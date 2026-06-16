@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "company_description",
+    "interview_likelihood",
+    "verdict",
+    "positive_evidence",
+    "risks",
+    "missing_specifics",
+    "improvements",
+    "evidence_vs_inference",
+    "non_ghostwriting_check"
+  ],
+  "properties": {
+    "company_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interview_likelihood": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["likely", "borderline", "unlikely"]
+    },
+    "positive_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "risks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "missing_specifics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "improvements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_vs_inference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "non_ghostwriting_check": {
+      "type": "boolean"
+    }
+  }
+}

@@ -8,10 +8,28 @@ Keep fun facts separate from critique. They should make the review feel more hum
 
 - Pick exactly one fun fact for a broad first-pass application review.
 - Prefer a fun fact that matches the founder's doubt, stage, geography, age concern, revenue status, or application weakness.
+- Optionally, replace the usual stat/history nugget with 2-4 relevant YC directory comps when that is more helpful than a traditional fun fact.
+- Optionally, replace the usual stat/history nugget with 1-2 possible partner-fit mentions when that is more useful context.
+- Use country-based directory comps mainly when the founder is from a less represented or lower-income country and seems to need confidence that YC funds startups from there.
 - If nothing is directly relevant, choose a neutral YC-insider fact.
 - Keep the output to 1-3 sentences.
 - Cite the local source file and line.
 - Clearly label stale or historical stats as historical.
+
+For directory comps:
+
+- Prefer companies that are genuinely similar in product, wedge, customer, or sector, not merely broad category matches.
+- If doing country-based comps, give 2-4 examples max and link the public YC company pages.
+- State the reason for the examples in one practical sentence.
+- Do not imply that sharing a country or sector meaningfully increases acceptance odds.
+
+For possible partner-fit notes:
+
+- Use only when there is a concrete public basis: directory profile patterns, prior public company assignments or investments, or RFSes tied to that partner.
+- Mention at most 1-2 partners.
+- Give one short reason per partner.
+- Label it as inference from public signals, not insider knowledge.
+- Do not imply that a partner-specific match matters more than the application's actual quality.
 
 ## Candidate Nuggets
 
@@ -27,6 +45,20 @@ Keep fun facts separate from critique. They should make the review feel more hum
 - Fun fact: Michael Seibel says founders do not have to network their way into YC; they just have to fill out an application.
 - Use when: The founder worries they need a warm intro, coffee meeting, dinner, or network access before applying.
 - Source: `../resources/tweets/michael-seibel-no-need-to-network-into-yc-2018-09-30.md:21`
+- Caveat: YC founder/partner source.
+
+### Online Application, Not Connections
+
+- Fun fact: PG says YC companies got in through an online application, not by being well-connected.
+- Use when: The founder worries they are outside the right network, city, school, or investor circle.
+- Source: `../resources/tweets/paul-graham-yc-online-application-not-connections-2023-06-21.md:21`
+- Caveat: YC founder/partner source; historical annual-startup count from 2023.
+
+### No Secret Rule Eliminates You
+
+- Fun fact: Michael Seibel says many founders wrongly think YC has a rule that eliminates them from consideration; founders break rules, so if they want to do YC, they should apply.
+- Use when: The founder thinks an unstated rule disqualifies them because of category, geography, stage, background, or setup.
+- Source: `../resources/tweets/michael-seibel-yc-no-rule-eliminates-you-2018-07-16.md:21`
 - Caveat: YC founder/partner source.
 
 ### YC Reads Applications Equally
@@ -56,11 +88,39 @@ Keep fun facts separate from critique. They should make the review feel more hum
 - Source: `../resources/tweets/paul-graham-w23-early-stage-acceptance-stats-2023-04-02.md:38`
 - Caveat: Historical W23 stat from pasted public X/screenshot text; use current official YC pages for current deadlines and policies.
 
+### Easier Early Myth
+
+- Fun fact: PG says the biggest myth about YC is that founders need to wait until the startup is far enough along; he says it is actually easier to get in early.
+- Use when: The founder has a concrete idea but wants to wait for more launch progress, revenue, or social proof before applying.
+- Source: `../resources/tweets/paul-graham-biggest-yc-myth-wait-until-far-along-2023-08-05.md:23`
+- Caveat: YC founder/partner source.
+
+### Established Startup Myth
+
+- Fun fact: PG says it is not true that a startup has to be established to get accepted; initial traction proves something, but YC partners care more about the founders than how far along they are.
+- Use when: The founder says YC is only for established companies or asks how much traction is enough.
+- Source: `../resources/tweets/paul-graham-idea-stage-startups-apply-to-yc-2024-04-22.md:33`
+- Caveat: YC founder/partner source.
+
+### Application Is Worth Doing
+
+- Fun fact: PG says time spent on the YC application is not lost, because YC designed it to be worth doing even if the startup does not get funded.
+- Use when: The founder hesitates because writing the application feels like wasted effort or a distraction.
+- Source: `../resources/tweets/paul-graham-yc-application-worth-doing-2023-01-28.md:21`
+- Caveat: YC founder/partner source.
+
 ### Applying Is Not a Lottery
 
 - Fun fact: In response to someone comparing YC to a lottery ticket, PG said lottery returns are random, whereas applying to YC is not.
 - Use when: The founder treats applying as pure chance or seems discouraged by low acceptance rates.
 - Source: `../resources/tweets/paul-graham-w23-early-stage-acceptance-stats-2023-04-02.md:67`
+- Caveat: YC founder/partner source.
+
+### Admissions Are Not Arbitrary
+
+- Fun fact: PG says YC admissions are the opposite of arbitrary: they look for something precise and measure false positives and false negatives carefully.
+- Use when: The founder assumes admissions are arbitrary, random, or driven mainly by vibe.
+- Source: `../resources/tweets/paul-graham-yc-admissions-opposite-arbitrary-2025-05-02.md:21`
 - Caveat: YC founder/partner source.
 
 ### Heysan's Old YC Application Sentence
@@ -102,15 +162,29 @@ Keep fun facts separate from critique. They should make the review feel more hum
 
 - Fun fact: Dalton Caldwell says Brex and Retool looked weak before pivoting into huge companies; their pivots worked because the founders moved toward problems they understood.
 - Use when: The founder is deciding whether weak current traction means quit, persist, or pivot toward stronger founder-market fit.
-- Source: `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:195`, `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:203`
+- Source: `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:23`
 - Caveat: Founder-story context, not a guarantee that any pivot will work.
 
 ### What Since Applying?
 
 - Fun fact: Gustaf Alstromer says one favorite YC question is what founders have done for the product since applying.
 - Use when: The founder is preparing for interview, updating an application, or needs to show recent velocity after a prior rejection.
-- Source: `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:921`, `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:922`
+- Source: `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:26`
 - Caveat: YC partner interview context, not an official fixed interview question list.
+
+### Interviews Are Not Pitches
+
+- Fun fact: PG says YC interviews are not pitches because 10 minutes is too short for sequential access; partners need random access.
+- Use when: The founder wants to memorize a pitch or is preparing a deck-like narrative for the interview.
+- Source: `../resources/tweets/paul-graham-yc-interviews-random-access-2020-11-29.md:21`
+- Caveat: YC founder/partner source.
+
+### User Needs Over Programming Ability
+
+- Fun fact: PG says YC asks about how well founders understand users' needs, not their programming ability.
+- Use when: The founder over-focuses on proving technical skill instead of customer insight.
+- Source: `../resources/tweets/paul-graham-ai-code-understanding-users-2025-02-10.md:32`
+- Caveat: YC founder/partner source.
 
 ### Founder Progress Over Company Progress
 
@@ -147,6 +221,41 @@ Keep fun facts separate from critique. They should make the review feel more hum
 - Source: `../resources/tweets/paul-graham-w23-early-stage-acceptance-stats-2023-04-02.md:121`
 - Caveat: YC-affiliated context, not official immigration or logistics guidance.
 
+### Focus Users, Not Hype
+
+- Fun fact: PG says the idea that Silicon Valley's most valuable lesson is hype is a common misconception YC often has to cure; the real lesson is focusing on users and iterating rapidly.
+- Use when: The application sounds like hype, press positioning, or market narrative without user learning.
+- Source: `../resources/tweets/paul-graham-hype-misconception-focus-users-2019-11-26.md:21`
+- Caveat: YC founder/partner source.
+
+### YC Is More Than VC Dollars
+
+- Fun fact: Garry Tan says VC dollars are just dollars, while YC increases the chance of success through community, a caring partner, and often strong first customers.
+- Use when: The founder asks whether YC is just another investor check or whether the dilution is only buying capital.
+- Source: `../resources/tweets/garry-tan-yc-more-than-vc-dollars-2025-08-06.md:21`
+- Caveat: YC CEO/partner source.
+
+### YC People Motivation
+
+- Fun fact: PG says he was impressed by how many people running YC were not doing it for the money.
+- Use when: The founder is skeptical that YC partners are only financially motivated; use lightly, not as a substitute for concrete program details.
+- Source: `../resources/tweets/paul-graham-yc-people-not-doing-it-for-money-2022-02-16.md:21`
+- Caveat: YC founder/partner source.
+
+### Hardware Stereotype
+
+- Fun fact: PG says the stereotype about hardware startups was always false.
+- Use when: The founder worries YC does not fund hardware or physical-product companies.
+- Source: `../resources/tweets/paul-graham-hardware-startup-stereotype-false-2016-03-27.md:21`
+- Caveat: YC founder/partner source; pair with current YC company/RFS examples when giving concrete sector advice.
+
+### Biotech Fundamentals
+
+- Fun fact: PG says YC looks for the same things in biotech as in other startups: founders with relevant expertise and an idea they find intriguing as domain experts.
+- Use when: A biotech, scientific, deep-tech, or specialized-domain founder worries YC uses a totally different rubric for their sector.
+- Source: `../resources/tweets/paul-graham-biotech-domain-expertise-2026-06-14.md:30`
+- Caveat: YC founder/partner source.
+
 ### Historical Gender Stats
 
 - Fun fact: In 2014, PG said 23% of YC applicants had female founders and 23% of accepted companies did, and that no one counted until afterward.
@@ -160,3 +269,17 @@ Keep fun facts separate from critique. They should make the review feel more hum
 - Use when: The founder is unsure whether to apply before launch, traction, or revenue.
 - Source: `../resources/yc-website/frequently-asked-questions.md:81`
 - Caveat: Official YC source captured 2026-06-04; recheck the live page when current wording matters.
+
+### YC Directory Comps
+
+- Fun fact: If more useful than a stat, mention 2-4 relevant YC companies from the public YC directory that are doing adjacent work, or from the founder's country when geography confidence is the useful context.
+- Use when: The founder would benefit from seeing that YC has funded related companies before, or when a founder from a less represented or lower-income country worries that geography itself makes YC unrealistic.
+- Source: `../resources/yc-company-directory/README.md:1`
+- Caveat: Directory comps are context only. They do not imply endorsement, direct comparability, or current YC demand for identical startups.
+
+### Possible Partner Fit
+
+- Fun fact: If useful, mention 1-2 YC partners who may be especially interested in the idea, based on public signals like their directory profile, prior public company assignments or investments, or RFSes they published.
+- Use when: The founder would benefit from knowing that the idea appears legible to at least one current YC partner based on public evidence, especially for unusual sectors or ideas that may otherwise feel out-of-scope.
+- Source: `../resources/yc-company-directory/README.md:1`, `../resources/rfs/README.md:1`
+- Caveat: This is inference from public signals only. It does not predict who will review the application or whether a given partner would support it.

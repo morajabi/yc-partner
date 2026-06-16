@@ -7,14 +7,14 @@
 - Published: 2022-06-27
 - Captured: 2026-06-16
 - Method: source page fetched; pasted excerpt checked against the page
-- Caveat: references/caveats/founder-story.md
+- Caveat: references/caveats/personalized-yc-rejection-email.md
 
 ## Summary
 
 - Lior Neu-ner says he applied to YC S22 for Kudu, a Slack alternative, received two YC interviews, and was rejected after the second interview.
 - The rejection email's central concern was not founder ability. It worried that Slack was deeply embedded, making it hard for users to pay attention to a new tool, and that incremental product improvements might not be enough to win customers and scale.
 - Use this as an external example when reviewing applications that compete with deeply embedded incumbents: pressure-test the wedge, urgency, first-customer path, switching behavior, and whether the product is more than an incremental improvement.
-- Do not treat this as a YC-wide rejection template or current YC policy. It is one public founder-posted rejection email.
+- Do not treat this as a YC-wide rejection template, current YC policy, or a reason to predict another company's outcome. It is one public founder-posted rejection email.
 
 ## Content
 

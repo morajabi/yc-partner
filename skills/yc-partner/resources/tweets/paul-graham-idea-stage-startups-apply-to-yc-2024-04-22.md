@@ -11,6 +11,7 @@
 ## Summary
 
 - Paul Graham tells founders not to avoid applying to YC merely because they are early. He says that in a typical YC batch, about 40% of funded startups are just an idea. He argues that while traction proves something, YC partners care more about the founders than how far along the company is, and that YC has a long-standing tradition of picking startups without needing a revenue graph. - 2026-06-16 - Processed from pasted public X thread text. -
+- Related URL: https://x.com/paulg/status/1782348234020487312
 - Timestamp shown in capture: 1:22 PM, Apr 22, 2024
 - View count shown in capture: 547.4K. - X UI chrome such as "Relevant" and "View quotes" was omitted
 - The public status ID corresponds to 2024-04-22T09:52:23Z, which matches the provided 1:22 PM timestamp in Asia/Tehran

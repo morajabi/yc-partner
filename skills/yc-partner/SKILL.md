@@ -1,6 +1,6 @@
 ---
 name: yc-partner
-description: Review and improve YC applications, answer pre-application YC questions and doubts, prepare founders for YC interviews, recommend relevant YC resources, and add focused Office Hours learning notes using processed public source files. Use when the user asks for YC application feedback, help deciding whether/how/when to apply, common YC doubts such as being too early, solo, nontechnical, non-Ivy, international, scared of rejection, unsure whether YC funds their sector, YC interview prep, YC-style critique, source-grounded YC advice, or help understanding what to read/watch before applying or interviewing.
+description: Review and improve YC applications, answer pre-application YC questions and doubts, prepare founders for YC interviews, recommend relevant YC resources, provide source-grounded office-hours-style advice on startup obstacles/worries/questions, and add focused Office Hours learning notes using processed public source files. Use when the user asks for YC application feedback, help deciding whether/how/when to apply, common YC doubts such as being too early, solo, nontechnical, non-Ivy, international, scared of rejection, unsure whether YC funds their sector, YC interview prep, YC-style critique, source-grounded YC advice, help understanding what to read/watch before applying or interviewing, or advice on the biggest obstacle, doubt, worry, or question in their startup.
 ---
 
 # YC Partner
@@ -18,8 +18,10 @@ The skill can accept:
 - One answer to improve.
 - A founder video transcript.
 - A demo video transcript or notes.
+- Public founder or company URLs for optional deeper context.
 - A local founder/demo video path, if the user wants you to run the bundled transcription helper first.
 - A pre-application question or doubt before the founder has finished writing.
+- A startup obstacle, worry, doubt, or question for source-grounded office-hours-style advice.
 - A request for mock interview questions.
 - A request for resources to read or watch.
 
@@ -63,6 +65,7 @@ Do not read, print, summarize, edit, or commit `.env` files. Do not copy private
 - Include essays, blog posts, and interviews with YC partners, Paul Graham, Jessica Livingston, and similar YC-affiliated sources in the review process.
 - Use anecdotes from successful YC founders as founder stories when relevant, not as YC evaluation criteria.
 - Treat public example applications and founder stories as examples, not rules.
+- Treat personalized YC rejection emails as recipient-specific feedback, not as YC policy or reusable rejection reasons. Do not speculate that another team with the same idea would be rejected for the same reason; the same idea with different founders, traction, timing, geography, or customer proof may be judged very differently.
 - Do not use private applications or personal data from this repository.
 - If a claim is based on inference rather than a source, label it as inference.
 - Cite local resource files or public URLs for guidance-based recommendations.
@@ -79,13 +82,15 @@ Start with:
 
 Then choose the smallest relevant path:
 
-- Application review: read `indexes/application-questions.md`, then the relevant maintained guide files under `guides/`.
+- Application review: read `indexes/application-questions.md`, then the relevant maintained guide files under `guides/`, including `guides/application-hygiene.md` for broad first-pass reviews. If the user provides public URLs, handles, company websites, GitHub, LinkedIn, or demo links and wants deeper analysis, also read `guides/application-research.md`.
 - Pre-application questions and doubts: read `indexes/faq.md`, then use `indexes/source-map.md` or `rg` to find the smallest official YC source and any directly relevant partner essay, tweet, post, interview, or founder story.
+- Rejection, rejection fear, or reapplication: read `guides/rejection-prep.md` and `indexes/faq.md`.
 - Interview prep: read `indexes/interview.md` and `guides/interview-prep.md`.
 - FAQ/logistics: read `indexes/faq.md`.
+- Office-hours-style advice on startup obstacles, worries, doubts, or questions: read `guides/office-hours.md`, then `indexes/source-map.md` and the smallest relevant index/guide/source files.
 - Source recommendation: read `indexes/source-map.md` if present; otherwise search `resources/` with `rg`.
 - Office Hours learning notes: for broad first-pass application reviews, read `indexes/source-map.md` and use `rg` to find a few resources that directly match the founder, company, sector, stage, or review issue.
-- Fun facts: for broad first-pass application reviews, read `guides/fun-facts.md` and choose one relevant source-linked item.
+- Fun facts: for broad first-pass application reviews, read `guides/fun-facts.md` and choose one relevant source-linked item. Optionally use `resources/yc-company-directory/` for a few relevant directory comps.
 
 Use `rg` over the bundled `resources/`, `indexes/`, and `guides/` when a question is narrow or when no index exists yet.
 
@@ -111,6 +116,17 @@ Optional:
 - Use YC founder anecdotes only as relevant stories or comparisons, never as YC criteria.
 - Browse the web only when the user asks for current material or local processed sources are missing/stale.
 
+## Office Hours Advice Workflow
+
+Use this when the founder presents their biggest obstacle, worry, doubt, question, or asks for advice outside a full application review.
+
+1. Read `guides/office-hours.md`.
+2. Route the topic through `indexes/source-map.md` and, when relevant, `indexes/faq.md`, `indexes/application-questions.md`, `indexes/interview.md`, or maintained guides.
+3. Search bundled `resources/`, `indexes/`, and `guides/` with `rg` for the exact issue before answering.
+4. Answer only from captured sources, guides, indexes, and YC or YC-affiliated material bundled in this skill.
+5. If the corpus does not support the answer, do not improvise. Say the skill does not have captured support for a confident YC-grounded answer, then recommend applying to YC for real YC partner feedback and offer to help draft the application so that question is visible.
+6. Cite source files for every substantive recommendation.
+
 ## Pre-Application Guidance Workflow
 
 Use this when the founder has not finished writing their application and wants to resolve doubts, learn YC expectations, or decide how to approach the application.
@@ -123,6 +139,9 @@ Common questions include:
 - Does YC fund this sector or only software startups?
 - Should I apply now, late, after graduation, or to a future batch?
 - What if I get rejected or already applied before?
+- Does rejection mean YC found a fatal flaw?
+- When will no-interview rejections or timeline updates arrive?
+- Does my school, geography, solo-founder status, or lack of elite network disqualify me?
 - How should I think about fear, confidence, commitment, and whether the application is worth trying?
 
 For these answers:
@@ -131,10 +150,12 @@ For these answers:
 2. Ground YC-specific claims in official YC sources before partner posts, interviews, or founder stories.
 3. Add nuance only where it changes the founder's decision. For example, "yes, solo founders can apply" can coexist with "YC says one-person startups are tougher."
 4. When users say they were rejected, have been rejected before, or are deciding whether to reapply, refer to the Replit founder story as an anecdotal example of a strong company rejected multiple times before acceptance (`resources/founder-stories/amjad-masad-haya-odeh-replit-yc-application-story.md`), while keeping official YC rejection/reapplication sources as policy.
-5. If the answer depends on the founder's private facts, ask only for the missing facts needed to answer.
-6. Recommend a focused reading list of 1-4 resources, ideally 1-2. Include why each source is relevant.
-7. Do not turn encouragement into flattery. Normalize common doubts, then make the next action concrete.
-8. If current deadlines, batch names, funding terms, immigration, or application form wording matter, recheck the official source before making a current claim.
+5. If a founder shares or references a personalized rejection email, use only their actual email to help translate the feedback into next experiments. Do not use other rejection examples to guess why they were rejected.
+6. If users ask about no-interview rejection timing, say rejected-without-interview applicants generally get the generic rejection email on the final notification day YC announced for that batch; do not read silence before that day as meaningful. If they want peer timeline chatter or to talk with other applicants, link https://www.reddit.com/r/ycombinator/ as community discussion, not official YC guidance.
+7. If the answer depends on the founder's private facts, ask only for the missing facts needed to answer.
+8. Recommend a focused reading list of 1-4 resources, ideally 1-2. Include why each source is relevant.
+9. Do not turn encouragement into flattery. Normalize common doubts, then make the next action concrete.
+10. If current deadlines, batch names, funding terms, immigration, or application form wording matter, recheck the official source before making a current claim.
 
 ## Application Review Workflow
 
@@ -144,14 +165,18 @@ For these answers:
 4. Flag the highest-impact issues first.
 5. Check whether each answer directly answers the prompt.
 6. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
-7. Separate:
+7. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
+8. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
+9. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
+10. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
+11. Separate:
    - Official YC guidance.
    - Public example patterns.
    - Your own inference from the application.
    - Open questions for the founder.
-8. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
-9. For broad first-pass reviews, add an `Office Hours` section that teaches the founder using the bundled source corpus.
-10. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
+12. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
+13. For broad first-pass reviews, add an `Office Hours` section that teaches the founder using the bundled source corpus.
+14. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
 
 For `Office Hours`:
 
@@ -168,6 +193,13 @@ For `Fun Fact`:
 
 - Include exactly one item in broad first-pass application reviews.
 - Pick a fact that matches the founder's stage, doubt, geography, age concern, revenue status, or application weakness.
+- Optionally, instead of a stat/history nugget, use the public YC company directory to mention 2-4 relevant YC companies that are doing similar things, or 2-4 YC companies from the founder's country when geography confidence is the useful context.
+- Optionally, use the `Fun Fact` slot to mention 1-2 YC partners who may be especially interested in the idea, when that inference is supported by public signals such as their directory profile, prior public company assignments or investments, or RFSes they published.
+- Use country-based comps mainly when the founder is from a less represented or lower-income country and seems worried that geography makes YC unrealistic.
+- Treat directory comps as context, not as evidence that YC wants identical companies or that the user's company is automatically a fit.
+- Treat possible partner-fit notes as inference from public signals, not as insider knowledge about who will read or champion the application.
+- When using comps, prefer public YC company URLs and keep the note lightweight: one sentence on why those examples are relevant, not a long market map.
+- When naming possible partner fit, keep it to one short reason per partner and avoid claiming certainty.
 - Keep it to 1-3 sentences and cite the local source line.
 - Keep it separate from the review's core critique; fun facts can support confidence or context, but do not use stale historical stats as current policy.
 - Skip it for narrow iterations, one-answer edits, pure mock interview drills, or follow-up revisions unless the user asks for it.

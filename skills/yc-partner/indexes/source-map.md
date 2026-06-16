@@ -27,6 +27,7 @@ High-level source navigation.
 
 - Folder: `../resources/yc-company-directory/`
 - Use for public YC company, batch, one-liner, region, industry, and group-partner lookup. Do not treat directory fields as application advice.
+- Guide: `../guides/application-research.md`
 - Source notes:
   - `../resources/yc-company-directory/README.md` - public YC directory dataset capture with 5960 company entries and 17 group partner summaries captured 2026-06-16.
 
@@ -42,10 +43,13 @@ High-level source navigation.
 - Folder: `../resources/yc-youtube/`
 - Use for official YC YouTube transcripts.
 - Source notes:
+  - `../resources/yc-youtube/50-founders-share-why-they-applied-to-y-combinator-HQjjgi6271k.md` - official YC founder montage on mentorship, direct feedback, accountability, community, brand, network, the batch time box, Demo Day, and value for non-Bay-Area or emerging-market founders.
+  - `../resources/yc-youtube/can-you-apply-to-yc-before-you-have-a-us-visa-jared-friedman-UZYgqu4XzOA.md` - official YC video from Jared Friedman saying founders can apply without already having a US visa; use with current official logistics and immigration-lawyer guidance.
   - `../resources/yc-youtube/how-to-apply-and-succeed-at-y-combinator-by-dalton-caldwell-8yiOcCPvyNE.md` - official YC talk by Dalton Caldwell on applying and succeeding at YC.
   - `../resources/yc-youtube/how-to-apply-and-succeed-at-y-combinator-startup-school-B5tU2447OK8.md` - official Startup School video on applying and succeeding at YC, including YC interview mechanics and preparation guidance.
   - `../resources/yc-youtube/how-to-build-a-self-improving-company-with-ai-X_JsIHUfUjc.md` - official YC YouTube transcript on AI-native self-improving company operations.
   - `../resources/yc-youtube/inside-ycs-ai-playbook-B246K_G7mHU.md` - official YC YouTube transcript on YC's internal AI playbook and agent infrastructure.
+  - `../resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md` - official YC video from Jared Friedman saying founders should apply once they have a founding team and an idea they are excited to work on; traction and revenue are not required.
 
 ## YC Partners
 
@@ -62,21 +66,30 @@ High-level source navigation.
 - Source notes:
   - `../resources/tweets/gustaf-alstromer-remote-solo-founder-hard-2025-02-13.md` - Gustaf Alstromer X post saying remote solo founders are often highly capable but face a hard accountability and emotional-support problem when things get difficult.
   - `../resources/tweets/gustaf-alstromer-heysan-yc-application-risk-conviction-2023-10-13.md` - Gustaf Alstromer X post on Heysan's YC application, applying despite risk, late applications, Retool/Deel examples, and communicating founder conviction.
+  - `../resources/tweets/garry-tan-yc-more-than-vc-dollars-2025-08-06.md` - Garry Tan X post saying YC is not just VC dollars; YC also offers a lifelong community, partner support, and often strong first customers.
   - `../resources/tweets/jared-friedman-trash-bin-history-good-ideas-2026-06-15.md` - Jared Friedman X post, with Paul Graham reply, about finding impactful startup ideas in historically discarded or unfashionable fields.
   - `../resources/tweets/jared-friedman-visa-concerns-yc-immigration-lawyers-2023-04-07.md` - Jared Friedman X post saying visa concerns should not keep founders from applying to YC because accepted founders on visas are introduced to YC immigration lawyers.
   - `../resources/tweets/michael-seibel-apply-to-yc-most-common-reason-2022-09-11.md` - Michael Seibel X post saying the single most common reason a startup does not get into YC is that the founders do not apply.
   - `../resources/tweets/michael-seibel-no-need-to-network-into-yc-2018-09-30.md` - Michael Seibel X post saying founders do not have to network their way into YC and only need to fill out an application.
+  - `../resources/tweets/michael-seibel-yc-no-rule-eliminates-you-2018-07-16.md` - Michael Seibel X post saying founders often wrongly believe a YC rule eliminates them and should just apply.
   - `../resources/tweets/michael-seibel-yc-interview-prep-top-ten-2015-10-31.md` - Michael Seibel X post with ten YC interview preparation tips: short answers, team/market/traction, "what do you do?", founder coordination, demos, and red flags.
   - `../resources/tweets/paul-graham-biggest-yc-myth-wait-until-far-along-2023-08-05.md` - Paul Graham X post saying the biggest myth about YC is that founders should wait until they are far enough along, and that many big YC successes had not launched when they applied.
   - `../resources/tweets/paul-graham-explain-what-you-learned-from-users-2022-09-12.md` - Paul Graham X post saying the most valuable per-word YC application advice is to explain what the founders learned from users.
   - `../resources/tweets/paul-graham-apply-now-with-solid-idea-2020-01-05.md` - Paul Graham X post advising founders to apply now if their current idea is solid, even if they may work on another idea later.
   - `../resources/tweets/paul-graham-biotech-domain-expertise-2026-06-14.md` - Paul Graham X reply saying YC looks for the same startup fundamentals in biotech: founders with relevant expertise and an idea they find intriguing as domain experts.
   - `../resources/tweets/paul-graham-founder-suitability-selection-2019-03-13.md` - Paul Graham X post saying YC learned not to fund people merely because they seemed nice and eager to be accepted if they were not genuinely suited to startup pain.
+  - `../resources/tweets/paul-graham-hardware-startup-stereotype-false-2016-03-27.md` - Paul Graham X post saying the hardware-startup stereotype was always false.
+  - `../resources/tweets/paul-graham-hype-misconception-focus-users-2019-11-26.md` - Paul Graham X post saying hype is a common misconception YC often has to cure, and the real lesson is focusing on users and iterating rapidly.
   - `../resources/tweets/paul-graham-idea-stage-startups-apply-to-yc-2024-04-22.md` - Paul Graham X thread telling idea-stage and pre-revenue founders not to be deterred from applying because a typical YC batch includes many startups that are just an idea.
   - `../resources/tweets/paul-graham-ready-to-apply-clear-application-2022-09-09.md` - Paul Graham X thread saying founders with an idea are ready to apply, traction is not required, and applications should be clear instead of vague marketing language.
   - `../resources/tweets/paul-graham-revenue-not-required-for-yc-2020-01-05.md` - Paul Graham X replies saying founders have been advised wrongly if told not to apply without revenue, because revenue is not required for YC.
   - `../resources/tweets/paul-graham-unequivocal-startup-pitches-2026-06-05.md` - Paul Graham X thread arguing that the best startup pitches make true, unequivocal claims and that office hours often surface exactly how much a startup can claim.
   - `../resources/tweets/paul-graham-ai-code-understanding-users-2025-02-10.md` - Paul Graham X thread arguing that AI commoditizing code makes user understanding more central, while YC interviews already probe user insight more than programming ability.
+  - `../resources/tweets/paul-graham-yc-admissions-opposite-arbitrary-2025-05-02.md` - Paul Graham X post saying YC admissions are the opposite of arbitrary and that YC carefully measures false positives and false negatives.
+  - `../resources/tweets/paul-graham-yc-application-worth-doing-2023-01-28.md` - Paul Graham X post saying the YC application is designed to be worth doing even if the startup does not get funded.
+  - `../resources/tweets/paul-graham-yc-interviews-random-access-2020-11-29.md` - Paul Graham X post saying YC interviews are not pitches because partners need random access in a 10-minute interview.
+  - `../resources/tweets/paul-graham-yc-online-application-not-connections-2023-06-21.md` - Paul Graham X post saying YC companies got in through online applications, not by being well-connected.
+  - `../resources/tweets/paul-graham-yc-people-not-doing-it-for-money-2022-02-16.md` - Paul Graham X post saying many people running YC are not doing it for the money.
   - `../resources/tweets/paul-graham-w23-early-stage-acceptance-stats-2023-04-02.md` - Paul Graham X thread with W23 acceptance stats and replies about early-stage, pre-revenue, age, geography, founder progress, and non-random selection.
   - `../resources/tweets/paul-graham-yc-gender-application-acceptance-stats-2014-11-18.md` - Paul Graham X post with historical 2014 applicant and acceptance gender stats; use only as historical context.
 
@@ -86,9 +99,9 @@ High-level source navigation.
 - Use for interviews with Paul Graham, Jessica Livingston, and YC partners.
 - Source notes:
   - `../resources/interviews/the-untold-stories-of-y-combinator-with-co-founder-jessica-livingston-oYFjKml9ptk.md` - Garry Tan interview with Jessica Livingston on YC's early history, founder selection, and company-building patterns.
-  - `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md` - Dalton Caldwell interview on persistence, pivots, tarpit ideas, user focus, and founder-led product care; see `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:97`, `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:203`, `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:311`, and `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:419`.
-  - `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md` - Gustaf Alstromer interview on talking to users, technical founders, speed, and customer focus; see `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:304`, `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:341`, `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:421`, and `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:488`.
-  - `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md` - Jessica Livingston interview on founder selection, defensiveness, cofounder dynamics, domain expertise, and scrappiness; see `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:199`, `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:209`, `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:238`, and `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:258`.
+  - `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md` - Lenny's Podcast interview with Dalton Caldwell on resilience, pivots, tarpit ideas, customer development, investor rejections, market size, and over-delegation; see `../resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md:18`.
+  - `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md` - Lenny's Podcast interview with Gustaf Alstromer on talking to customers, YC office hours, founder attributes, technical cofounders, climate tech, and applying to YC without needing insider access; see `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:19`.
+  - `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md` - Lenny's Podcast interview with Jessica Livingston on founder social radar, defensiveness, cofounder dynamics, earnestness, Airbnb's YC interview, and early YC stories; see `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:18`.
 
 ## Paul Graham Essays
 
@@ -129,8 +142,11 @@ High-level source navigation.
 - Folder: `../resources/examples/`
 - Use for public example applications, demo videos, and founder videos. Do not treat examples as YC criteria.
 - Source notes:
+  - `../resources/examples/doordash-s-application-video-for-yc-s13-Rzlr2tNSl0U.md` - public official YC upload of DoorDash's YC S13 application video, useful as an example of customer discovery, manual founder work, and early paying-customer traction.
+  - `../resources/examples/embark-trucks-application-video-for-yc-w16-8MdVFF5HU0g.md` - public official YC upload of Embark Trucks' YC W16 application video, useful as an example of founder/team technical credibility and prototype proof.
   - `../resources/examples/getintoyc/` - 36 public Get into YC applications labeled Successful, captured 2026-06-16 as one Markdown file per company.
   - `../resources/examples/lago-yc-application.md` - public Lago blog post with the successful application that got Lago into YC S21.
+  - `../resources/examples/weave-s-application-video-for-yc-w14-rpyvQJGcQGw.md` - public official YC upload of Weave's YC W14 application video, useful as an example of clear product description, vertical focus, traction, revenue, and technical progress.
   - `../../../evals/yc-application-review/fixtures.jsonl` - 60 public application review eval fixtures, including 37 successful and 23 unsuccessful outcome labels.
 
 ## External Context

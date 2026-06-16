@@ -4,6 +4,7 @@
 *.env
 .source/
 .yc-partner/
+evals/**/receipts/
 raw/
 tmp/
 temp/
@@ -25,3 +26,5 @@ dist/
 .cache/
 __pycache__/
 *.pyc
+evals/**/receipts/
+skills/yc-partner/resources/external/redacted-yc-post-interview-rejection-email-*.md
