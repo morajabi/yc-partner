@@ -5,9 +5,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import textwrap
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -15,7 +16,7 @@ from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CAPTURED = "2026-06-16"
+CAPTURED = date.today().isoformat()
 
 
 @dataclass(frozen=True)
@@ -142,6 +143,33 @@ def fetch_article(url: str) -> dict:
     return data["props"]["article"]
 
 
+def slugify(value: str) -> str:
+    value = value.lower()
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    value = re.sub(r"-+", "-", value).strip("-")
+    return value[:90].strip("-") or "yc-library-page"
+
+
+def default_capture(url: str) -> Capture:
+    article = fetch_article(url)
+    title = article.get("title") or "YC Library Page"
+    author = article.get("author") or "Y Combinator"
+    type_ = "Official YC Library video transcript" if article.get("transcript") else "Official YC Library page"
+    content_label = "transcript" if article.get("transcript") else "page text"
+    return Capture(
+        url=url,
+        output=Path("skills/yc-partner/resources/yc-website/yc-library") / f"{slugify(title)}.md",
+        type_=type_,
+        author_fallback=author,
+        summary=[
+            f"Official YC Library {content_label} captured as a first-class source.",
+            f"Use with topic-specific indexes and guides based on the source title and {content_label}.",
+            f"Full processed {content_label} preserved below.",
+        ],
+    )
+
+
 def date_only(value: str | None) -> str:
     if not value:
         return "Unknown"
@@ -155,7 +183,7 @@ def duration(value: int | None) -> str:
     return f"{minutes:02d}:{seconds:02d}"
 
 
-def wrap_transcript(text: str) -> str:
+def wrap_text(text: str) -> str:
     paragraphs = []
     for para in text.strip().split("\n\n"):
         para = " ".join(para.split())
@@ -170,19 +198,23 @@ def markdown(capture: Capture, article: dict) -> str:
     youtube_url = article.get("link")
     video_id = article.get("youtube_id")
     transcript = article.get("transcript") or ""
-    if not transcript.strip():
-        raise RuntimeError(f"missing transcript for {capture.url}")
+    content = article.get("content") or ""
+    source_text = transcript or content
+    if not source_text.strip():
+        raise RuntimeError(f"missing transcript/content for {capture.url}")
+    section_title = "Transcript" if transcript else "Page Text"
+    source_url = youtube_url or capture.url
 
     lines = [
         f"# {article['title']}",
         "",
         f"- Type: {capture.type_}",
         "- Status: Official YC public source",
-        f"- URL: {youtube_url}",
+        f"- URL: {source_url}",
         f"- Author: {author}",
         f"- Published: {date_only(article.get('created_at'))}",
         f"- Captured: {CAPTURED}",
-        "- Method: YC Library data-page transcript",
+        f"- Method: YC Library data-page {'transcript' if transcript else 'content'}",
         "- Caveat: references/caveats/official-yc-source.md",
         "",
         "## Summary",
@@ -194,9 +226,9 @@ def markdown(capture: Capture, article: dict) -> str:
             f"- YC Library URL: {capture.url}.",
             f"- Video ID: {video_id}; duration: {duration(article.get('video_duration'))}; YC Library view count at capture: {article.get('youtube_view_count')}.",
             "",
-            "## Transcript",
+            f"## {section_title}",
             "",
-            wrap_transcript(transcript),
+            wrap_text(source_text),
             "",
         ]
     )
@@ -205,10 +237,30 @@ def markdown(capture: Capture, article: dict) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("urls", nargs="*", help="YC Library URLs to capture. If omitted, capture the curated default set.")
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=None,
+        help="Optional output directory for URL arguments. Defaults to skills/yc-partner/resources/yc-website/yc-library.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    for capture in CAPTURES:
+    captures = CAPTURES if not args.urls else [default_capture(url) for url in args.urls]
+    if args.output_dir is not None:
+        captures = [
+            Capture(
+                url=capture.url,
+                output=args.output_dir / capture.output.name,
+                type_=capture.type_,
+                author_fallback=capture.author_fallback,
+                summary=capture.summary,
+            )
+            for capture in captures
+        ]
+
+    for capture in captures:
         article = fetch_article(capture.url)
         output = ROOT / capture.output
         text = markdown(capture, article)

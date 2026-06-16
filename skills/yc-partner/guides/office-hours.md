@@ -16,7 +16,7 @@ This is not real YC office hours. Official YC says office hours are led by YC pa
 
 1. Restate the founder's obstacle in one sentence.
 2. Identify the topic route: application, idea, users, growth, revenue, cofounders, founder morale, pivot, fundraising, market, logistics, interview, or another concrete bucket.
-3. Read `founder-advice-notes.md` for a matching short note, then `indexes/source-map.md` and the smallest relevant index or guide. Use `rg` over `resources/`, `indexes/`, and `guides/` for exact topic words when the note bank does not cover the issue.
+3. Read `founder-advice-notes.md` for a matching short note. For operating topics, read `startup-operating-notes.md`; for fundraising, runway, or investor-meeting topics, read `investor-meeting-prep.md`; for prompt generation, read `question-bank.md`. Then use `indexes/source-map.md` and the smallest relevant index or guide.
 4. Open the source files that directly support the answer. Prefer official YC sources, then YC partner/PG/Jessica/Dalton/Michael/Garry/Gustaf material, then founder stories or external context only if clearly labeled.
 5. If the source support is enough, answer with:
    - `Obstacle`: the real bottleneck or uncertainty.
@@ -43,6 +43,9 @@ These questions are grounded in Gustaf Alstromer's description of YC office hour
 - Application clarity, founder video, demo, traction, founder-market fit, and application hygiene: use `indexes/application-questions.md`, `guides/application-review.md`, and `guides/application-hygiene.md`.
 - Cross-cutting issues like customer learning, founder signal, market, competitors, fundraising, AI/agents, and reapplication: use `indexes/themes.md` to find the closest route before opening source files.
 - Short source-grounded notes for application reviews, founder doubts, stage questions, founder profile issues, user-learning gaps, and interview prep: use `guides/founder-advice-notes.md`.
+- Operating tips, heads-up notes, and tactical office-hours advice for users, MVPs, launch, focus, burn, hiring, technical ownership, and AI startup questions: use `guides/startup-operating-notes.md`.
+- Investor meeting prep, fundraising story, seed mechanics, runway, and burn: use `guides/investor-meeting-prep.md`.
+- Office-hours, user-discovery, interview, investor, hiring, and operating check-in questions: use `guides/question-bank.md`.
 - Interview doubts and short-answer practice: use `indexes/interview.md` and `guides/interview-prep.md`.
 - Customer learning, talking to users, progress, cofounder issues, technical-founder risk, pivot judgment, resilience, tarpit ideas, market size, growth-vs-retention, and over-delegation: use `indexes/source-map.md` plus `rg` across `resources/interviews/`, `resources/dalton-michael/`, `resources/pg-essays/`, and `resources/yc-partners/`.
 

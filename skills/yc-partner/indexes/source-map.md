@@ -17,7 +17,27 @@ For cross-cutting review issues, use `themes.md` first, then come back here for 
   - `../resources/yc-website/why-didnt-my-group-get-an-interview.md` - official YC explanation of why many good applications do not receive interviews and why YC generally does not provide application feedback.
   - `../resources/yc-website/yc-rejection-email-excerpts-2024.md` - official YC rejection-email excerpts from screenshots: no individual feedback, encouragement to reapply, repeat-applicant stat, solo-founder cofounder-matching tip, and Work at a Startup tip.
   - `../resources/yc-website/yc-people-leadership.md` - concise official YC People roster for the President & CEO, managing partners, general partners, and retired founders, captured 2026-06-16.
-  - `../resources/yc-website/yc-library/` - official YC Startup Library video transcripts captured from public YC Library page payloads, including application tips on timing, not needing connections, including a demo, and Dalton Caldwell's "How to apply and succeed at YC."
+  - `../resources/yc-website/yc-library/` - official YC Startup Library video transcripts and article pages captured from public YC Library page payloads, including application tips, Dalton Caldwell's "How to apply and succeed at YC," user/customer talks, MVP/product talks, Group Partner Lounge discussions, AI startup talks, sales, hiring, and selected Social Radars/YC Library pages.
+  - `../resources/yc-website/yc-library/how-to-talk-to-users.md` - Gustaf Alstromer on why and how founders should talk to users, what to ask, and how to turn learning into an MVP.
+  - `../resources/yc-website/yc-library/how-to-get-your-first-customers.md` - Gustaf Alstromer on early customer acquisition and first-customer tactics.
+  - `../resources/yc-website/yc-library/how-to-plan-an-mvp.md` - Michael Seibel on planning an MVP and getting first users before overbuilding.
+  - `../resources/yc-website/yc-library/building-product.md` - Michael Seibel on building product and product-development focus.
+  - `../resources/yc-website/yc-library/growth-for-startups.md` - Gustaf Alstromer on startup growth.
+  - `../resources/yc-website/yc-library/how-not-to-fail.md` - YC Library video transcript for Jessica Livingston's "How Not to Fail"; use the YC Blog post as the cleaner article source when a transcript is not needed.
+  - `../resources/yc-website/yc-library/how-to-get-startup-ideas.md` - Jared Friedman on getting startup ideas; use with PG's `how-to-get-startup-ideas.md` and RFS/company-directory context.
+  - `../resources/yc-website/yc-library/why-startup-founders-should-launch-companies-sooner-than-they-think.md` - YC partner discussion on launching early, learning from bad launches, and using launches to diagnose problems.
+  - `../resources/yc-website/yc-library/inside-the-group-partner-lounge-the-ideal-customer.md` - Group Partner Lounge discussion for ideal-customer selection.
+  - `../resources/yc-website/yc-library/inside-the-group-partner-lounge-turning-users-into-paid-customers.md` - Group Partner Lounge discussion on converting users to paying customers.
+  - `../resources/yc-website/yc-library/inside-the-group-partner-lounge-top-ways-startups-waste-money.md` - Group Partner Lounge discussion on wasteful pre-PMF spending, hiring, marketing, PR, and customer spend.
+  - `../resources/yc-website/yc-library/inside-the-group-partner-lounge-advantages-of-a-first-time-founder.md` - Group Partner Lounge discussion on first-time founder advantages and disadvantages.
+  - `../resources/yc-website/yc-library/inside-the-group-partner-lounge-how-to-compete-with-amazon-and-google.md` - Group Partner Lounge discussion on competing with large incumbents.
+  - `../resources/yc-website/yc-library/yc-s-group-partners-discuss-doing-things-that-don-t-scale.md` - YC group partners discuss doing things that do not scale.
+  - `../resources/yc-website/yc-library/yc-partners-answer-your-questions-office-hours.md` - official YC office-hours-style Q&A source.
+  - `../resources/yc-website/yc-library/how-to-use-ai-in-your-startup.md` and `../resources/yc-website/yc-library/how-to-get-ai-startup-ideas.md` - official YC AI startup operating and idea-generation guidance.
+  - `../resources/yc-website/yc-library/the-sales-playbook-for-founders.md` - Tom Blomfield on founder-led sales.
+  - `../resources/yc-website/yc-library/how-to-hire-your-first-engineer.md` - Harj Taggar's Library page for early engineering hiring.
+  - `../resources/yc-website/yc-library/paul-graham-co-founder-of-y-combinator-and-viaweb.md` and `../resources/yc-website/yc-library/trevor-blackwell-co-founder-y-combinator-founder-anybots.md` - official YC Library Social Radars episode-note captures; prefer `../resources/social-radars/` for the full Social Radars episode-note set.
+  - `../resources/yc-website/yc-blog/` - official YC Blog posts captured from public post payloads, including Jessica Livingston's "How Not to Fail," seed fundraising, fundraising rounds vs milestones, runway survival, early engineering hiring, convincing engineers, university spinouts, and technical cofounder advice.
 
 ## YC Requests for Startups
 
@@ -69,6 +89,19 @@ For cross-cutting review issues, use `themes.md` first, then come back here for 
   - `../resources/yc-partners/sam-altman-what-i-ve-learned-from-female-founders-so-far.md` - Sam Altman on female-founder outreach, equal standards, recognizing different confidence styles, and avoiding narrow founder stereotypes; use especially when responding to female founders or gendered founder doubts.
   - `../resources/yc-partners/startup-playbook/` - Sam Altman's public Startup Playbook, captured from `https://playbook.samaltman.com/` on 2026-06-16 and split into introduction plus chapter files.
 
+## Official YC Blog
+
+- Folder: `../resources/yc-website/yc-blog/`
+- Use for official YC Blog posts that are not just application-review material: fundraising, hiring, runway, burn, technical cofounders, university spinouts, and founder focus.
+- Source notes:
+  - `../resources/yc-website/yc-blog/jessica-livingston-s-pretty-complete-list-on-how-not-to-fail.md` - Jessica Livingston on making something people want, focus, growth, burn, default alive/default dead, and avoiding distraction.
+  - `../resources/yc-website/yc-blog/a-guide-to-seed-fundraising.md` - Geoff Ralston's official YC seed fundraising guide; use for investor meeting prep and seed mechanics.
+  - `../resources/yc-website/yc-blog/fundraising-rounds-are-not-milestones.md` - Michael Seibel on why fundraising rounds are not company milestones.
+  - `../resources/yc-website/yc-blog/advice-for-companies-with-less-than-1-year-of-runway.md` - Dalton Caldwell on runway triage, burn reduction, and avoiding false assumptions about future funding or acquisitions.
+  - `../resources/yc-website/yc-blog/how-to-hire-your-first-engineer.md` and `../resources/yc-website/yc-blog/convincing-engineers-to-join-your-team.md` - Harj Taggar on founder-led engineering hiring and offer acceptance.
+  - `../resources/yc-website/yc-blog/why-you-really-do-need-a-technical-co-founder.md` - Dalton Caldwell on technical-cofounder risk for VC-backed tech companies.
+  - `../resources/yc-website/yc-blog/how-to-spin-your-scientific-research-out-of-a-university-and-into-a-startup.md` - Jared Friedman on commercializing university research, university IP, spinout timing, and founder/VC readiness.
+
 ## Tweets
 
 - Folder: `../resources/tweets/`
@@ -118,18 +151,61 @@ For cross-cutting review issues, use `themes.md` first, then come back here for 
 - Folder: `../resources/pg-essays/`
 - Use for Paul Graham essays and related source files.
 - Source notes:
+  - `../resources/pg-essays/a-fundraising-survival-guide.md` - use for fundraising process, investor meetings, valuation restraint, and fundraising survival tactics.
+  - `../resources/pg-essays/a-new-venture-animal.md` - use as historical context for YC's accelerator model and early-stage funding pattern.
+  - `../resources/pg-essays/a-student-s-guide-to-startups.md` - use for student-founder timing, school-vs-startup tradeoffs, and early founder context.
+  - `../resources/pg-essays/a-word-to-the-resourceful.md` - use for concise founder-resourcefulness framing.
+  - `../resources/pg-essays/before-the-startup.md` - use for startup counterintuition, user expertise over startup theater, cofounder judgment, and "make something people want"; see `../resources/pg-essays/before-the-startup.md:47`, `../resources/pg-essays/before-the-startup.md:73`, and `../resources/pg-essays/before-the-startup.md:113`.
   - `../resources/pg-essays/billionaires-build.md`
   - `../resources/pg-essays/default-alive-or-default-dead.md`
   - `../resources/pg-essays/do-things-that-don-t-scale.md`
+  - `../resources/pg-essays/five-founders.md` - use for founder-story context on early YC founders and founder qualities.
+  - `../resources/pg-essays/founder-control.md` - use for founder-control context; not YC application policy.
+  - `../resources/pg-essays/founder-mode.md` - use for founder-led management context in later-stage operating advice; not an application rubric.
+  - `../resources/pg-essays/frighteningly-ambitious-startup-ideas.md` - use for ambitious idea framing and market/technology opportunity context.
+  - `../resources/pg-essays/high-resolution-fundraising.md` - use for investor/fundraising mechanics and staged investor interest.
   - `../resources/pg-essays/how-to-convince-investors.md` - use for fundraising, pitch clarity, formidable-founder framing, market-size reasoning, "why now?", and truth-based investor/application claims.
+  - `../resources/pg-essays/how-to-earn-a-billion-dollars.md` - use for current PG framing on large outcomes and how major startup wealth is created.
+  - `../resources/pg-essays/how-to-fund-a-startup.md` - use for startup funding mechanics; historical context, not current YC terms.
   - `../resources/pg-essays/how-to-present-to-investors.md` - use for presentation clarity, founder-video phrasing, demos, user stories, and concise descriptions; caveat that common VC/investor presentation advice is not automatically YC application or interview guidance.
+  - `../resources/pg-essays/how-to-raise-money.md` - use for fundraising focus, investor process, and what fundraising can distract from.
+  - `../resources/pg-essays/how-to-start-a-startup.md` - use for early startup fundamentals: people, product users want, and startup economics.
+  - `../resources/pg-essays/how-y-combinator-started.md` - use as historical context for YC's origins.
   - `../resources/pg-essays/how-to-get-startup-ideas.md`
+  - `../resources/pg-essays/ideas-for-startups.md` - use for older startup-idea examples and opportunity framing; prefer newer idea essays for general advice.
+  - `../resources/pg-essays/investor-herd-dynamics.md` - use for fundraising and investor behavior context.
+  - `../resources/pg-essays/learning-from-founders.md` - use for founder-story/source context.
+  - `../resources/pg-essays/organic-startup-ideas.md` - use for founders discovering ideas from their own needs and lived experience.
+  - `../resources/pg-essays/ramen-profitable.md` - use for runway, morale, and independence from investors.
+  - `../resources/pg-essays/relentlessly-resourceful.md` - use for founder-signal review and interview prep; see `../resources/pg-essays/relentlessly-resourceful.md:20`, `../resources/pg-essays/relentlessly-resourceful.md:41`, and `../resources/pg-essays/relentlessly-resourceful.md:81`.
+  - `../resources/pg-essays/schlep-blindness.md` - use for hard, unglamorous startup ideas founders avoid because they look like work.
   - `../resources/pg-essays/startup-equals-growth.md`
+  - `../resources/pg-essays/startup-investing-trends.md` - use for historical context on startup investing shifts.
+  - `../resources/pg-essays/startups-in-13-sentences.md` - use for compact operating advice: cofounders, launch fast, user understanding, customer service, focus, and persistence; see `../resources/pg-essays/startups-in-13-sentences.md:20`, `../resources/pg-essays/startups-in-13-sentences.md:33`, `../resources/pg-essays/startups-in-13-sentences.md:46`, and `../resources/pg-essays/startups-in-13-sentences.md:125`.
+  - `../resources/pg-essays/subject-airbnb.md` - use as founder-story context for Airbnb, including investor skepticism and founder persistence.
+  - `../resources/pg-essays/the-18-mistakes-that-kill-startups.md` - use for startup-risk review, cofounder risk, launching, user need, focus, fundraising, and founder effort.
+  - `../resources/pg-essays/the-airbnbs.md` - use for Airbnb founder selection, scrappiness, and non-obvious idea context.
+  - `../resources/pg-essays/the-future-of-startup-funding.md` - use as historical context on startup funding changes.
+  - `../resources/pg-essays/the-hacker-s-guide-to-investors.md` - use for technical founders learning investor psychology and fundraising communication.
+  - `../resources/pg-essays/the-hardest-lessons-for-startups-to-learn.md` - use for early startup operating mistakes: release, understand users, focus, and morale.
+  - `../resources/pg-essays/what-i-ve-learned-from-users.md` - use for YC application advice to explain what founders learned from users, and for YC office-hours context; see `../resources/pg-essays/what-i-ve-learned-from-users.md:20` and `../resources/pg-essays/what-i-ve-learned-from-users.md:46`.
+  - `../resources/pg-essays/what-microsoft-is-this-the-altair-basic-of.md` - use for small initial wedge, platform shifts, and "why now" questions.
+  - `../resources/pg-essays/what-startups-are-really-like.md` - use for founder expectations, morale, and the lived reality of startups.
+  - `../resources/pg-essays/what-we-look-for-in-founders.md` - use for founder-signal review: determination, flexibility, imagination, rule-bending without bad ethics, and cofounder friendship; see `../resources/pg-essays/what-we-look-for-in-founders.md:23`, `../resources/pg-essays/what-we-look-for-in-founders.md:37`, `../resources/pg-essays/what-we-look-for-in-founders.md:51`, and `../resources/pg-essays/what-we-look-for-in-founders.md:79`.
+  - `../resources/pg-essays/why-it-s-safe-for-founders-to-be-nice.md` - use for founder ethics and long-term relationship context.
+  - `../resources/pg-essays/why-to-not-not-start-a-startup.md` - use for founder doubts and reasons people avoid starting; not YC-specific policy.
+  - `../resources/pg-essays/why-to-start-a-startup-in-a-bad-economy.md` - use for downturn/startup timing context.
+  - `../resources/pg-essays/why-yc.md` - use as historical context for why YC existed and what it tried to change.
 
 ## Social Radars
 
 - Folder: `../resources/social-radars/`
-- Use for Social Radars podcast transcripts.
+- Use for Social Radars podcast page captures and notes. Most current captures are official YC Library episode pages with concise episode descriptions and Spotify URLs, not full transcripts.
+- Source notes:
+  - `../resources/social-radars/paul-graham-co-founder-of-y-combinator-and-viaweb.md` - official YC Library page for Social Radars with Paul Graham on Viaweb and YC origins.
+  - `../resources/social-radars/garry-tan-president-and-ceo-of-y-combinator.md` - official YC Library page for Social Radars with Garry Tan.
+  - `../resources/social-radars/patrick-john-collison-co-founders-of-stripe.md`, `../resources/social-radars/brian-chesky-co-founder-ceo-of-airbnb.md`, `../resources/social-radars/brian-chesky-co-founder-ceo-of-airbnb-part-ii.md`, `../resources/social-radars/brian-armstrong-co-founder-and-ceo-of-coinbase.md`, `../resources/social-radars/tony-xu-co-founder-ceo-of-doordash.md`, `../resources/social-radars/parker-conrad-founder-of-zenefits-rippling.md`, and `../resources/social-radars/steve-huffman-co-founder-ceo-of-reddit.md` - official YC Library pages for founder-story discovery and lightweight source routing.
+  - `../resources/social-radars/bill-clerico-co-founder-ceo-of-wepay.md`, `../resources/social-radars/dimitri-dadiomov-co-founder-ceo-of-modern-treasury.md`, `../resources/social-radars/paul-buchheit-creator-of-gmail.md`, `../resources/social-radars/emmett-shear-co-founder-of-twitch.md`, `../resources/social-radars/adora-cheung-co-founder-of-homejoy-instalab.md`, `../resources/social-radars/yuri-sagalov-co-founder-of-aerofs.md`, `../resources/social-radars/tracy-young-co-founder-ceo-of-plangrid.md`, `../resources/social-radars/edith-elliott-co-founder-ceo-of-noora-health.md`, `../resources/social-radars/trevor-blackwell-co-founder-y-combinator-founder-anybots.md`, and `../resources/social-radars/david-lieb-creator-of-google-photos.md` - official YC Library episode-note captures for founder-story and YC-history discovery.
 
 ## Founder Stories
 

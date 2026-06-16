@@ -26,6 +26,25 @@ python3 scripts/capture_yc_web_pages.py
 python3 scripts/capture_yc_web_pages.py https://www.ycombinator.com/faq
 ```
 
+## YC Blog Capture
+
+Use `capture_yc_blog_pages.py` to fetch public official YC Blog posts and convert their post payloads to processed Markdown under `skills/yc-partner/resources/yc-website/yc-blog/`.
+The script refuses non-`www.ycombinator.com/blog/` URLs and does not persist raw HTML.
+
+```sh
+python3 scripts/capture_yc_blog_pages.py https://www.ycombinator.com/blog/how-to-raise-a-seed-round
+```
+
+## YC Library Capture
+
+Use `capture_yc_library_pages.py` to fetch public YC Library video transcript pages or article-style Library pages from `https://www.ycombinator.com/library/`.
+With no URL arguments it refreshes the curated default capture set. With URL arguments it writes processed Markdown to `skills/yc-partner/resources/yc-website/yc-library/` unless `--output-dir` is provided.
+
+```sh
+python3 scripts/capture_yc_library_pages.py https://www.ycombinator.com/library/Iq-how-to-talk-to-users
+python3 scripts/capture_yc_library_pages.py --output-dir skills/yc-partner/resources/social-radars https://www.ycombinator.com/library/JV-paul-graham-co-founder-of-y-combinator-and-viaweb
+```
+
 ## Paul Graham HTML Conversion
 
 Use `convert_pg_html_to_markdown.py` to convert local Paul Graham essay HTML captures into processed Markdown files under `skills/yc-partner/resources/pg-essays/`.

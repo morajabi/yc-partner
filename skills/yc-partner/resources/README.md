@@ -23,7 +23,7 @@ Do not commit raw HTML, downloaded media, raw transcripts, caption JSON, screens
 ## Resource Buckets
 
 - `application-form/` - official YC application form questions and batch-specific prompt captures.
-- `yc-website/` - official YC website material.
+- `yc-website/` - official YC website, YC Blog, and YC Library material.
 - `yc-company-directory/` - parsed public YC company directory data plus derived group partner profile summaries.
 - `rfs/` - official YC Requests for Startups sections, split into one processed Markdown file per RFS.
 - `yc-youtube/` - official YC YouTube transcripts.
@@ -31,7 +31,7 @@ Do not commit raw HTML, downloaded media, raw transcripts, caption JSON, screens
 - `tweets/` - public tweets and X threads from YC-affiliated people and other relevant startup sources.
 - `interviews/` - interviews with Paul Graham, Jessica Livingston, YC partners, and YC-affiliated startup thinkers.
 - `pg-essays/` - Paul Graham essays.
-- `social-radars/` - Social Radars podcast transcripts.
+- `social-radars/` - Social Radars podcast page captures and notes.
 - `founder-stories/` - YC founder stories from renowned startups.
 - `dalton-michael/` - Dalton + Michael video transcripts.
 - `examples/` - public example applications, founder videos, and demo videos.

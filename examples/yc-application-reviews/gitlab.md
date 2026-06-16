@@ -20,84 +20,88 @@ Give a source-grounded first-pass review with a quick overview, scorecard, highe
 
 ## Review Output
 
-### Overview
+**Overview**
+GitLab reads as a very strong YC application: open-source code collaboration, deployed mostly on-premise, with 100k+ organizations, named paying customers, 600+ contributors, $1M ARR, and ~60% monthly revenue growth in the submitted text ([public application](https://getintoyc.com/company/gitlab/)). The application’s strength is not polish; it is concrete proof that real developers and enterprises already care.
 
-- Very strong written case: product, users, revenue, contributors, named customers, and open-source distribution are all legible.
-- The biggest improvement is claim discipline. The application should keep the strong claims but add denominators and time windows.
-- The application reads interview-worthy from the text alone, with a few avoidable clarity and hygiene issues.
+Text-only application strength: **0.88/1.00**
+Text-only interview likelihood: **0.85/1.00**
+Caveat: this is a review of the written public application, not an admissions prediction.
 
-### Scorecard
+**Scorecard**
 
-- Application strength: 0.91
-- Text-only interview likelihood: 0.86
-- Fixes: 4
-- Good areas: 4
-- Risks: 3
-- Highest-impact changes: make metrics verifiable; fix small writing errors; sharpen the SaaS expansion story.
-- Caveat: this is a text-only estimate from a public historical example, not YC feedback or an admissions prediction.
+| Area | Read |
+|---|---|
+| Founder signal | Strong: technical founders, long collaboration, product built by the team/community. |
+| Company signal | Very strong: real usage, revenue, named customers, open-source distribution. |
+| Application signal | Good but sloppy: clear enough to win, but several answers leave avoidable doubts. |
+| Fixes | 8 |
+| Good areas | 6 |
+| Risks | 5 |
 
-### What's Good
+Highest-impact changes: clarify metric quality, sharpen the on-prem/open-source wedge, clean up wording and missing details.
 
-- Clear product: an open-source, self-hosted GitHub alternative with merge requests, issues, wiki, CI, and runner.
-- Strong proof: over 100,000 organizations, more than 1 million estimated users, named paying customers, contributors, and $1M ARR.
-- Strong founder/product fit: the team built the actual product and community, not just a pitch deck.
-- Strong wedge: organizations wanting control, inspectability, and deployability have a concrete reason to choose GitLab.
+**What’s Good**
+- The first product answer is unusually concrete: “run your own GitHub,” self-hosted, merge requests, wikis, issues, CI. YC later used GitLab as an example of a clear application description in Dalton Caldwell’s application talk ([YC video](https://www.youtube.com/watch?v=B5tU2447OK8)).
+- The traction is real: 100k+ organizations, 1M estimated active users, named paying customers, $1M ARR, and 600 contributors.
+- The insight is strong: open-source developer infrastructure can distribute, improve, and sell into enterprises differently from closed-source competitors.
+- The competitor answer names real alternatives and explains concrete differences: self-hosting, clustering/scaling, integration, flexibility, and price.
+- The story has founder-market fit: Dmitriy wanted it at a previous job, and most employees were developers.
 
-### Highest-ROI Risks
+**Highest-ROI Risks**
+- “We estimate more than 1M” is too vague. Active how? Monthly active developers? Installations? Users behind firewalls? This matters because YC looks for evidence users want the product, not just big numbers ([YC application advice](https://www.youtube.com/watch?v=B5tU2447OK8)).
+- “Most popular open source version control software” and “more installations than anything else” are strong claims but need evidence or narrower wording.
+- The application under-explains revenue quality: $1M ARR and 60% monthly revenue growth are excellent, but the reader needs customer count, ACV range, churn/retention, and whether revenue is recurring subscription revenue.
+- The user-learning answer lists channels, but not what users taught them. PG’s compact YC advice is to explain what you learned from users because it tests user attention and depth of need ([PG essay](https://www.paulgraham.com/users.html)).
+- Focus risk: they mention on-prem, CI, SaaS, marketing, and GitLab.com. The core wedge is on-prem/open-source enterprise DevOps; don’t let the application sound scattered.
 
-- Big claims need cleaner proof: active users, revenue growth, installations, and "most popular" should each have a denominator.
-- Some writing issues are avoidable and make a polished application look less careful.
-- GitLab.com/SaaS expansion is weaker than the self-hosted wedge because the application does not say which user segment is pulling it.
+**Highest-ROI Fixes**
+1. **Upgrade the traction answer from impressive to airtight.**
+   Replace broad claims with denominated metrics: paying organizations, ARR by month, net revenue retention if known, active installations, GitLab.com MAU, contributor growth, and enterprise logo proof. Sam Altman’s Startup Playbook warns against vanity metrics and says retention matters as much as acquisition ([Startup Playbook: Growth](https://playbook.samaltman.com/#growth)).
 
-### Changes To Make
+2. **Make the unique insight sharper.**
+   The best sentence is basically: “Developer infrastructure sold to enterprises can grow through open-source adoption first, then convert via enterprise features and support.” That is stronger than “open source markets your product for free.” It explains distribution, product feedback, and monetization in one loop.
 
-1. Make the biggest claims falsifiable.
+3. **Clarify the wedge against GitHub Enterprise and Atlassian.**
+   The strongest wedge is not “cheaper.” It is: self-hosted, inspectable, modifiable, integrated code + issues + wiki + CI, and better suited to behind-the-firewall enterprise development. Keep competitor language factual; Sam Altman’s competitor advice is to worry less about competitors and more about making a great product/company ([Startup Playbook: Competitors](https://playbook.samaltman.com/#competition)).
 
-"More than 1M users" is strongest if it says active how and over what period. "60% revenue growth each month" needs baseline and duration. Paul Graham's point about unequivocal claims fits here: the stronger the claim, the more useful it becomes when it is precise enough to check ([PG thread](https://x.com/paulg/status/2062957298512003556)).
+4. **Turn user feedback channels into user lessons.**
+   Current answer: “we listen via feedback, merge requests, issues, Twitter…” Better direction: “Enterprise users told us GitHub Enterprise’s VM model didn’t scale for their internal workflows, so we prioritized self-hosting, source access, and integrated CI.” Only use that exact claim if true.
 
-2. Fix preventable mechanics.
+5. **Tighten founder seriousness.**
+   “Since 2011, over 10,000 commits” is good but incomplete. Say who is full-time, since when, who writes code, who sells, and how responsibilities split. YC readers explicitly ask who the founders are, what exists today, whether users exist, and what is special ([YC application advice](https://www.youtube.com/watch?v=B5tU2447OK8)).
 
-There is a visible missing phrase after "including thousands of programmers at." Small grammar issues like "where will be based" are cheap to fix and matter because Startup School calls out clarity, completeness, and care as application signals ([YC Startup School video](https://www.youtube.com/watch?v=B5tU2447OK8&t=622s)).
+**Fun Fact**
+YC’s Commercial Open Source RFS later named GitLab as one of the open-source companies YC funded, alongside Docker, Apollo, and Supabase, and said YC had funded 150+ open-source companies ([YC RFS: Open Source](https://www.ycombinator.com/rfs#open-source)).
 
-3. Lead with the enterprise wedge, not just the category.
+**Tips**
+- Lead with the strongest true claim. Michael Seibel’s pitch guidance says to start with what the company does in simple language, not setup or impressiveness ([How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)).
+- Keep the “run your own GitHub” phrase. It is compressed and memorable, then the answer can immediately explain why GitLab is more than that.
+- Don’t bury named customers. Apple, Qualcomm, NASA, Nasdaq OMX, and Interpol are major proof points; if they are paying or active, state exactly which.
+- Include a demo link and founder video, but make sure the founder video follows YC’s rule: one minute, only founders talking, all founders present, no script, no demo replacement ([YC video guide](https://www.ycombinator.com/video)).
+- Clean the application before submission. This application won despite typos; a current applicant should not rely on that.
 
-"Run your own GitHub" is strong. The next sentence should say who needs that: teams that need code collaboration behind their firewall, on inspectable infrastructure, with integrated tools.
+**Office Hours**
+- Pick one growth metric for the next month. For GitLab in 2015, I’d choose either new paid enterprise seats, ARR, or retained active self-hosted organizations, not broad “users.”
+- Double down on the open-source enterprise loop: community adoption creates trust and feedback; enterprise features convert the highest-need organizations.
+- Be careful splitting attention between on-prem, SaaS, and CI. The application’s best wedge is on-prem enterprise Git collaboration; CI and SaaS should reinforce that wedge, not read like separate startups.
+- Interview prep should pressure-test the strongest claims: “How do you know you have more installations?”, “Why won’t GitHub fix this?”, “What percentage of users convert to paid?”, “Why is support alone not enough?”
 
-4. Make SaaS expansion concrete.
+**Hygiene**
+Material issues: typos and awkward phrasing (“100.000,” “since than,” “where will be based,” “We offer the a”), missing/empty URL parentheses, an apparently redacted customer name on Get into YC, vague active-user estimate, and unsupported superlative claims. No founder video review was performed; I only reviewed the linked written application.
 
-GitLab.com has 15k monthly active users, but "a lot of possibilities" is not a strategy. Add the user segment already pulling SaaS and why hosted GitLab wins for that segment.
+**Next Questions**
+- What exactly counts as an active user in the “more than 1M” estimate?
+- How many paying organizations are included in the $1M ARR, and what is the ACV range?
+- What period does the ~60% monthly revenue growth cover?
+- Which user segment is pulling GitLab.com rather than self-hosted GitLab?
+- What did enterprise users teach the team that changed the product roadmap?
 
-### Fun Fact
-
-Dalton Caldwell's Startup School talk uses GitLab's public application as an example of a clear application because a reader can quickly understand what the product is, what it does, and who uses it ([YC Startup School video](https://www.youtube.com/watch?v=B5tU2447OK8&t=622s)).
-
-### Tips
-
-- Application tip: do not add hype to already-strong numbers. Add denominators, time windows, and definitions.
-- Application tip: use the strongest current wedge first. "Self-hosted code collaboration for organizations that need control" is easier to remember than a long feature list.
-- Application tip: Michael Seibel's pitch structure maps well here: what you do, progress, unique insight, business model, team, and ask ([How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)).
-
-### Office Hours
-
-- Startup advice: keep open-source distribution and enterprise monetization connected. The community creates reach; the paid product needs a crisp reason budget owners pay.
-- Startup advice: make SaaS a focused bet, not a bucket of possibilities. Pick the customer segment where hosted beats self-hosted and measure that path.
-- Startup advice: as traction grows, precision matters operationally too. The metrics that persuade YC should also be the metrics the team uses to decide what to build.
-
-### Hygiene
-
-- Fix the incomplete sentence and small grammar issues.
-- Add denominator/time-window details to the biggest claims.
-- Clarify location/base-after-YC if the current form asks for it.
-
-### Next Questions
-
-- What period does the 60% monthly revenue growth cover?
-- What qualifies as an active user in the "more than 1M" claim?
-- Which customer segment is pulling GitLab.com rather than self-hosted GitLab?
-
-### Sources
-
+**Sources**
 - [GitLab public application](https://getintoyc.com/company/gitlab/)
 - [YC Startup School: How to Apply and Succeed at YC](https://www.youtube.com/watch?v=B5tU2447OK8)
+- [Paul Graham: What I've Learned from Users](https://www.paulgraham.com/users.html)
+- [Sam Altman: Startup Playbook - Growth](https://playbook.samaltman.com/#growth)
+- [Sam Altman: Startup Playbook - Competitors](https://playbook.samaltman.com/#competition)
 - [Michael Seibel: How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)
-- [Paul Graham on unequivocal startup claims](https://x.com/paulg/status/2062957298512003556)
+- [YC application video guide](https://www.ycombinator.com/video)
+- [YC RFS: Commercial Open Source Companies](https://www.ycombinator.com/rfs#open-source)

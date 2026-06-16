@@ -12,6 +12,7 @@ It is based on official YC resources, Paul Graham essays, YC partner writing and
 - Answers pre-application questions before you have a finished draft.
 - Helps with common doubts: too early, solo founder, nontechnical founder, non-Ivy background, international founder, pre-revenue, reapplying after rejection, and whether YC funds your sector.
 - Prepares you for YC interviews with direct questions, weak-point checks, and short-answer practice.
+- Gives source-grounded office-hours-style guidance for startup obstacles, tactical operating questions, hiring, launch, customer discovery, runway, and investor meeting prep.
 - Points you to a small set of relevant sources instead of dumping a giant reading list on you.
 - Can work from founder/demo video transcripts, or help transcribe local videos when your environment is configured for it.
 
@@ -48,22 +49,31 @@ For video review, provide local paths to your founder video or demo video. If yo
 These are demo reviews of public YC applications, included so you can see the kind of feedback YC Partner gives. They are not YC feedback, not admissions predictions, and not templates to copy.
 
 - [Dropbox public application review](examples/yc-application-reviews/dropbox.md) - Shows how the skill handles an early, pre-revenue product with a strong demo, sharp user pain, and clear founder technical signal.
+
+```text
+- Dropbox is automatic file sync, backup, and versioning for individuals and small teams, starting with a Windows client plus web access.
+- Strongest signal: Drew built a real product quickly, has a demo/build, understands the workflow pain, and is clearly technical.
+- Biggest weakness: “Private beta” and “add batches every few days” need numbers, behavior, retention, and what users learned.
+```
+
 - [GitLab public application review](examples/yc-application-reviews/gitlab.md) - Shows how the skill reviews a later-stage devtools application with strong traction, revenue, open-source distribution, and a few claim-discipline issues.
-- [Paystack public application review](examples/yc-application-reviews/paystack.md) - Shows how the skill surfaces founder-market fit, customer pull, geography context, fintech risk, and technical-ownership questions.
+
+```text
+GitLab reads as a very strong YC application: open-source code collaboration, deployed mostly on-premise, with 100k+ organizations, named paying customers, 600+ contributors, $1M ARR, and ~60% monthly revenue growth in the submitted text. The application’s strength is not polish; it is concrete proof that real developers and enterprises already care.
+
+“We estimate more than 1M” is too vague. Active how? Monthly active developers? Installations? Users behind firewalls? This matters because YC looks for evidence users want the product, not just big numbers.
+```
 
 ## Resources Used
 
 YC Partner ships with a processed public corpus, not just a prompt. The current snapshot includes:
 
-- 262 processed Markdown source files, excluding README notes inside resource folders.
-- 96 official YC resources: 12 YC website/library pages, 1 application-form capture, and 83 Requests for Startups pages.
-- 57 video transcripts: 7 official YC YouTube videos, 49 Dalton + Michael videos, and 1 Garry Tan interview-prep video.
-- 4 long-form interviews.
-- 27 partner/PG written resources: 7 YC-partner posts, 13 Startup Playbook chapters, and 7 Paul Graham essays.
-- 28 public tweet/X captures from YC-affiliated people and relevant startup sources.
-- 44 public example application/demo resources, including successful historical applications and application videos.
-- 6 founder-story, external-context, and company-directory Markdown resources.
-- A YC public company-directory snapshot with 5,960 companies and 17 group-partner profiles.
+- 349 processed Markdown source files across official YC material, partner writing, interviews, transcripts, public examples, podcast notes, and founder stories.
+- 134 official YC resources, including YC website/blog/library pages, YouTube transcripts, application prompts, Requests for Startups, and company-directory context.
+- 80 transcript/interview/podcast-note captures from YC, Dalton + Michael, Social Radars, Garry Tan, Jessica Livingston, Gustaf Alstromer, and Dalton Caldwell.
+- 74 partner essays and posts from Paul Graham, Sam Altman, Michael Seibel, Jessica Livingston, Geoff Ralston, Harj Taggar, Dalton Caldwell, and other YC-affiliated sources.
+- 72 public examples and short-form captures, including YC application/demo examples and public tweet/X captures.
+- YC company-directory context with 5,960 public company entries and 17 group-partner profiles.
 
 When YC Partner quotes or cites a resource, it should show the public URL so founders can check the original source instead of being pointed at internal skill files.
 

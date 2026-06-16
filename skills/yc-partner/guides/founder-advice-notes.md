@@ -127,6 +127,39 @@ Sources:
 - W23 "founders than startup" reply: `../resources/tweets/paul-graham-w23-early-stage-acceptance-stats-2023-04-02.md:75`
 - Public URLs: https://www.ycombinator.com/howtoapply, https://www.youtube.com/watch?v=B5tU2447OK8&t=682s, https://x.com/paulg/status/1782346703229612224, https://x.com/paulg/status/1642566043053826048
 
+### Explain What Users Taught You
+
+Use when: an application describes features, launch plans, surveys, waitlists, or internal progress but not user learning.
+
+Note: The application should say what real users changed in the founders' understanding. PG says "explain what you've learned from users" is the highest-value YC application advice per word because it tests attention to users, user understanding, and user need.
+
+Sources:
+
+- PG essay: `../resources/pg-essays/what-i-ve-learned-from-users.md:20`
+- Public URL: https://www.paulgraham.com/users.html
+
+### Show Relentless Resourcefulness
+
+Use when: founder signal is vague, the team claims grit without evidence, or a solo founder needs stronger proof they can keep moving.
+
+Note: Do not write "we are relentless" as a claim. Show an example where the team kept adapting under constraints: talked to users directly, found a workaround, launched with an imperfect version, sold manually, changed approach, or got around a blocker without waiting for permission.
+
+Sources:
+
+- PG Relentlessly Resourceful: `../resources/pg-essays/relentlessly-resourceful.md:20`, `../resources/pg-essays/relentlessly-resourceful.md:41`, `../resources/pg-essays/relentlessly-resourceful.md:81`
+- Public URL: https://www.paulgraham.com/relres.html
+
+### Determined And Flexible Beats Stubborn
+
+Use when: a founder overstates commitment to a fixed plan, resists customer evidence, or frames persistence as never changing the idea.
+
+Note: YC-style founder strength is not blind stubbornness. PG says determination matters most, but the startup version must include flexibility because founders need to modify plans on the fly.
+
+Sources:
+
+- PG What We Look for in Founders: `../resources/pg-essays/what-we-look-for-in-founders.md:25`, `../resources/pg-essays/what-we-look-for-in-founders.md:39`
+- Public URL: https://www.paulgraham.com/founders.html
+
 ### Show The Magnitude Of Founder Achievement
 
 Use when: founder bios are generic, resume-like, or do not show why this team is unusually capable.

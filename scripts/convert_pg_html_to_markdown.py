@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import html
 import re
 import textwrap
@@ -129,6 +130,7 @@ def normalize_text(value: str) -> str:
 
 def build_markdown(title: str, url: str, published: str, text: str, source: Path) -> str:
     source_name = source.name
+    captured = date.today().isoformat()
     return f"""# {title}
 
 - Type: Paul Graham essay
@@ -136,7 +138,7 @@ def build_markdown(title: str, url: str, published: str, text: str, source: Path
 - URL: {url}
 - Author: Paul Graham
 - Published: {published}
-- Captured: 2026-06-04
+- Captured: {captured}
 - Method: `scripts/convert_pg_html_to_markdown.py`
 - Caveat: references/caveats/yc-founder-partner-source.md
 

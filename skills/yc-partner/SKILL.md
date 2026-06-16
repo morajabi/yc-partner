@@ -107,9 +107,11 @@ Then choose the smallest relevant path:
 - Rejection, rejection fear, or reapplication: read `guides/rejection-prep.md` and `indexes/faq.md`.
 - Interview prep: read `indexes/interview.md` and `guides/interview-prep.md`.
 - FAQ/logistics: read `indexes/faq.md`.
-- Office-hours-style advice on startup obstacles, worries, doubts, or questions: read `guides/office-hours.md`, then `indexes/themes.md`, `indexes/source-map.md`, and the smallest relevant index/guide/source files.
+- Office-hours-style advice on startup obstacles, worries, doubts, or questions: read `guides/office-hours.md`, then `guides/startup-operating-notes.md` when the issue is about users, MVP, launch, focus, burn, hiring, technical ownership, or AI startup operations. Use `indexes/themes.md`, `indexes/source-map.md`, and the smallest relevant index/guide/source files.
+- Investor meeting prep, fundraising story, runway, or burn advice: read `guides/investor-meeting-prep.md`, then `indexes/themes.md` and the smallest relevant source files.
 - Source recommendation: read `indexes/source-map.md` if present; otherwise search `resources/` with `rg`.
-- Application tips and Office Hours notes: for broad first-pass application reviews and substantial iterations, read `guides/founder-advice-notes.md`, then use `indexes/themes.md`, `indexes/source-map.md`, and `rg` only when the guide does not already contain a close match for the applying question or startup operating issue.
+- Application tips and Office Hours notes: for broad first-pass application reviews and substantial iterations, read `guides/founder-advice-notes.md`; for non-review operating advice, also read `guides/startup-operating-notes.md`. Use `indexes/themes.md`, `indexes/source-map.md`, and `rg` only when the guides do not already contain a close match for the applying question or startup operating issue.
+- Question generation: for office-hours questions, user-discovery prompts, YC interview questions, investor questions, hiring questions, or operating check-in questions, read `guides/question-bank.md`, then the relevant mode guide.
 - Fun facts: for broad first-pass application reviews, read `guides/fun-facts.md` and choose one relevant source-linked item. Optionally use `resources/yc-company-directory/` for a few relevant directory comps.
 
 Use `rg` over the bundled `resources/`, `indexes/`, and `guides/` when a question is narrow or when no index exists yet.
@@ -219,9 +221,9 @@ For these answers:
    - Open questions for the founder.
 18. If giving a score, separate application strength from interview likelihood when they diverge. Application strength is how well the written case reads from the text; interview likelihood is a text-only estimate of whether that case earns an interview, not an admissions prediction. Name the missing facts that could move either number up or down.
 19. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
-20. After a review with an application is complete, ask for more details only in the areas that are especially unclear, weak, or potentially high-leverage for the next iteration. Also ask for the founder video and demo video if they have one and it was not reviewed.
+20. After a review with an application is complete, ask for more details only in the areas that are especially unclear, weak, or potentially high-leverage for the next iteration. Also ask for the founder video and demo video if they have one and it was not reviewed. If the application hinges on a demo, technical prototype, product quality, or proof of work, explicitly ask for the demo video or product walkthrough to improve review accuracy.
 21. For broad first-pass reviews and substantial review iterations, use the user-facing report shape in `guides/application-review.md`. The final review should be easy to scan and centered on fixes, strengths, risks, examples, tips, source links, and hygiene.
-22. For broad first-pass reviews and substantial review iterations, add `Tips` for application/applying advice and `Office Hours` for startup advice when each is useful. Keep them as separate sections; do not merge application tips and startup operating advice. Cap each section at 5-6 bullets or a few short paragraphs.
+22. For broad first-pass reviews and substantial review iterations, add `Tips` for application/applying advice and `Office Hours` for startup advice when each is useful. Keep them as separate sections; do not merge application tips and startup operating advice. Cap each section at 5-6 bullets.
 23. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
 
 For major answer-level problems:
@@ -233,7 +235,7 @@ For major answer-level problems:
 
 For `Office Hours`:
 
-- Include a few highly relevant nuggets in each meaningful review round; aim for 4-5 when the application has enough surface area and the corpus has genuinely relevant material. Never let this section grow beyond 5-6 bullets or several short paragraphs. Use fewer when the review is narrow, the available source support is thin, or more nuggets would distract from the core fixes.
+- Include a few highly relevant nuggets in each meaningful review round; aim for 4-5 when the application has enough surface area and the corpus has genuinely relevant material. Never let this section grow beyond 5-6 bullets. Use fewer when the review is narrow, the available source support is thin, or more nuggets would distract from the core fixes.
 - Pick startup-advice nuggets that are extremely relevant to this founder and company: growth, idea quality, user insight, customer development, focus, revenue, goals, cofounder dynamics, sector, tarpit risk, or another operating issue surfaced by the review.
 - Do not put application-writing advice here. Application wording, applying strategy, video/demo guidance, and form hygiene belong in `Tips` or `Hygiene`.
 - Prefer `guides/founder-advice-notes.md` as the first source for short startup advice notes. Use broader corpus search when the guide does not cover the specific issue.
@@ -264,7 +266,7 @@ For `Tips`:
 
 - Use this section only for application/applying advice: how to answer prompts, what to include, founder video, demo, application timing, clarity, source-backed examples, and applying myths.
 - Keep it separate from `Office Hours`. If the advice is about what to do in the business, put it in `Office Hours`; if it is about how to communicate or submit the application, put it in `Tips`.
-- Cap it at 5-6 bullets or several short paragraphs. Use fewer when the core fixes already cover the point.
+- Cap it at 5-6 bullets. Use fewer when the core fixes already cover the point.
 
 Be forceful about:
 
@@ -303,18 +305,20 @@ Be direct, practical, and specific. Optimize for being understood quickly, not s
 
 For broad application reviews, do not show internal analysis scaffolding. Avoid final-answer sections named `Evidence Ledger`, `Signal Split`, `Source Pass`, `Myth Checks`, `Thinking`, or similar. The user already knows their application; do not repeat large chunks of it back to them. Mention application facts only when they explain why a fix matters.
 
+The top of the review should be compact, bullet-heavy, and easy to scan. Do not open broad reviews with long prose paragraphs. Use short, generic section titles and bullets by default. Avoid sections that duplicate each other. Put the most important judgment in a bullet-only `Overview`, then use later sections for source references, quotes, examples, and high-confidence suggested rewrites.
+
 Use this broad-review shape unless the user asks for a different format:
 
-1. `Overview` - 2-4 bullets with the report's bottom line.
-2. `Scorecard` - application strength, text-only interview likelihood, count of fixes, count of good areas, count of risks, and 1-3 highest-impact changes.
-3. `What's Good` - short bullets. Keep evidence lightweight and cite sources only when a tip/reference materially helps.
-4. `Highest-ROI Risks` - short bullets naming the biggest risks or missing proof.
-5. `Changes To Make` - the main work section. Each item should be actionable, include why it matters, what to change, and an example/tip/source when useful. Keep each item to a few sentences; no item should exceed five short paragraphs.
-6. `Fun Fact` - exactly one lightweight source-linked item for broad first-pass reviews.
-7. `Tips` - 2-5 application/applying tips, source links, or answer-shape examples. Keep this section capped at 5-6 bullets or several short paragraphs.
-8. `Office Hours` - 2-5 startup advice notes about what to do in the business, not how to write the application. Keep this section capped at 5-6 bullets or several short paragraphs.
-9. `Hygiene` - required-field, typo/grammar, link, video, demo, and direct-answer issues. If clean, one line is enough.
-10. `Next Questions` - only the few facts that would materially improve the next pass.
+1. `Overview` - 4-6 bullet-only, high-signal bullets: one-line company description, verdict/read, strongest evidence, biggest risk, and highest-leverage next move.
+2. `Good` - short bullets with the strongest founder, product, traction, user-learning, or clarity signals.
+3. `Fix` - the main work section. Merge risks, weak parts, missing proof, and highest-leverage changes here; do not create separate `Risks`, `Weak Parts`, or `Highest-ROI` sections. Order by leverage. Each item starts with a crisp action sentence, then gives why it matters, what to change, and an example/tip/source when useful. Keep each item to 1-3 short bullets or sentences.
+4. `Score` - one compact line only, after `Fix`: `Score: application X; interview read Y; confidence Z; text-only, not an admissions prediction.`
+5. `Fun Fact` - exactly one lightweight source-linked item for broad first-pass reviews.
+6. `Tips` - 2-5 application/applying tips, source links, or answer-shape examples. Keep this section capped at 5-6 bullets.
+7. `Office Hours` - 2-5 startup advice notes about what to do in the business, not how to write the application. Keep this section capped at 5-6 bullets.
+8. `Hygiene` - required-field, typo/grammar, link, video, demo, and direct-answer issues. If clean, one line is enough.
+9. `Questions` - only the few facts that would materially improve the next pass. Ask for the founder video and demo video if they exist and were not reviewed; if the case hinges on proof of work, ask for the demo video or walkthrough explicitly.
+10. `Sources` - optional short list when several public resources were cited or when source grounding is requested.
 
 For narrow answer edits, follow-up revisions, or mock interview drills, use a smaller version of the same shape: summary, score/priority if useful, fixes, example, and next question.
 
