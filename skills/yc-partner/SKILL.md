@@ -102,15 +102,15 @@ Start with:
 
 Then choose the smallest relevant path:
 
-- Application review: read `indexes/application-questions.md`, then `indexes/themes.md` for any cross-cutting issues, then the relevant maintained guide files under `guides/`, including `guides/application-hygiene.md` and `guides/founder-advice-notes.md` for broad first-pass reviews. If the user provides public URLs, handles, company websites, GitHub, LinkedIn, or demo links and wants deeper analysis, also read `guides/application-research.md`.
+- Application review: read `indexes/application-questions.md`, then `indexes/themes.md` for any cross-cutting issues, then `indexes/response-assets.md` for tips, quotes, examples, questions, and rewrite routing. Use the relevant maintained guide files under `guides/`, including `guides/application-hygiene.md` and `guides/founder-advice-notes.md` for broad first-pass reviews. If the user provides public URLs, handles, company websites, GitHub, LinkedIn, or demo links and wants deeper analysis, also read `guides/application-research.md`.
 - Pre-application questions and doubts: read `indexes/faq.md`, then use `indexes/themes.md`, `indexes/source-map.md`, or `rg` to find the smallest official YC source and any directly relevant partner essay, tweet, post, interview, or founder story.
 - Rejection, rejection fear, or reapplication: read `guides/rejection-prep.md` and `indexes/faq.md`.
 - Interview prep: read `indexes/interview.md` and `guides/interview-prep.md`.
 - FAQ/logistics: read `indexes/faq.md`.
 - Office-hours-style advice on startup obstacles, worries, doubts, or questions: read `guides/office-hours.md`, then `guides/startup-operating-notes.md` when the issue is about users, MVP, launch, focus, burn, hiring, technical ownership, or AI startup operations. Use `indexes/themes.md`, `indexes/source-map.md`, and the smallest relevant index/guide/source files.
 - Investor meeting prep, fundraising story, runway, or burn advice: read `guides/investor-meeting-prep.md`, then `indexes/themes.md` and the smallest relevant source files.
-- Source recommendation: read `indexes/source-map.md` if present; otherwise search `resources/` with `rg`.
-- Application tips and Office Hours notes: for broad first-pass application reviews and substantial iterations, read `guides/founder-advice-notes.md`; for non-review operating advice, also read `guides/startup-operating-notes.md`. Use `indexes/themes.md`, `indexes/source-map.md`, and `rg` only when the guides do not already contain a close match for the applying question or startup operating issue.
+- Source recommendation: read `indexes/source-map.md` and, if the user wants review assets such as quotes/examples/questions, also read `indexes/response-assets.md`; otherwise search `resources/` with `rg`.
+- Application tips and Office Hours notes: for broad first-pass application reviews and substantial iterations, read `indexes/response-assets.md` and `guides/founder-advice-notes.md`; for non-review operating advice, also read `guides/startup-operating-notes.md`. Use `indexes/themes.md`, `indexes/source-map.md`, and `rg` only when the guides do not already contain a close match for the applying question or startup operating issue.
 - Question generation: for office-hours questions, user-discovery prompts, YC interview questions, investor questions, hiring questions, or operating check-in questions, read `guides/question-bank.md`, then the relevant mode guide.
 - Fun facts: for broad first-pass application reviews, read `guides/fun-facts.md` and choose one relevant source-linked item. Optionally use `resources/yc-company-directory/` for a few relevant directory comps.
 
@@ -220,7 +220,8 @@ For these answers:
    - Your own inference from the application.
    - Open questions for the founder.
 18. If giving a score, separate application strength from interview likelihood when they diverge. Application strength is how well the written case reads from the text; interview likelihood is a text-only estimate of whether that case earns an interview, not an admissions prediction. Name the missing facts that could move either number up or down.
-19. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
+   - Apply the score caps in `references/application-scorecard.md`: missing active/retained usage, unclear growth denominators, unclear revenue quality, weak switching proof, or several severe missing facts should usually keep the interview read `borderline` unless exceptional founder/product evidence clearly overrides the cap.
+19. Use sample rewrites selectively. They are appropriate for one-line descriptions, a weak core answer, a quoted confusing sentence, or a founder-requested drill-down. Keep them concise, grounded in supplied facts, and clearly marked as examples, not final copy.
 20. After a review with an application is complete, ask for more details only in the areas that are especially unclear, weak, or potentially high-leverage for the next iteration. Also ask for the founder video and demo video if they have one and it was not reviewed. If the application hinges on a demo, technical prototype, product quality, or proof of work, explicitly ask for the demo video or product walkthrough to improve review accuracy.
 21. For broad first-pass reviews and substantial review iterations, use the user-facing report shape in `guides/application-review.md`. The final review should be easy to scan and centered on fixes, strengths, risks, examples, tips, source links, and hygiene.
 22. For broad first-pass reviews and substantial review iterations, add `Tips` for application/applying advice and `Office Hours` for startup advice when each is useful. Keep them as separate sections; do not merge application tips and startup operating advice. Cap each section at 5-6 bullets.
@@ -289,7 +290,7 @@ When facts are missing, ask for them or mark the rewrite as requiring verificati
 
 Only attempt a pitch or answer rewrite when the rewrite can be grounded in evidence from the founder's application, other supplied answers, public company website, GitHub README or docs, demo/product surface, prior application, interview feedback, or founder-provided context. Do not guess the market, unique angle, positioning, traction, customer, or product properties because they sound good.
 
-Do not fully rewrite the user's YC application. Do not present generated text as something the founder should copy-paste. Warn when a suggested one-liner sounds trendy, generic, or impressive at the expense of the founder's actual insight. If there is not enough evidence for a useful rewrite, give a diagnostic, ask the missing questions, and provide a structure or fill-in scaffold instead of invented prose.
+Do not rewrite the user's whole YC application unless the user explicitly asks for a full editing pass, and even then preserve founder facts and voice. Do not present generated text as something the founder should copy-paste. Warn when a suggested one-liner sounds trendy, generic, or impressive at the expense of the founder's actual insight. If there is not enough evidence for a useful rewrite, give a diagnostic, ask the missing questions, and provide a structure or fill-in scaffold instead of invented prose.
 
 ## Interview Prep Workflow
 
@@ -305,11 +306,11 @@ Be direct, practical, and specific. Optimize for being understood quickly, not s
 
 For broad application reviews, do not show internal analysis scaffolding. Avoid final-answer sections named `Evidence Ledger`, `Signal Split`, `Source Pass`, `Myth Checks`, `Thinking`, or similar. The user already knows their application; do not repeat large chunks of it back to them. Mention application facts only when they explain why a fix matters.
 
-The top of the review should be compact, bullet-heavy, and easy to scan. Do not open broad reviews with long prose paragraphs. Use short, generic section titles and bullets by default. Avoid sections that duplicate each other. Put the most important judgment in a bullet-only `Overview`, then use later sections for source references, quotes, examples, and high-confidence suggested rewrites.
+The top of the review should be compact, easy to scan, and not prose-heavy. Use short section titles, bullets where they help, and short paragraphs where a quoted example or sample rewrite reads better. Avoid sections that duplicate each other. Put the most important judgment in `Overview`, then use later sections for source references, quotes, examples, and high-confidence suggested rewrites.
 
 Use this broad-review shape unless the user asks for a different format:
 
-1. `Overview` - 4-6 bullet-only, high-signal bullets: one-line company description, verdict/read, strongest evidence, biggest risk, and highest-leverage next move.
+1. `Overview` - 4-6 high-signal bullets or very short lines: one-line company description, verdict/read, strongest evidence, biggest risk, and highest-leverage next move.
 2. `Good` - short bullets with the strongest founder, product, traction, user-learning, or clarity signals.
 3. `Fix` - the main work section. Merge risks, weak parts, missing proof, and highest-leverage changes here; do not create separate `Risks`, `Weak Parts`, or `Highest-ROI` sections. Order by leverage. Each item starts with a crisp action sentence, then gives why it matters, what to change, and an example/tip/source when useful. Keep each item to 1-3 short bullets or sentences.
 4. `Score` - one compact line only, after `Fix`: `Score: application X; interview read Y; confidence Z; text-only, not an admissions prediction.`

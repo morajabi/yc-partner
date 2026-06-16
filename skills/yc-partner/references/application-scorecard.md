@@ -60,6 +60,29 @@ Examples that move a score down:
 - Legal, immigration, regulatory, or logistics claims stated with more certainty than the evidence supports.
 - A product description that sounds impressive but cannot be repeated in one sentence.
 
+## Score Caps
+
+Use caps to keep scores calibrated when the written application has real signal but missing proof. These are soft ceilings for `interview likelihood`, not automatic penalties. A cap can be overridden only when another part of the application gives exceptional compensating evidence, and the review must say why.
+
+- No active or retained usage stated: usually cap at `0.68`.
+- Growth percentage without baseline, time period, channel, or denominator: usually cap at `0.70`.
+- Revenue exists but revenue quality is unclear: usually cap at `0.72`.
+- Crowded incumbent space with weak switching proof: usually cap at `0.68`.
+- Several severe missing facts in the same application: default to `borderline` even if the company has users or revenue.
+- Strong founder/product signal can raise the cap when the demo, technical proof, user insight, or speed is exceptional, but only if the review names that evidence.
+
+Before calling an application `likely`, check:
+
+- Active vs total users.
+- Retained vs one-time use.
+- Paid/high-intent vs free/curious usage.
+- Organic or efficient acquisition vs unknown acquisition.
+- Clear baseline and time period for growth.
+- Switching from a named substitute.
+- Narrow first user segment.
+
+If 3 or more of these are missing, use `borderline` by default. The score can still be high within `borderline`, but avoid crossing into `likely` unless the founder/product evidence is unusually strong.
+
 ## Myth Checks
 
 Run an explicit myth check when relevant:

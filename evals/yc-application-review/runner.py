@@ -63,6 +63,34 @@ LEARNING_RE = re.compile(r"\b(talked|interviewed|learned|observed|requests?|feed
 VAGUE_RE = re.compile(r"\b(revolutionary|seamless|platform|leverage|synergy|disrupt|ai-powered|next-generation|all-in-one)\b", re.IGNORECASE)
 NO_TRACTION_RE = re.compile(r"\b(no users|no revenue|not launched|idea only|haven't launched|have not launched|pre-product|pre-revenue)\b", re.IGNORECASE)
 
+FIXTURE_EXPECTATIONS = {
+    "getintoyc-gitlab": {"verdict": "likely", "interview_likelihood_min": 0.78, "interview_likelihood_max": 0.88},
+    "getintoyc-streamplate": {"verdict": "unlikely", "interview_likelihood_min": 0.25, "interview_likelihood_max": 0.40},
+    "getintoyc-buffer": {"verdict": "borderline", "interview_likelihood_min": 0.55, "interview_likelihood_max": 0.68},
+    "getintoyc-dropbox": {"interview_likelihood_min": 0.60, "interview_likelihood_max": 0.78},
+}
+
+MARKDOWN_REQUIRED_SECTIONS = [
+    "Overview",
+    "Good",
+    "Fix",
+    "Score",
+    "Tips",
+    "Office Hours",
+    "Hygiene",
+    "Questions",
+]
+
+MARKDOWN_BANNED_SECTIONS = [
+    "Scorecard",
+    "What's Good",
+    "Highest-ROI Risks",
+    "Changes To Make",
+    "Next Questions",
+    "Weak Parts",
+    "Risks",
+]
+
 
 @dataclass
 class Fixture:
@@ -130,120 +158,34 @@ def build_candidate_prompt(fixture: Fixture) -> str:
         f"""\
         You are running a yc-partner application-review eval.
 
-        Review the application text below. Do not use external knowledge about
-        this specific company, founders, YC outcome, later success, or the source
+        Review the application text below with the yc-partner skill and return
+        only JSON matching the schema. Do not use external knowledge about this
+        specific company, founders, YC outcome, later success, or the source
         website. The historical acceptance result is hidden from you on purpose.
 
-        You may use captured yc-partner resources in this repository for general
-        YC guidance, source-grounded risks, myth checks, public example patterns,
-        YC company-directory context, and sector/landscape questions. Cite those
-        resources by exact repo-relative path. Do not browse the web.
+        Use captured yc-partner resources for general YC guidance. Cite source
+        paths by exact repo-relative path. Do not browse the web.
 
-        Common valid source paths include:
-        - skills/yc-partner/references/application-scorecard.md
-        - skills/yc-partner/references/source-priority.md
-        - skills/yc-partner/guides/application-review.md
-        - skills/yc-partner/guides/application-hygiene.md
-        - skills/yc-partner/guides/application-research.md
-        - skills/yc-partner/indexes/application-questions.md
-        - skills/yc-partner/indexes/source-map.md
-        - skills/yc-partner/resources/yc-website/frequently-asked-questions.md
-        - skills/yc-partner/resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md
-        - skills/yc-partner/resources/yc-youtube/how-to-apply-and-succeed-at-y-combinator-startup-school-B5tU2447OK8.md
-        - skills/yc-partner/resources/tweets/paul-graham-ready-to-apply-clear-application-2022-09-09.md
-        - skills/yc-partner/resources/tweets/paul-graham-revenue-not-required-for-yc-2020-01-05.md
-        - skills/yc-partner/resources/tweets/paul-graham-explain-what-you-learned-from-users-2022-09-12.md
-        - skills/yc-partner/resources/tweets/paul-graham-hype-misconception-focus-users-2019-11-26.md
-        - skills/yc-partner/resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md
-        - skills/yc-partner/resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md
-        - skills/yc-partner/resources/yc-company-directory/README.md
-        - skills/yc-partner/resources/rfs/README.md
-        - skills/yc-partner/resources/external/kudu-yc-s22-rejection-email-slack-alternative-2022-06-27.md
-
-        Source class rules:
-        - `skill_reference`: paths under skills/yc-partner/references/,
-          skills/yc-partner/guides/, or skills/yc-partner/indexes/
-        - `official_yc`: official YC website or official YC YouTube resources
-        - `yc_affiliated`: YC partner/founder essays, tweets, talks, and interviews
-        - `public_example`: public application examples and application videos
-        - `yc_directory`: YC company-directory resources
-        - `rfs`: YC Requests for Startups resources
-        - `external_context`: non-YC external context files
-        - `inference`: your own inference when no captured source supports a claim
-
-        Apply this review standard:
-        - Identify what the company does in one plain sentence.
-        - Build an evidence ledger before scoring: product, user, proof users
-          care, progress, founder-market fit, unique insight, market path,
-          distribution, and competitive context.
-        - Split founder signal, company signal, and application signal. If one
-          is much stronger than another, say that directly.
-        - Estimate application_strength first: how strong the written case is
-          from the text alone, independent of the hidden historical outcome.
-        - Separately estimate interview_likelihood: how likely this text is to
-          earn an interview, not an admissions prediction. Interview likelihood
-          can be lower than application strength when the founder case is strong
-          but the company wedge, retention, switching reason, or source-grounded
-          proof is still thin.
-        - Do not treat high usage or high revenue as automatically strong.
-          Ask whether the evidence is retained, urgent, monetizable, defensible,
-          and tied to a large-company path.
-        - Do not reward metrics for size. Reward metrics for evidence quality:
-          active users, retained users, paid or high-intent users, organic or
-          efficient acquisition, rapid growth from a clear baseline, and metrics
-          tied to the right first user. Be skeptical of fake-substance metrics:
-          cumulative signups, vague "users", waitlists, GMV without take rate,
-          pilots without payment, revenue that is consulting/pass-through/one-off,
-          paid acquisition without CAC/payback/retention, growth percentages
-          without denominators, and demos or LOIs without usage.
-        - Do not treat low revenue, pre-revenue, pre-product, or idea stage as
-          automatically weak. Look for founder insight, user learning, speed,
-          domain expertise, manual work, technical proof, and a credible next
-          experiment.
-        - Dig into the sector and problem-space profile: marketplace liquidity,
-          embedded incumbents, retention, buyer/user split, regulatory risk,
-          sales cycle, data advantage, technical proof, distribution, and common
-          failure paths when relevant.
-        - Reward clear product description, urgent user pain, concrete evidence,
-          founder insight, speed, and founder-market fit.
-        - Penalize vague answers, unsupported claims, weak user learning,
-          unclear differentiation, missing context, and answers that do not
-          directly answer the prompt.
-        - Separate evidence from inference.
-        - Ground YC-specific advice in captured reputable resources and avoid
-          reinforcing common myths or misconceptions.
-        - Give directional improvements, but do not ghostwrite a final
-          copy-paste application.
-
-        Return only JSON matching the provided schema. Use:
-        - evidence_ledger: short text for every required evidence category
-        - signal_split: founder_signal, company_signal, application_signal,
-          and the main gap between them
-        - application_strength: 0.0 to 1.0 for the written application case
-        - interview_likelihood: 0.0 to 1.0 for text-only interview likelihood
-        - verdict: "likely", "borderline", or "unlikely"; use "likely"
-          when interview_likelihood is >= 0.72, "unlikely" when it is <= 0.40,
-          and "borderline" otherwise
-        - score_caveat: one sentence explaining that this is a text-only
-          estimate and naming what could move it
-        - score_movers: concrete facts that could move the score up or down
-        - positive_evidence: short bullets grounded in the text
-        - risks: short bullets grounded in the text and, where possible, a
-          captured resource
-        - missing_specifics: short bullets naming facts the application should add
-        - improvements: short directional suggestions, not final copy
-        - source_grounding: at least two captured resources with repo-relative
-          paths, source classes, and why each resource matters to this review
-        - myth_checks: at least one myth correction applied to this application
-        - context_probes: sector/landscape/failure-path questions tailored to
-          this company
-        - evidence_vs_inference: one sentence separating textual evidence from your inference
-        - non_ghostwriting_check: true only if your improvements are directional and not a final rewrite
+        Required judgment:
+        - Separate application_strength from text-only interview_likelihood.
+        - Apply metric-quality skepticism and the score caps in
+          skills/yc-partner/references/application-scorecard.md.
+        - Use likely only when the written case has strong retained/active
+          usage, metric denominators, switching proof, or exceptional
+          founder/product evidence. Otherwise default mixed traction to
+          borderline.
+        - Separate evidence from inference, include score movers, source
+          grounding, myth checks, context probes, and directional improvements.
+        - Do not ghostwrite final copy.
 
         APPLICATION TEXT:
         {fixture.application_markdown}
         """
     )
+
+
+def build_markdown_prompt(fixture: Fixture) -> str:
+    return f"review my application\n\n{fixture.application_markdown}"
 
 
 def run_codex_candidate(fixture: Fixture, model: str | None, timeout: int, schema_path: Path) -> tuple[str, dict[str, Any]]:
@@ -263,6 +205,65 @@ def run_codex_candidate(fixture: Fixture, model: str | None, timeout: int, schem
         "never",
         "--output-schema",
         str(schema_path),
+        "-o",
+        str(out_path),
+        "-",
+    ]
+    if model:
+        cmd[2:2] = ["--model", model]
+        metadata["model"] = model
+    else:
+        metadata["model"] = "codex-default"
+
+    started = time.time()
+    try:
+        completed = subprocess.run(
+            cmd,
+            input=prompt,
+            text=True,
+            cwd=ROOT,
+            capture_output=True,
+            timeout=timeout,
+            check=False,
+        )
+        metadata["duration_seconds"] = round(time.time() - started, 3)
+        metadata["returncode"] = completed.returncode
+        metadata["stderr_tail"] = completed.stderr[-2000:]
+        if out_path.exists():
+            output = out_path.read_text(encoding="utf-8").strip()
+        else:
+            output = completed.stdout.strip()
+        if completed.returncode != 0 and not output:
+            output = completed.stdout.strip() or completed.stderr.strip()
+        return output, metadata
+    except subprocess.TimeoutExpired as exc:
+        metadata["duration_seconds"] = round(time.time() - started, 3)
+        metadata["timeout"] = True
+        stdout = exc.stdout if isinstance(exc.stdout, str) else ""
+        stderr = exc.stderr if isinstance(exc.stderr, str) else ""
+        return (stdout or stderr or "TIMEOUT").strip(), metadata
+    finally:
+        try:
+            out_path.unlink()
+        except FileNotFoundError:
+            pass
+
+
+def run_codex_markdown_candidate(fixture: Fixture, model: str | None, timeout: int) -> tuple[str, dict[str, Any]]:
+    prompt = build_markdown_prompt(fixture)
+    metadata: dict[str, Any] = {"candidate": "codex-markdown", "timeout_seconds": timeout}
+    with tempfile.NamedTemporaryFile("w+", encoding="utf-8", suffix=".md", delete=False) as out:
+        out_path = Path(out.name)
+    cmd = [
+        "codex",
+        "exec",
+        "--ephemeral",
+        "-C",
+        str(ROOT),
+        "-s",
+        "read-only",
+        "--color",
+        "never",
         "-o",
         str(out_path),
         "-",
@@ -699,6 +700,126 @@ def response_quality(fixture: Fixture, parsed: dict[str, Any] | None, parse_erro
     return (len(checks) - len(failures)) / len(checks), failures
 
 
+def markdown_section_pattern(title: str) -> re.Pattern[str]:
+    escaped = re.escape(title)
+    return re.compile(rf"(?im)^\s*(?:#+\s*{escaped}\s*|\*\*{escaped}\*\*\s*)$")
+
+
+def markdown_section_position(text: str, title: str) -> int:
+    match = markdown_section_pattern(title).search(text)
+    return match.start() if match else -1
+
+
+def markdown_section_text(text: str, title: str) -> str:
+    match = markdown_section_pattern(title).search(text)
+    if not match:
+        return ""
+    next_header = re.search(r"(?m)^\s*(?:#+\s+\S.*|\*\*[^*\n]+\*\*\s*)$", text[match.end() :])
+    end = match.end() + next_header.start() if next_header else len(text)
+    return text[match.end() : end].strip()
+
+
+def fixture_needs_demo_question(fixture: Fixture) -> bool:
+    text = fixture.application_markdown.lower()
+    return bool(
+        re.search(r"\bdemo\b|screencast|prototype|beta|build|installer|app\b|codebase|kloc|working product|product works", text)
+    )
+
+
+def markdown_quality(fixture: Fixture, raw: str, run_metadata: dict[str, Any]) -> tuple[float, list[str]]:
+    if run_metadata.get("timeout"):
+        return 0.0, ["timeout"]
+    if not raw.strip():
+        return 0.0, ["empty response"]
+
+    checks: list[tuple[str, bool]] = []
+    positions = {title: markdown_section_position(raw, title) for title in MARKDOWN_REQUIRED_SECTIONS}
+
+    for title in MARKDOWN_REQUIRED_SECTIONS:
+        checks.append((f"section_{title}", positions[title] >= 0))
+
+    for title in MARKDOWN_BANNED_SECTIONS:
+        checks.append((f"no_old_section_{title}", markdown_section_position(raw, title) < 0))
+
+    overview = markdown_section_text(raw, "Overview")
+    overview_bullets = re.findall(r"(?m)^\s*[-*]\s+\S", overview)
+    checks.append(("overview_bullet_only_density", 4 <= len(overview_bullets) <= 7 and not re.search(r"(?m)^\s*(?![-*]\s|\s*$).+", overview)))
+
+    fix = markdown_section_text(raw, "Fix")
+    checks.append(("fix_is_actionable_list", bool(re.search(r"(?m)^\s*(?:[-*]|\d+\.)\s+", fix))))
+
+    score = markdown_section_text(raw, "Score")
+    score_lines = [line for line in score.splitlines() if line.strip()]
+    checks.append(("score_one_or_two_lines", 1 <= len(score_lines) <= 2))
+    checks.append(("score_has_text_only_caveat", bool(re.search(r"text[- ]only", score, re.IGNORECASE)) and bool(re.search(r"prediction|admissions", score, re.IGNORECASE))))
+
+    if positions["Fix"] >= 0 and positions["Score"] >= 0 and positions["Tips"] >= 0:
+        checks.append(("score_after_fix_before_tips", positions["Fix"] < positions["Score"] < positions["Tips"]))
+    else:
+        checks.append(("score_after_fix_before_tips", False))
+
+    questions = markdown_section_text(raw, "Questions")
+    if fixture_needs_demo_question(fixture):
+        checks.append(("asks_for_demo_when_proof_matters", bool(re.search(r"demo|walkthrough|product video|screen ?recording|founder video", questions, re.IGNORECASE))))
+    else:
+        checks.append(("asks_for_demo_when_proof_matters", True))
+
+    office_hours = markdown_section_text(raw, "Office Hours")
+    checks.append(("office_hours_kept", bool(office_hours)))
+
+    failures = [name for name, ok in checks if not ok]
+    return (len(checks) - len(failures)) / len(checks), failures
+
+
+def fixture_expectation_failures(fixture: Fixture, parsed: dict[str, Any] | None) -> list[str]:
+    if parsed is None:
+        return []
+    expectation = FIXTURE_EXPECTATIONS.get(fixture.id)
+    if not expectation:
+        return []
+    failures: list[str] = []
+    score = parsed.get("interview_likelihood")
+    verdict = parsed.get("verdict")
+    if isinstance(score, (int, float)):
+        min_score = expectation.get("interview_likelihood_min")
+        max_score = expectation.get("interview_likelihood_max")
+        if min_score is not None and score < min_score:
+            failures.append(f"expected_score_min_{min_score}")
+        if max_score is not None and score > max_score:
+            failures.append(f"expected_score_max_{max_score}")
+    expected_verdict = expectation.get("verdict")
+    if expected_verdict and verdict != expected_verdict:
+        failures.append(f"expected_verdict_{expected_verdict}")
+    return failures
+
+
+def markdown_row(fixture: Fixture, raw: str, run_metadata: dict[str, Any]) -> dict[str, Any]:
+    expected = fixture.expected
+    quality_score, quality_failures = markdown_quality(fixture, raw, run_metadata)
+    leak_patterns = has_leak(raw, None)
+    return {
+        "id": fixture.id,
+        "company": fixture.company,
+        "source": fixture.source,
+        "expected_outcome": expected["known_outcome"],
+        "score_band": expected.get("score_band"),
+        "application_strength": None,
+        "interview_likelihood": None,
+        "verdict": None,
+        "parse_error": None,
+        "range_failure": False,
+        "leak_patterns": leak_patterns,
+        "ghostwriting_patterns": [],
+        "expectation_failures": [],
+        "timeout_failure": bool(run_metadata.get("timeout")),
+        "quality_score": round(quality_score, 4),
+        "quality_failures": quality_failures,
+        "candidate_response": None,
+        "raw_response_preview": raw[:2000],
+        "run_metadata": run_metadata,
+    }
+
+
 def auc(per_fixture: list[dict[str, Any]]) -> float | None:
     positives = [row for row in per_fixture if row["expected_outcome"] == "successful" and isinstance(row.get("interview_likelihood"), (int, float))]
     negatives = [row for row in per_fixture if row["expected_outcome"] == "unsuccessful" and isinstance(row.get("interview_likelihood"), (int, float))]
@@ -751,10 +872,12 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
     quality_scores = [row["quality_score"] for row in per_fixture]
     quality_mean = mean(quality_scores) or 0.0
 
-    parse_failures = [row["id"] for row in per_fixture if row["parse_error"]]
+    timeout_failures = [row["id"] for row in per_fixture if row.get("timeout_failure")]
+    parse_failures = [row["id"] for row in per_fixture if row["parse_error"] and not row.get("timeout_failure")]
     leak_failures = [row["id"] for row in per_fixture if row["leak_patterns"]]
     ghostwriting_failures = [row["id"] for row in per_fixture if row["ghostwriting_patterns"]]
-    range_failures = [row["id"] for row in per_fixture if row["range_failure"]]
+    range_failures = [row["id"] for row in per_fixture if row["range_failure"] and not row.get("timeout_failure")]
+    expectation_failures = {row["id"]: row["expectation_failures"] for row in per_fixture if row.get("expectation_failures")}
     high_historical_unsuccessful_scores = [
         row["id"]
         for row in per_fixture
@@ -781,10 +904,12 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
     ]
 
     pass_checks = {
+        "timeout_failures": len(timeout_failures) == 0,
         "parse_failures": len(parse_failures) == 0,
         "leak_failures": len(leak_failures) == 0,
         "range_failures": len(range_failures) == 0,
         "ghostwriting_failures": len(ghostwriting_failures) == 0,
+        "fixture_expectations": len(expectation_failures) == 0,
         "extreme_score_mismatches": len(extreme_score_mismatches) == 0,
         "quality_mean": quality_mean >= thresholds["min_quality_mean"],
     }
@@ -801,10 +926,12 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
         "score_gap": round(score_gap, 4) if score_gap is not None else None,
         "auc": round(auc_value, 4) if auc_value is not None else None,
         "quality_mean": round(quality_mean, 4),
+        "timeout_failures": timeout_failures,
         "parse_failures": parse_failures,
         "leak_failures": leak_failures,
         "range_failures": range_failures,
         "ghostwriting_failures": ghostwriting_failures,
+        "expectation_failures": expectation_failures,
         "high_historical_unsuccessful_scores": high_historical_unsuccessful_scores,
         "low_historical_successful_scores": low_historical_successful_scores,
         "extreme_score_mismatches": extreme_score_mismatches,
@@ -823,20 +950,32 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         print(f"[{index}/{len(selected)}] {fixture.id}", file=sys.stderr, flush=True)
         if args.mode == "codex":
             raw, run_metadata = run_codex_candidate(fixture, args.model, args.timeout, args.schema)
+        elif args.mode == "codex-markdown":
+            raw, run_metadata = run_codex_markdown_candidate(fixture, args.model, args.timeout)
+            per_fixture.append(markdown_row(fixture, raw, run_metadata))
+            continue
         else:
             raw, run_metadata = run_heuristic_candidate(fixture)
 
         parsed, parse_error = parse_candidate_json(raw)
         leak_patterns = has_leak(raw, parsed)
         ghostwriting_patterns = has_ghostwriting(parsed)
-        quality_score, quality_failures = response_quality(fixture, parsed, parse_error)
+        if run_metadata.get("timeout"):
+            parse_error = "timeout"
+            quality_score, quality_failures = 0.0, ["timeout"]
+        else:
+            quality_score, quality_failures = response_quality(fixture, parsed, parse_error)
+        expectation_failures = fixture_expectation_failures(fixture, parsed) if args.mode == "codex" else []
         application_strength = parsed.get("application_strength") if parsed else None
         score = parsed.get("interview_likelihood") if parsed else None
         range_failure = (
-            not isinstance(application_strength, (int, float))
+            not run_metadata.get("timeout")
+            and (
+                not isinstance(application_strength, (int, float))
             or not 0 <= application_strength <= 1
             or not isinstance(score, (int, float))
             or not 0 <= score <= 1
+            )
         )
 
         expected = fixture.expected
@@ -853,6 +992,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             "range_failure": range_failure,
             "leak_patterns": leak_patterns,
             "ghostwriting_patterns": ghostwriting_patterns,
+            "expectation_failures": expectation_failures,
+            "timeout_failure": bool(run_metadata.get("timeout")),
             "quality_score": round(quality_score, 4),
             "quality_failures": quality_failures,
             "candidate_response": parsed,
@@ -878,7 +1019,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         "schema_version": 1,
         "eval": "yc-application-review",
         "mode": args.mode,
-        "candidate_model": args.model if args.model else ("codex-default" if args.mode == "codex" else "local-signal-baseline"),
+        "candidate_model": args.model if args.model else ("codex-default" if args.mode.startswith("codex") else "local-signal-baseline"),
         "started_at": started.isoformat(),
         "finished_at": finished.isoformat(),
         "duration_seconds": round((finished - started).total_seconds(), 3),
@@ -906,8 +1047,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--fixtures", type=Path, default=DEFAULT_FIXTURES)
     parser.add_argument("--schema", type=Path, default=DEFAULT_SCHEMA)
-    parser.add_argument("--mode", choices=["heuristic", "codex"], default="heuristic")
-    parser.add_argument("--model", help="Model name passed to codex exec in --mode codex.")
+    parser.add_argument("--mode", choices=["heuristic", "codex", "codex-markdown"], default="heuristic")
+    parser.add_argument("--model", help="Model name passed to codex exec in codex modes.")
     parser.add_argument("--limit", type=int, help="Run a stratified sample of N fixtures.")
     parser.add_argument("--fixture-id", action="append", default=[], help="Run a specific fixture id. Repeatable.")
     parser.add_argument("--seed", type=int, default=20260616)
@@ -940,9 +1081,11 @@ def main() -> int:
     print(f"AUC: {aggregate['auc']}")
     print(f"Calibration gated: {aggregate['calibration_gated']}")
     print(f"Quality mean: {aggregate['quality_mean']}")
+    print(f"Timeout failures: {len(aggregate['timeout_failures'])}")
     print(f"Parse failures: {len(aggregate['parse_failures'])}")
     print(f"Leak failures: {len(aggregate['leak_failures'])}")
     print(f"Ghostwriting failures: {len(aggregate['ghostwriting_failures'])}")
+    print(f"Fixture expectation failures: {len(aggregate['expectation_failures'])}")
     return 0 if aggregate["verdict"] == "pass" else 1
 
 

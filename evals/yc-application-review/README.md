@@ -36,6 +36,14 @@ python3 evals/yc-application-review/runner.py --mode codex --limit 4
 
 The live candidate uses `codex exec` in read-only, ephemeral mode and asks for structured JSON matching `response.schema.json`. It does not read `.env` files and it does not receive the hidden `expected.known_outcome` label. It may read captured yc-partner resources in this repository to ground YC-specific guidance.
 
+Run a normal-user output smoke test with the exact prompt shape `review my application` and no structured output schema:
+
+```sh
+python3 evals/yc-application-review/runner.py --mode codex-markdown --fixture-id getintoyc-dropbox
+```
+
+This mode checks whether the founder-facing Markdown stays compact and scannable: short generic section titles, dense bullet lists, `Office Hours`, a compact `Score` after the main risks/fixes, no old verbose section names, and a demo/founder-video ask when the application hinges on proof of work. It reports timeouts separately from parse failures because Markdown mode has no JSON parse step.
+
 Receipts are written to:
 
 ```text
@@ -49,6 +57,7 @@ Successful examples should generally receive a higher interview-likelihood score
 - Reviews only the application text, not external knowledge of the company.
 - Scores `application_strength` as the strength of the written case and `interview_likelihood` as the text-only odds of earning an interview. These can diverge when founder signal is strong but the company wedge, retention, switching reason, or source-grounded proof is still thin.
 - Uses verdict bands conservatively: `likely` at `0.72+`, `borderline` above `0.40` and below `0.72`, and `unlikely` at `0.40` or below.
+- Applies fixture-specific regression expectations for key public examples: GitLab should stay `likely`, Streamplate should stay `unlikely`, Buffer should stay `borderline`, and Dropbox should stay in a plausible but not overconfident interview-likelihood range.
 - Separates concrete evidence from inference.
 - Does not over-reward high usage or revenue without active/retained users, organic or efficient acquisition, monetization quality, clear denominators, distribution, defensibility, and market-path analysis.
 - Treats impressive-sounding metrics skeptically when they are cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, or growth percentages without a baseline.
@@ -68,8 +77,10 @@ The runner always gates on:
 
 - All candidate responses parse as JSON.
 - `application_strength` and `interview_likelihood` are in the `0..1` range.
+- Codex runs do not time out. Timeout failures are reported separately from parse failures.
 - No hidden-label or historical-outcome leakage appears in the response.
 - No obvious ghostwritten final application rewrite appears.
+- Fixture-specific regression expectations pass for configured live Codex fixtures.
 - Captured source grounding is present.
 - Myth checks and context probes are present.
 - The average deterministic response-quality score is at least `0.75`.
