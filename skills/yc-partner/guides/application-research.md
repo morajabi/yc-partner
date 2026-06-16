@@ -24,6 +24,16 @@ When founder bios are thin but public links exist, create short private working 
 
 Do not overvalue prestigious affiliations. Treat school, employer, and awards as signals to inspect, then ask what the founder has actually built. Jessica says early investors have little data and may look at where founders went to college and what they built before; the second half matters just as much for non-elite founders (`../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:443`).
 
+For founder-market fit, do not pause a first review to ask broad background questions unless the submitted application is too thin to evaluate. Do the first pass with what the founder provided, then ask targeted questions for the next iteration when the answers could materially improve the profile:
+
+- What past work, research, side projects, open-source work, customer exposure, or domain experience led you to this idea?
+- What specific event, user conversation, repeated frustration, or market change made you decide this should exist now?
+- What have you built, shipped, sold, automated, or operated before that makes you unusually likely to execute this?
+- Which customers or users did you already know before starting, and what did you learn from them that outsiders would miss?
+- If your resume does not obviously match the market, what non-obvious founder-market fit should the application surface?
+
+Use these as iteration questions, not an intake checklist. Prefer 2-4 high-leverage questions tied to the weaknesses found in the first review.
+
 ## Company Profile
 
 Create a concise private working company profile before judging the answers:

@@ -2,7 +2,8 @@
 """Run YC application review evals.
 
 The fixture label is intentionally hidden from the candidate. The runner scores
-calibration against that label after the response is produced.
+response quality and reports historical-outcome diagnostics after the response
+is produced.
 """
 
 from __future__ import annotations
@@ -10,7 +11,6 @@ from __future__ import annotations
 import argparse
 import json
 import math
-import os
 import random
 import re
 import subprocess
@@ -130,29 +130,100 @@ def build_candidate_prompt(fixture: Fixture) -> str:
         f"""\
         You are running a yc-partner application-review eval.
 
-        Review only the application text below. Do not use external knowledge
-        about the company, founders, YC outcome, later success, or the source
-        website. The historical result is hidden from you on purpose.
+        Review the application text below. Do not use external knowledge about
+        this specific company, founders, YC outcome, later success, or the source
+        website. The historical acceptance result is hidden from you on purpose.
+
+        You may use captured yc-partner resources in this repository for general
+        YC guidance, source-grounded risks, myth checks, public example patterns,
+        YC company-directory context, and sector/landscape questions. Cite those
+        resources by exact repo-relative path. Do not browse the web.
+
+        Common valid source paths include:
+        - skills/yc-partner/references/application-scorecard.md
+        - skills/yc-partner/references/source-priority.md
+        - skills/yc-partner/guides/application-review.md
+        - skills/yc-partner/guides/application-hygiene.md
+        - skills/yc-partner/guides/application-research.md
+        - skills/yc-partner/indexes/application-questions.md
+        - skills/yc-partner/indexes/source-map.md
+        - skills/yc-partner/resources/yc-website/frequently-asked-questions.md
+        - skills/yc-partner/resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md
+        - skills/yc-partner/resources/yc-youtube/how-to-apply-and-succeed-at-y-combinator-startup-school-B5tU2447OK8.md
+        - skills/yc-partner/resources/tweets/paul-graham-ready-to-apply-clear-application-2022-09-09.md
+        - skills/yc-partner/resources/tweets/paul-graham-revenue-not-required-for-yc-2020-01-05.md
+        - skills/yc-partner/resources/tweets/paul-graham-explain-what-you-learned-from-users-2022-09-12.md
+        - skills/yc-partner/resources/tweets/paul-graham-hype-misconception-focus-users-2019-11-26.md
+        - skills/yc-partner/resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md
+        - skills/yc-partner/resources/interviews/lessons-from-1-000-yc-startups-resilience-tar-pit-ideas-pivoting-more-dalton-caldwell-yc-m7LvNTbaqSI.md
+        - skills/yc-partner/resources/yc-company-directory/README.md
+        - skills/yc-partner/resources/rfs/README.md
+        - skills/yc-partner/resources/external/kudu-yc-s22-rejection-email-slack-alternative-2022-06-27.md
+
+        Source class rules:
+        - `skill_reference`: paths under skills/yc-partner/references/,
+          skills/yc-partner/guides/, or skills/yc-partner/indexes/
+        - `official_yc`: official YC website or official YC YouTube resources
+        - `yc_affiliated`: YC partner/founder essays, tweets, talks, and interviews
+        - `public_example`: public application examples and application videos
+        - `yc_directory`: YC company-directory resources
+        - `rfs`: YC Requests for Startups resources
+        - `external_context`: non-YC external context files
+        - `inference`: your own inference when no captured source supports a claim
 
         Apply this review standard:
         - Identify what the company does in one plain sentence.
-        - Estimate whether the application is likely to earn a YC interview.
-        - Reward clear product description, urgent user pain, concrete user or
-          revenue evidence, founder insight, speed, and founder-market fit.
-        - Penalize vague answers, missing traction specifics, unsupported
-          claims, weak user learning, unclear differentiation, and answers that
-          do not directly answer the prompt.
+        - Build an evidence ledger before scoring: product, user, proof users
+          care, progress, founder-market fit, unique insight, market path,
+          distribution, and competitive context.
+        - Estimate how strong the application text is as an interview case.
+          This is a text-only estimate, not an admissions prediction.
+        - Do not treat high usage or high revenue as automatically strong.
+          Ask whether the evidence is retained, urgent, monetizable, defensible,
+          and tied to a large-company path.
+        - Do not reward metrics for size. Reward metrics for evidence quality:
+          active users, retained users, paid or high-intent users, organic or
+          efficient acquisition, rapid growth from a clear baseline, and metrics
+          tied to the right first user. Be skeptical of fake-substance metrics:
+          cumulative signups, vague "users", waitlists, GMV without take rate,
+          pilots without payment, revenue that is consulting/pass-through/one-off,
+          paid acquisition without CAC/payback/retention, growth percentages
+          without denominators, and demos or LOIs without usage.
+        - Do not treat low revenue, pre-revenue, pre-product, or idea stage as
+          automatically weak. Look for founder insight, user learning, speed,
+          domain expertise, manual work, technical proof, and a credible next
+          experiment.
+        - Dig into the sector and problem-space profile: marketplace liquidity,
+          embedded incumbents, retention, buyer/user split, regulatory risk,
+          sales cycle, data advantage, technical proof, distribution, and common
+          failure paths when relevant.
+        - Reward clear product description, urgent user pain, concrete evidence,
+          founder insight, speed, and founder-market fit.
+        - Penalize vague answers, unsupported claims, weak user learning,
+          unclear differentiation, missing context, and answers that do not
+          directly answer the prompt.
         - Separate evidence from inference.
+        - Ground YC-specific advice in captured reputable resources and avoid
+          reinforcing common myths or misconceptions.
         - Give directional improvements, but do not ghostwrite a final
           copy-paste application.
 
         Return only JSON matching the provided schema. Use:
+        - evidence_ledger: short text for every required evidence category
         - interview_likelihood: 0.0 to 1.0
         - verdict: "likely", "borderline", or "unlikely"
+        - score_caveat: one sentence explaining that this is a text-only
+          estimate and naming what could move it
         - positive_evidence: short bullets grounded in the text
-        - risks: short bullets grounded in the text
+        - risks: short bullets grounded in the text and, where possible, a
+          captured resource
         - missing_specifics: short bullets naming facts the application should add
         - improvements: short directional suggestions, not final copy
+        - source_grounding: at least two captured resources with repo-relative
+          paths, source classes, and why each resource matters to this review
+        - myth_checks: at least one myth correction applied to this application
+        - context_probes: sector/landscape/failure-path questions tailored to
+          this company
         - evidence_vs_inference: one sentence separating textual evidence from your inference
         - non_ghostwriting_check: true only if your improvements are directional and not a final rewrite
 
@@ -279,8 +350,20 @@ def run_heuristic_candidate(fixture: Fixture) -> tuple[str, dict[str, Any]]:
 
     response = {
         "company_description": extract_company_description(fixture),
+        "evidence_ledger": {
+            "product": extract_company_description(fixture),
+            "user": "The likely user/customer segment must be read from the application text and narrowed in review.",
+            "proof_users_care": "The application includes signal words for traction, users, revenue, launch status, or customer learning." if traction_terms or learning_terms else "The application needs clearer proof that users care.",
+            "progress": "Progress is inferred from launch, prototype, beta, revenue, or time markers in the application text.",
+            "founder_market_fit": "Founder-market fit is inferred from building, technical, domain, or prior-startup signals in the text." if founder_terms else "Founder-market fit needs more explicit evidence.",
+            "unique_insight": "The application should be checked for a non-obvious insight beyond generic market language.",
+            "market_path": "The first wedge and expansion path should be made explicit.",
+            "distribution": "The application should explain how the first users are reached without assuming broad paid marketing works.",
+            "competitive_context": "The review should inspect substitutes, direct competitors, adjacent YC-funded companies, and why users switch.",
+        },
         "interview_likelihood": round(score, 2),
         "verdict": verdict,
+        "score_caveat": "This is a text-only estimate from the application; stronger source-backed user learning, retention, founder insight, or sector context could move it up or down.",
         "positive_evidence": positives[:4],
         "risks": risks[:4],
         "missing_specifics": [
@@ -292,6 +375,38 @@ def run_heuristic_candidate(fixture: Fixture) -> tuple[str, dict[str, Any]]:
             "Make the first product answer concrete enough that a reader can repeat it in one sentence.",
             "Replace broad claims with factual evidence from users, revenue, speed, or shipped product.",
             "Keep any rewrite directional and verify missing facts before adding them.",
+        ],
+        "source_grounding": [
+            {
+                "source_path": "skills/yc-partner/references/application-scorecard.md",
+                "source_class": "skill_reference",
+                "relevance": "Defines the evidence ledger, myth checks, score bands, and sector-specific review posture.",
+            },
+            {
+                "source_path": "skills/yc-partner/guides/application-review.md",
+                "source_class": "skill_reference",
+                "relevance": "Captures YC-grounded review guidance on clarity, early-stage readiness, user learning, market path, and founder/team risk.",
+            },
+        ],
+        "myth_checks": [
+            {
+                "myth": "Revenue or traction alone determines whether a YC application is strong.",
+                "correction": "Revenue and usage are evidence, but the review should inspect urgency, retention, founder insight, user learning, and market path.",
+                "source_path": "skills/yc-partner/references/application-scorecard.md",
+                "applied_to_application": "The score treats traction signals as prompts for deeper inspection, not as automatic proof of application strength.",
+            }
+        ],
+        "context_probes": [
+            {
+                "angle": "First wedge",
+                "why_it_matters": "YC application strength depends on a narrow urgent user and credible first market, not broad category ambition.",
+                "next_question": "Which exact user segment has the strongest pain and what behavior proves it?",
+            },
+            {
+                "angle": "Switching or adoption path",
+                "why_it_matters": "Usage or interest is weaker if the application cannot explain why users switch from existing substitutes.",
+                "next_question": "What do users do today, and what makes this product enough better to change behavior?",
+            },
         ],
         "evidence_vs_inference": "The score is based only on textual signals in the application; any interview-likelihood estimate is inference, not outside knowledge.",
         "non_ghostwriting_check": True,
@@ -360,6 +475,51 @@ def verdict_consistent(score: float | None, verdict: Any) -> bool:
     return verdict == "borderline"
 
 
+def source_path_exists(source_path: Any) -> bool:
+    if not isinstance(source_path, str) or not source_path.strip():
+        return False
+    clean = source_path.strip().strip("`")
+    clean = re.sub(r":\d+(?::\d+)?$", "", clean)
+    candidates = [
+        ROOT / clean,
+        ROOT / "skills/yc-partner" / clean,
+        ROOT / "skills/yc-partner/references" / clean,
+    ]
+    return any(path.exists() for path in candidates)
+
+
+def source_class_plausible(item: Any) -> bool:
+    if not isinstance(item, dict):
+        return False
+    source_path = item.get("source_path")
+    source_class = item.get("source_class")
+    if not isinstance(source_path, str) or not isinstance(source_class, str):
+        return False
+    clean = source_path.strip().strip("`")
+    if "/references/" in clean or "/guides/" in clean or "/indexes/" in clean:
+        return source_class == "skill_reference"
+    if "/resources/yc-website/" in clean or "/resources/yc-youtube/" in clean:
+        return source_class == "official_yc"
+    if "/resources/yc-company-directory/" in clean:
+        return source_class == "yc_directory"
+    if "/resources/rfs/" in clean:
+        return source_class == "rfs"
+    if "/resources/examples/" in clean:
+        return source_class == "public_example"
+    if "/resources/external/" in clean:
+        return source_class == "external_context"
+    if (
+        "/resources/tweets/" in clean
+        or "/resources/interviews/" in clean
+        or "/resources/yc-partners/" in clean
+        or "/resources/pg-essays/" in clean
+        or "/resources/dalton-michael/" in clean
+        or "/resources/founder-stories/" in clean
+    ):
+        return source_class == "yc_affiliated" or ("/resources/founder-stories/" in clean and source_class == "founder_story")
+    return source_class == "inference"
+
+
 def response_quality(fixture: Fixture, parsed: dict[str, Any] | None, parse_error: str | None) -> tuple[float, list[str]]:
     if parsed is None:
         return 0.0, [parse_error or "parse failed"]
@@ -368,21 +528,110 @@ def response_quality(fixture: Fixture, parsed: dict[str, Any] | None, parse_erro
     score = parsed.get("interview_likelihood")
     checks.append(("score_range", isinstance(score, (int, float)) and 0 <= score <= 1))
     checks.append(("verdict_consistent", verdict_consistent(float(score) if isinstance(score, (int, float)) else None, parsed.get("verdict"))))
+    checks.append(("score_caveat", isinstance(parsed.get("score_caveat"), str) and len(parsed["score_caveat"].strip()) >= 30))
+    ledger = parsed.get("evidence_ledger")
+    ledger_keys = [
+        "product",
+        "user",
+        "proof_users_care",
+        "progress",
+        "founder_market_fit",
+        "unique_insight",
+        "market_path",
+        "distribution",
+        "competitive_context",
+    ]
+    checks.append(
+        (
+            "evidence_ledger_complete",
+            isinstance(ledger, dict)
+            and all(isinstance(ledger.get(key), str) and ledger[key].strip() for key in ledger_keys),
+        )
+    )
     for key in ["positive_evidence", "risks", "missing_specifics", "improvements"]:
         value = parsed.get(key)
         checks.append((f"{key}_nonempty", isinstance(value, list) and any(isinstance(item, str) and item.strip() for item in value)))
     checks.append(("company_description", isinstance(parsed.get("company_description"), str) and len(parsed["company_description"].strip()) >= 12))
     checks.append(("evidence_vs_inference", isinstance(parsed.get("evidence_vs_inference"), str) and len(parsed["evidence_vs_inference"].strip()) >= 20))
     checks.append(("non_ghostwriting_check", parsed.get("non_ghostwriting_check") is True))
+    source_grounding = parsed.get("source_grounding")
+    checks.append(
+        (
+            "source_grounding_captured",
+            isinstance(source_grounding, list)
+            and len(source_grounding) >= 2
+            and all(isinstance(item, dict) and source_path_exists(item.get("source_path")) for item in source_grounding[:2]),
+        )
+    )
+    checks.append(
+        (
+            "source_classes_plausible",
+            isinstance(source_grounding, list)
+            and len(source_grounding) >= 2
+            and all(source_class_plausible(item) for item in source_grounding[:2]),
+        )
+    )
+    myth_checks = parsed.get("myth_checks")
+    checks.append(
+        (
+            "myth_checks_present",
+            isinstance(myth_checks, list)
+            and any(
+                isinstance(item, dict)
+                and isinstance(item.get("correction"), str)
+                and source_path_exists(item.get("source_path"))
+                for item in myth_checks
+            ),
+        )
+    )
+    context_probes = parsed.get("context_probes")
+    checks.append(
+        (
+            "context_probes_tailored",
+            isinstance(context_probes, list)
+            and len(context_probes) >= 2
+            and all(
+                isinstance(item, dict)
+                and isinstance(item.get("angle"), str)
+                and isinstance(item.get("why_it_matters"), str)
+                and isinstance(item.get("next_question"), str)
+                for item in context_probes[:2]
+            ),
+        )
+    )
 
     app_has_numbers = bool(NUMBER_RE.search(fixture.application_markdown))
     app_has_traction = bool(TRACTION_RE.search(fixture.application_markdown))
     positives = " ".join(str(item) for item in parsed.get("positive_evidence", []) if isinstance(item, str))
     risks = " ".join(str(item) for item in parsed.get("risks", []) if isinstance(item, str))
     missing = " ".join(str(item) for item in parsed.get("missing_specifics", []) if isinstance(item, str))
+    myth_text = " ".join(
+        " ".join(str(item.get(key, "")) for key in ["myth", "correction", "applied_to_application"])
+        for item in parsed.get("myth_checks", [])
+        if isinstance(item, dict)
+    )
+    context_text = " ".join(
+        " ".join(str(item.get(key, "")) for key in ["angle", "why_it_matters", "next_question"])
+        for item in parsed.get("context_probes", [])
+        if isinstance(item, dict)
+    )
     risk_text = f"{risks} {missing}"
     checks.append(("mentions_numeric_evidence_when_present", not app_has_numbers or bool(re.search(r"\d|\$|revenue|users?|customers?|growth|paid", positives, re.IGNORECASE))))
     checks.append(("mentions_traction_gap_when_needed", app_has_traction or bool(re.search(r"traction|users?|customers?|revenue|usage|growth|specific", risk_text, re.IGNORECASE))))
+    metric_quality_text = f"{risk_text} {myth_text} {context_text}"
+    checks.append(
+        (
+            "metric_quality_skepticism_when_numbers_present",
+            not app_has_numbers
+            or bool(
+                re.search(
+                    r"active|retention|retained|repeat|organic|paid acquisition|cac|payback|denominator|baseline|cumulative|signup|waitlist|gmv|take rate|pilot|loi|one[- ]?off|pass[- ]?through|subsidized|vanity|conversion|willingness to pay",
+                    metric_quality_text,
+                    re.IGNORECASE,
+                )
+            ),
+        )
+    )
 
     failures = [name for name, ok in checks if not ok]
     return (len(checks) - len(failures)) / len(checks), failures
@@ -431,15 +680,29 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
     leak_failures = [row["id"] for row in per_fixture if row["leak_patterns"]]
     ghostwriting_failures = [row["id"] for row in per_fixture if row["ghostwriting_patterns"]]
     range_failures = [row["id"] for row in per_fixture if row["range_failure"]]
-    high_false_positives = [
+    high_historical_unsuccessful_scores = [
         row["id"]
         for row in per_fixture
         if row["expected_outcome"] == "unsuccessful" and isinstance(row.get("interview_likelihood"), (int, float)) and row["interview_likelihood"] > 0.75
     ]
-    severe_false_negatives = [
+    low_historical_successful_scores = [
         row["id"]
         for row in per_fixture
         if row["expected_outcome"] == "successful" and isinstance(row.get("interview_likelihood"), (int, float)) and row["interview_likelihood"] < 0.35
+    ]
+    extreme_score_mismatches = [
+        row["id"]
+        for row in per_fixture
+        if (
+            row["expected_outcome"] == "successful"
+            and isinstance(row.get("interview_likelihood"), (int, float))
+            and row["interview_likelihood"] < 0.25
+        )
+        or (
+            row["expected_outcome"] == "unsuccessful"
+            and isinstance(row.get("interview_likelihood"), (int, float))
+            and row["interview_likelihood"] > 0.95
+        )
     ]
 
     pass_checks = {
@@ -447,9 +710,8 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
         "leak_failures": len(leak_failures) == 0,
         "range_failures": len(range_failures) == 0,
         "ghostwriting_failures": len(ghostwriting_failures) == 0,
+        "extreme_score_mismatches": len(extreme_score_mismatches) == 0,
         "quality_mean": quality_mean >= thresholds["min_quality_mean"],
-        "score_gap": score_gap is not None and score_gap >= thresholds["min_score_gap"],
-        "auc": auc_value is not None and auc_value >= thresholds["min_auc"],
     }
 
     return {
@@ -465,8 +727,9 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
         "leak_failures": leak_failures,
         "range_failures": range_failures,
         "ghostwriting_failures": ghostwriting_failures,
-        "high_false_positives": high_false_positives,
-        "severe_false_negatives": severe_false_negatives,
+        "high_historical_unsuccessful_scores": high_historical_unsuccessful_scores,
+        "low_historical_successful_scores": low_historical_successful_scores,
+        "extreme_score_mismatches": extreme_score_mismatches,
         "pass_checks": pass_checks,
         "verdict": "pass" if all(pass_checks.values()) else "fail",
     }
@@ -519,10 +782,10 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         "min_quality_mean": args.min_quality_mean,
     }
     aggregate = summarize(per_fixture, thresholds)
-    calibration_gated = args.mode == "codex" or args.strict_calibration
-    if not calibration_gated:
-        aggregate["pass_checks"]["score_gap"] = True
-        aggregate["pass_checks"]["auc"] = True
+    calibration_gated = args.strict_calibration
+    if calibration_gated:
+        aggregate["pass_checks"]["score_gap"] = aggregate["score_gap"] is not None and aggregate["score_gap"] >= thresholds["min_score_gap"]
+        aggregate["pass_checks"]["auc"] = aggregate["auc"] is not None and aggregate["auc"] >= thresholds["min_auc"]
         aggregate["verdict"] = "pass" if all(aggregate["pass_checks"].values()) else "fail"
     aggregate["calibration_gated"] = calibration_gated
     finished = datetime.now(timezone.utc)
@@ -571,7 +834,7 @@ def main() -> int:
     parser.add_argument(
         "--strict-calibration",
         action="store_true",
-        help="Gate heuristic mode on score gap and AUC. Codex mode always gates calibration.",
+        help="Also gate on aggregate historical-outcome score gap and AUC diagnostics.",
     )
     args = parser.parse_args()
 

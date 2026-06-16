@@ -46,6 +46,7 @@ Do not down-rank a startup merely because it is early, pre-revenue, or still mos
 
 Use this as a review pass:
 
+- If the founder has applied to YC before with the same idea or a close variant, ask for the previous application(s) before finalizing the review. If they got an interview, also ask for any interview feedback, rejection email text, partner comments, or the founder's own post-interview notes. The comparison should focus on progress since the last application, changed insight, clearer user evidence, and concerns that still look unresolved.
 - For "How far along are you?", reward honesty over pretending the company is more established.
 - If traction is weak or absent, look harder at founder quality, speed, insight, user understanding, seriousness, and concrete next steps.
 - Initial traction proves something, but not everything; PG says YC partners care more about what the founders are like than how far along the startup is (`../resources/tweets/paul-graham-idea-stage-startups-apply-to-yc-2024-04-22.md:33`).
@@ -65,6 +66,7 @@ For founder-quality review, include social dynamics. Jessica Livingston's "socia
 Use this as a review pass:
 
 - If the founder is solo, look for compensating evidence: exceptional speed, ability to build the product directly, unusually strong customer access, prior startup resilience, or a concrete plan for accountability.
+- Do not block a first review by asking broad founder-background questions. Review the submitted application first unless it is too minimal to evaluate, then ask targeted follow-up questions for the next iteration when work history, idea origin, domain exposure, or founder-market fit could materially strengthen the application.
 - If the founder is both solo and remote, explicitly check isolation risk. Gustaf Alstromer says remote solo founders often do not lack skill; the problem is that when things get hard, no cofounder is there to bring them back up and on track (`../resources/tweets/gustaf-alstromer-remote-solo-founder-hard-2025-02-13.md:22`).
 - If a solo founder wants a cofounder, point to YC's own cofounder-matching context rather than treating solo status as disqualifying (`../resources/yc-website/frequently-asked-questions.md:119`, `../resources/yc-website/yc-rejection-email-excerpts-2024.md:36`).
 - If one founder is treated as a disposable implementer, flag it. Gustaf Alstromer says early technology companies need founders who can build the first prototype, and Jessica Livingston describes weak technical-founder agency and very low engineer equity as a founder-dynamics warning sign (`../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:304`, `../resources/interviews/lessons-from-working-with-600-yc-startups-gustaf-alstrmer-y-combinator-airbnb-ZoKLofsp8u0.md:421`, `../resources/interviews/the-social-radar-y-combinators-secret-weapon-jessica-livingston-co-founder-of-yc-author-h9MUuhsDJOM.md:209`).
@@ -133,7 +135,9 @@ Use this as a review pass:
 
 Start with the highest-impact fixes. Then cover answer-level issues, suggested rewrites, open questions, and relevant sources.
 
-For every rewrite, preserve factual accuracy. If a stronger answer needs missing facts, ask for those facts instead of inventing them.
+When an important answer is seriously weak, way off, or the founder explicitly asks for guidance, calibrate before rewriting. For core prompts such as "What is your company going to make?", show 1-2 short exact examples from the most relevant YC sources: official YC guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Use examples to teach answer shape, not as templates to imitate. Expand the example set only if the founder asks.
+
+For every rewrite, preserve factual accuracy. Only rewrite a pitch or answer when the facts are grounded in the submitted application, other supplied answers, public website, GitHub README or docs, demo/product surface, prior application, interview feedback, or founder-provided context. If a stronger answer needs missing facts about the market, customer, unique angle, positioning, traction, or product, ask for those facts instead of inventing them.
 
 ## Fun Fact
 

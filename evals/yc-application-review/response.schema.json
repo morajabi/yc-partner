@@ -4,12 +4,17 @@
   "additionalProperties": false,
   "required": [
     "company_description",
+    "evidence_ledger",
     "interview_likelihood",
     "verdict",
+    "score_caveat",
     "positive_evidence",
     "risks",
     "missing_specifics",
     "improvements",
+    "source_grounding",
+    "myth_checks",
+    "context_probes",
     "evidence_vs_inference",
     "non_ghostwriting_check"
   ],
@@ -26,6 +31,36 @@
     "verdict": {
       "type": "string",
       "enum": ["likely", "borderline", "unlikely"]
+    },
+    "score_caveat": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product",
+        "user",
+        "proof_users_care",
+        "progress",
+        "founder_market_fit",
+        "unique_insight",
+        "market_path",
+        "distribution",
+        "competitive_context"
+      ],
+      "properties": {
+        "product": { "type": "string", "minLength": 1 },
+        "user": { "type": "string", "minLength": 1 },
+        "proof_users_care": { "type": "string", "minLength": 1 },
+        "progress": { "type": "string", "minLength": 1 },
+        "founder_market_fit": { "type": "string", "minLength": 1 },
+        "unique_insight": { "type": "string", "minLength": 1 },
+        "market_path": { "type": "string", "minLength": 1 },
+        "distribution": { "type": "string", "minLength": 1 },
+        "competitive_context": { "type": "string", "minLength": 1 }
+      }
     },
     "positive_evidence": {
       "type": "array",
@@ -57,6 +92,52 @@
       "items": {
         "type": "string",
         "minLength": 1
+      }
+    },
+    "source_grounding": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_path", "source_class", "relevance"],
+        "properties": {
+          "source_path": { "type": "string", "minLength": 1 },
+          "source_class": {
+            "type": "string",
+            "enum": ["official_yc", "yc_affiliated", "public_example", "founder_story", "yc_directory", "rfs", "external_context", "skill_reference", "inference"]
+          },
+          "relevance": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "myth_checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["myth", "correction", "source_path", "applied_to_application"],
+        "properties": {
+          "myth": { "type": "string", "minLength": 1 },
+          "correction": { "type": "string", "minLength": 1 },
+          "source_path": { "type": "string", "minLength": 1 },
+          "applied_to_application": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "context_probes": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["angle", "why_it_matters", "next_question"],
+        "properties": {
+          "angle": { "type": "string", "minLength": 1 },
+          "why_it_matters": { "type": "string", "minLength": 1 },
+          "next_question": { "type": "string", "minLength": 1 }
+        }
       }
     },
     "evidence_vs_inference": {

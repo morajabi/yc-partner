@@ -79,6 +79,7 @@ Start with:
 
 1. `references/source-priority.md`
 2. `references/review-framework.md`
+3. `references/application-scorecard.md` for any broad application review or interview-likelihood estimate
 
 Then choose the smallest relevant path:
 
@@ -107,6 +108,7 @@ Required for application review:
 
 - Read the user's application or the relevant answer.
 - Read `references/review-framework.md`.
+- Read `references/application-scorecard.md` before estimating interview likelihood.
 - Read the relevant index/guide for the section being reviewed.
 - Cite sources when grounding advice in YC guidance.
 
@@ -161,22 +163,34 @@ For these answers:
 
 1. Read as a second pair of eyes with fresh context, not as a ghostwriter.
 2. Identify the company in one plain sentence.
-3. Extract the strongest evidence: product, users, revenue, growth, speed, founder-market fit, and unusual insight.
-4. Flag the highest-impact issues first.
-5. Check whether each answer directly answers the prompt.
-6. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
-7. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
-8. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
-9. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
-10. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
-11. Separate:
+3. If the founder has applied to YC before with the same idea or a close variant, ask for the previous application(s) before doing a final review. If they reached interview, also ask for any interview feedback, rejection email text, partner comments, or their own notes from the interview. Compare old vs current answers for progress, changed insight, and unresolved concerns.
+4. Do not delay a first review to ask broad founder-background questions unless the application is so minimal that no useful review can start. Use the submitted answers first; after the first pass, ask targeted follow-up questions for the next iteration when founder profile, work history, origin story, or founder-market fit could materially improve the application.
+5. Build an evidence ledger before scoring: product, user, proof users care, progress, founder-market fit, unique insight, market path, distribution, competitive context, and risk profile.
+6. Run the myth checks from `references/application-scorecard.md`. Do not treat high usage/revenue as automatically strong, and do not treat low revenue, pre-revenue, pre-product, or idea stage as automatically weak. Reward metric quality over metric size: active and retained users, paid or high-intent users, organic or efficient acquisition, clear denominators, fast growth from a real baseline, and metrics tied to the right first user. Be skeptical of cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, and growth percentages without baseline.
+7. Add a sector and landscape pass. Use the local YC company directory, RFSes, public examples, and captured partner guidance when they sharpen the review. Look for problem-space-specific failure paths such as marketplace liquidity, embedded incumbents, retention, buyer/user split, regulatory risk, sales cycle, data advantage, technical proof, or founder domain expertise.
+8. Flag the highest-impact issues first, grounded in the application text and reputable captured resources.
+9. Check whether each answer directly answers the prompt.
+10. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
+11. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
+12. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
+13. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
+14. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
+15. Separate:
    - Official YC guidance.
    - Public example patterns.
    - Your own inference from the application.
    - Open questions for the founder.
-12. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
-13. For broad first-pass reviews, add an `Office Hours` section that teaches the founder using the bundled source corpus.
-14. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
+16. If giving an interview-likelihood score, include a caveat that it is a text-only estimate, not an admissions prediction, and name the missing facts that could move it up or down.
+17. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
+18. For broad first-pass reviews, add an `Office Hours` section that teaches the founder using the bundled source corpus.
+19. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
+
+For major answer-level problems:
+
+- If a founder is way off on one important answer, asks for guidance on it, or has a serious issue in a core prompt such as "What is your company going to make?", use exact short examples from YC sources to calibrate what good looks like.
+- Start with 1-2 examples only. Use YC official guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Expand only if the user explicitly asks for more examples.
+- Keep examples tied to the question being fixed. Do not dump broad YC advice or unrelated startup lessons.
+- Use short quotes only where the wording matters, and always link to the local source path or public URL.
 
 For `Office Hours`:
 
@@ -223,7 +237,9 @@ Be careful and less forceful about:
 
 When facts are missing, ask for them or mark the rewrite as requiring verification.
 
-Do not fully rewrite the user's YC application. Do not present generated text as something the founder should copy-paste. Warn when a suggested one-liner sounds trendy, generic, or impressive at the expense of the founder's actual insight.
+Only attempt a pitch or answer rewrite when the rewrite can be grounded in evidence from the founder's application, other supplied answers, public company website, GitHub README or docs, demo/product surface, prior application, interview feedback, or founder-provided context. Do not guess the market, unique angle, positioning, traction, customer, or product properties because they sound good.
+
+Do not fully rewrite the user's YC application. Do not present generated text as something the founder should copy-paste. Warn when a suggested one-liner sounds trendy, generic, or impressive at the expense of the founder's actual insight. If there is not enough evidence for a useful rewrite, give a diagnostic, ask the missing questions, and provide a structure or fill-in scaffold instead of invented prose.
 
 ## Interview Prep Workflow
 

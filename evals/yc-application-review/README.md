@@ -1,6 +1,6 @@
 # YC Application Review Evals
 
-JSONL fixtures for testing whether the `yc-partner` skill can review YC applications and roughly calibrate interview likelihood.
+JSONL fixtures for testing whether the `yc-partner` skill can review YC applications with useful, source-grounded, myth-safe feedback and roughly calibrate text-only interview likelihood.
 
 ## Fixture Source
 
@@ -16,11 +16,13 @@ The Lago successful-example row is generated from the Lago blog by:
 python3 scripts/capture_lago_yc_application.py
 ```
 
-The model-facing fields are `prompt` and `application_markdown`. The hidden `expected` object contains the historical outcome label from the public source.
+The model-facing fields are `prompt` and `application_markdown`. The hidden `expected` object contains the historical acceptance outcome label from the public source.
+
+Do not treat `unsuccessful` as a clean "did not deserve an interview" label. Some unsuccessful public applications may still have received an interview and then been rejected. A high score on an unsuccessful application can be a reasonable review if the application text has strong interview-worthy evidence.
 
 ## Runner
 
-Run a local deterministic baseline over all fixtures. This checks response shape, leakage, and ghostwriting rules, and reports calibration metrics without failing on score separation unless `--strict-calibration` is passed:
+Run a local deterministic baseline over all fixtures. This checks response shape, leakage, source grounding, myth checks, context probes, and ghostwriting rules, and reports calibration metrics without failing on score separation unless `--strict-calibration` is passed:
 
 ```sh
 python3 evals/yc-application-review/runner.py --mode heuristic
@@ -32,7 +34,7 @@ Run a live Codex candidate over a small stratified smoke sample:
 python3 evals/yc-application-review/runner.py --mode codex --limit 4
 ```
 
-The live candidate uses `codex exec` in read-only, ephemeral mode and asks for structured JSON matching `response.schema.json`. It does not read `.env` files and it does not receive the hidden `expected.known_outcome` label.
+The live candidate uses `codex exec` in read-only, ephemeral mode and asks for structured JSON matching `response.schema.json`. It does not read `.env` files and it does not receive the hidden `expected.known_outcome` label. It may read captured yc-partner resources in this repository to ground YC-specific guidance.
 
 Receipts are written to:
 
@@ -42,11 +44,15 @@ evals/yc-application-review/receipts/
 
 ## Scoring Intent
 
-Successful examples should generally receive a higher interview-likelihood score than unsuccessful examples, but the evaluator should still reward useful critique. A good response:
+Successful examples should generally receive a higher interview-likelihood score than unsuccessful examples in aggregate, but this is only a diagnostic. Individual unsuccessful examples may still be strong interview cases. A good response:
 
 - Reviews only the application text, not external knowledge of the company.
 - Separates concrete evidence from inference.
-- Notices traction, user insight, founder fit, speed, and clarity when present.
+- Does not over-reward high usage or revenue without active/retained users, organic or efficient acquisition, monetization quality, clear denominators, distribution, defensibility, and market-path analysis.
+- Treats impressive-sounding metrics skeptically when they are cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, or growth percentages without a baseline.
+- Does not punish low revenue, pre-revenue, pre-product, or idea stage when the application shows user insight, founder-market fit, speed, domain expertise, or a strong next experiment.
+- References captured reputable resources for YC-specific claims, myths, and problem-space risks.
+- Uses sector and landscape context: adjacent YC companies, RFSes, common failure paths, substitutes, incumbents, sales cycle, marketplace liquidity, regulatory risk, buyer/user split, technical proof, or data advantage where relevant.
 - Calls out missing specifics and vague answers directly.
 - Gives directional improvements without ghostwriting final application copy.
 
@@ -60,9 +66,12 @@ The runner always gates on:
 - `interview_likelihood` is in the `0..1` range.
 - No hidden-label or historical-outcome leakage appears in the response.
 - No obvious ghostwritten final application rewrite appears.
+- Captured source grounding is present.
+- Myth checks and context probes are present.
 - The average deterministic response-quality score is at least `0.75`.
+- No extreme score mismatch appears: historically successful applications below `0.25`, or historically unsuccessful applications above `0.95`.
 
-Live Codex candidate runs, and heuristic runs with `--strict-calibration`, also gate on:
+Runs with `--strict-calibration` also gate on aggregate historical-outcome diagnostics:
 
 - Successful examples score at least `0.12` higher on average than unsuccessful examples.
 - Pairwise AUC is at least `0.65`.
