@@ -1,6 +1,6 @@
 # YC Application Review Evals
 
-JSONL fixtures for testing whether the `yc-partner` skill can review YC applications with useful, source-grounded, myth-safe feedback and roughly calibrate text-only interview likelihood.
+JSONL fixtures for testing whether the `yc-partner` skill can review YC applications with useful, source-grounded, myth-safe feedback, separate written application strength from interview likelihood, and roughly calibrate text-only interview likelihood.
 
 ## Fixture Source
 
@@ -47,6 +47,8 @@ evals/yc-application-review/receipts/
 Successful examples should generally receive a higher interview-likelihood score than unsuccessful examples in aggregate, but this is only a diagnostic. Individual unsuccessful examples may still be strong interview cases. A good response:
 
 - Reviews only the application text, not external knowledge of the company.
+- Scores `application_strength` as the strength of the written case and `interview_likelihood` as the text-only odds of earning an interview. These can diverge when founder signal is strong but the company wedge, retention, switching reason, or source-grounded proof is still thin.
+- Uses verdict bands conservatively: `likely` at `0.72+`, `borderline` above `0.40` and below `0.72`, and `unlikely` at `0.40` or below.
 - Separates concrete evidence from inference.
 - Does not over-reward high usage or revenue without active/retained users, organic or efficient acquisition, monetization quality, clear denominators, distribution, defensibility, and market-path analysis.
 - Treats impressive-sounding metrics skeptically when they are cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, or growth percentages without a baseline.
@@ -65,7 +67,7 @@ These are calibration fixtures, not proof that historical successful application
 The runner always gates on:
 
 - All candidate responses parse as JSON.
-- `interview_likelihood` is in the `0..1` range.
+- `application_strength` and `interview_likelihood` are in the `0..1` range.
 - No hidden-label or historical-outcome leakage appears in the response.
 - No obvious ghostwritten final application rewrite appears.
 - Captured source grounding is present.

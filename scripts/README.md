@@ -6,6 +6,16 @@ Scripts should convert public source material into processed Markdown files unde
 
 Do not write raw scraper output, downloaded media, private application data, credentials, or `.env` content into this repository.
 
+## Resource Connection Audit
+
+Use `audit_resource_connections.py` to find processed resource files that are not directly referenced by indexes, guides, references, `SKILL.md`, `AGENTS.md`, or the README.
+It hides intentionally bulk-routed folders like RFS pages, GetIntoYC examples, Dalton/Michael imports, and the YC company directory unless `--show-bulk` is provided.
+
+```sh
+python3 scripts/audit_resource_connections.py
+python3 scripts/audit_resource_connections.py --show-bulk
+```
+
 ## YC Website Capture
 
 Use `capture_yc_web_pages.py` to fetch public pages from `https://www.ycombinator.com` and convert their main content to processed Markdown with compact metadata.
@@ -35,6 +45,16 @@ The script uses only Python's standard library and does not persist raw HTML.
 ```sh
 python3 scripts/capture_startup_playbook.py
 python3 scripts/capture_startup_playbook.py --output-dir skills/yc-partner/resources/yc-partners/startup-playbook
+```
+
+## YC-Affiliated Partner Blog Capture
+
+Use `capture_partner_blog_pages.py` to fetch supported public blog pages from YC-affiliated partners and write processed Markdown files under `skills/yc-partner/resources/yc-partners/`.
+The script currently supports `blog.samaltman.com` and `www.michaelseibel.com`, uses only Python's standard library, and does not persist raw HTML.
+
+```sh
+python3 scripts/capture_partner_blog_pages.py
+python3 scripts/capture_partner_blog_pages.py https://blog.samaltman.com/applying-to-yc
 ```
 
 ## Get into YC Example Application Capture

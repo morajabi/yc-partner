@@ -18,7 +18,7 @@ Use this guide after reviewing the application.
 
 ## Core Mechanics
 
-YC interviews are short. The official Startup School video describes them as a 10-minute Zoom with all founders present, while YC has the application open and asks basic, context-dependent questions (`../resources/yc-youtube/how-to-apply-and-succeed-at-y-combinator-startup-school-B5tU2447OK8.md:226`).
+YC interviews are short. The official Startup School video describes them as a 10-minute Zoom with all founders present, while YC has the application open and asks basic, context-dependent questions (`../resources/yc-youtube/how-to-apply-and-succeed-at-y-combinator-startup-school-B5tU2447OK8.md:226`). Dalton Caldwell's official YC Library transcript gives the same mechanics and says a good interview shows mastery of the business, numbers, risks, and next steps (`../resources/yc-website/yc-library/how-to-apply-and-succeed-at-yc.md:307`, `../resources/yc-website/yc-library/how-to-apply-and-succeed-at-yc.md:368`).
 
 Prepare around:
 

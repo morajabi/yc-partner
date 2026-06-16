@@ -16,6 +16,21 @@ Use this guide after loading the relevant source files.
 10. General application hygiene.
 11. Batch/location/logistics consistency.
 
+## Review Depth
+
+Do not write a broad review after one pass through the application. The failure mode is easy: a fast review drifts into guesses, generic YC advice, or unsupported optimism/pessimism. Take enough time to read the application, inspect the relevant guides, and open the source files that support the important critiques.
+
+For broad first-pass reviews and substantial iterations, run these passes before final output:
+
+- Comprehension pass: state what the company does, who the first user/customer is, what exists now, and what the application is trying to claim.
+- Evidence pass: list product proof, user proof, revenue, growth, retention, founder-market fit, technical ability, and progress. Mark missing or ambiguous evidence.
+- Question pass: check each application answer against the actual prompt; do not let a strong answer hide a weak or unanswered prompt elsewhere.
+- Source pass: read the relevant captured notes and original source files for the important issues. Use `founder-advice-notes.md`, `application-hygiene.md`, `application-scorecard.md`, and the smallest set of official YC, PG, partner, interview, example, or founder-story files that actually match the application.
+- Risk pass: inspect founder seriousness, misleading claims, technical ownership, cofounder dynamics, competitor/market risks, and the strongest reason YC might not understand or believe the application.
+- Calibration pass: before giving a score or interview-likelihood estimate, check whether the conclusion follows from the application text plus sources. Label uncertainty and missing facts instead of pretending the review is more precise than it is.
+
+Use source-backed advice to sharpen judgment, not to decorate the answer. If a source does not materially change the recommendation for this founder, do not include it.
+
 ## Claim Discipline
 
 For every application review, ask what the startup can truly claim today. Paul Graham says the best startup pitches make unequivocal claims, and that much of late-batch office hours is spent finding "exactly how much the startup can truly claim" (`../resources/tweets/paul-graham-unequivocal-startup-pitches-2026-06-05.md:28`).
@@ -34,7 +49,7 @@ Use this as a review pass:
 - Treat convincing language as a consequence of real understanding, not polish. PG's investor advice is to understand why the startup is worth investing in, then explain that clearly; if the application cannot do this yet, push for the missing customer, market, or traction facts (`../resources/pg-essays/how-to-convince-investors.md:18`, `../resources/pg-essays/how-to-convince-investors.md:82`, `../resources/pg-essays/how-to-convince-investors.md:121`).
 - Apply the retelling test: a clear explanation should be concise enough that someone else can sell the company accurately after hearing it (`../resources/pg-essays/how-to-convince-investors.md:225`, `../resources/pg-essays/how-to-convince-investors.md:307`).
 - For founder videos and short application answers, spend attention on what the product does and why users want it before secondary matters like competitors, resumes, or long business-model theory (`../resources/pg-essays/how-to-present-to-investors.md:41`, `../resources/pg-essays/how-to-present-to-investors.md:123`, `../resources/pg-essays/how-to-present-to-investors.md:131`).
-- Use public application-video examples as calibration, not templates: DoorDash shows customer discovery, manual operations, and first-month paying-customer traction (`../resources/examples/doordash-s-application-video-for-yc-s13-Rzlr2tNSl0U.md:14`); Embark shows technical team credibility and prototype context (`../resources/examples/embark-trucks-application-video-for-yc-w16-8MdVFF5HU0g.md:14`); Weave shows a plain product description, vertical wedge, customer count, revenue, and technical progress (`../resources/examples/weave-s-application-video-for-yc-w14-rpyvQJGcQGw.md:14`).
+- Use public application-video examples as calibration, not templates: DoorDash shows customer discovery, manual operations, and first-month paying-customer traction (`../resources/examples/doordash-s-application-video-for-yc-s13-Rzlr2tNSl0U.md:14`); Embark shows technical team credibility and prototype context (`../resources/examples/embark-trucks-application-video-for-yc-w16-8MdVFF5HU0g.md:14`); Weave shows a plain product description, vertical wedge, customer count, revenue, and technical progress (`../resources/examples/weave-s-application-video-for-yc-w14-rpyvQJGcQGw.md:14`); Teespring shows product plus revenue in under a minute (`../resources/examples/teespring-yc-w2013-application-video.md:25`, `../resources/examples/teespring-yc-w2013-application-video.md:28`); Zenefits shows a boring but valuable B2B workflow and market-timing explanation (`../resources/examples/zenefits-yc-w2013-application-video.md:22`, `../resources/examples/zenefits-yc-w2013-application-video.md:44`); Flip shows founder-market fit for a narrow marketplace wedge (`../resources/examples/flip-yc-w2015-application-video.md:22`, `../resources/examples/flip-yc-w2015-application-video.md:26`); Campus Job shows founder roles and early marketplace traction (`../resources/examples/campus-job-yc-w2015-application-video.md:26`, `../resources/examples/campus-job-yc-w2015-application-video.md:30`).
 
 ## General Hygiene Pass
 
@@ -42,7 +57,7 @@ Run one explicit hygiene pass in every broad application review using `applicati
 
 ## Stage And Readiness
 
-Do not down-rank a startup merely because it is early, pre-revenue, or still mostly an idea. The official YC FAQ says "it would be a mistake to wait to apply" and that on average 40% of companies YC funds in each batch are just an idea (`../resources/yc-website/frequently-asked-questions.md:81`). Jared Friedman says the right time to apply is once the founders have a founding team and an idea the team is excited to work on, and that traction or revenue are not required (`../resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md:14`, `../resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md:15`). Paul Graham similarly says founders with an idea are ready to apply and should not wait for traction by default, and frames applying early as a signal of confidence (`../resources/tweets/paul-graham-ready-to-apply-clear-application-2022-09-09.md:34`, `../resources/tweets/paul-graham-biggest-yc-myth-wait-until-far-along-2023-08-05.md:23`, `../resources/tweets/paul-graham-biggest-yc-myth-wait-until-far-along-2023-08-05.md:27`).
+Do not down-rank a startup merely because it is early, pre-revenue, or still mostly an idea. The official YC FAQ says "it would be a mistake to wait to apply" and that on average 40% of companies YC funds in each batch are just an idea (`../resources/yc-website/frequently-asked-questions.md:81`). Stephanie Simon says there is no such thing as too early or too late and YC reads applications year round (`../resources/yc-website/yc-library/yc-application-tips-when-to-apply.md:22`). Jared Friedman says the right time to apply is once the founders have a founding team and an idea the team is excited to work on, and that traction or revenue are not required (`../resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md:14`, `../resources/yc-youtube/when-is-the-right-time-to-apply-to-y-combinator-jared-friedman-EEy2MYHxAe8.md:15`). Paul Graham similarly says founders with an idea are ready to apply and should not wait for traction by default, and frames applying early as a signal of confidence (`../resources/tweets/paul-graham-ready-to-apply-clear-application-2022-09-09.md:34`, `../resources/tweets/paul-graham-biggest-yc-myth-wait-until-far-along-2023-08-05.md:23`, `../resources/tweets/paul-graham-biggest-yc-myth-wait-until-far-along-2023-08-05.md:27`).
 
 Use this as a review pass:
 
@@ -131,13 +146,21 @@ Use this as a review pass:
 - For earnest applications that lack evidence of founder strength, remember PG's founder-suitability warning: YC learned not to accept people merely because they seemed nice and eager if they were not genuinely suited to startup pain (`../resources/tweets/paul-graham-founder-suitability-selection-2019-03-13.md:21`).
 - For hardware, biotech, and other domains where founders fear a category-specific YC bias, route back to fundamentals: PG says the hardware stereotype was always false and that YC looks for the same startup fundamentals in biotech as in other startups (`../resources/tweets/paul-graham-hardware-startup-stereotype-false-2016-03-27.md:21`, `../resources/tweets/paul-graham-biotech-domain-expertise-2026-06-14.md:30`).
 
+## Helpful Notes
+
+Use `founder-advice-notes.md` in every broad first-pass review and substantial iteration. Pick notes that map to the application's actual issues: stage doubt, clarity, founder signal, technical ownership, user learning, founder video, interview prep, competitors, market wedge, or another concrete issue surfaced by the review. Do not present the guide as a reading list.
+
+When assessing what the company does or whether it is a plausible YC company, include the partner-legibility note when relevant: YC fit is not just category matching against YC-funded companies or RFSes. The stronger question is whether a real YC partner can quickly see an interesting idea/insight, a compelling founder profile, or both. Ground this in official How to Apply, Startup School's application-reader questions, PG essays, interviews, and captured partner posts (`founder-advice-notes.md#make-a-real-partner-want-to-know-more`).
+
+For broad first-pass reviews, add a short `Office Hours` or `Helpful Notes` section with 3-5 context-matched notes. For narrow answer edits or follow-up revisions, use 1-2 inline notes only if they change the next edit.
+
 ## Output Shape
 
 Start with the highest-impact fixes. Then cover answer-level issues, suggested rewrites, open questions, and relevant sources.
 
 After completing a review of an application, ask for more detail only where it would materially improve the next iteration: unclear product scope, weak user evidence, vague founder-market fit, missing work history, unresolved competitor/differentiation claims, questionable commitment, or inconsistent traction. Also ask for the founder video and demo video if they exist and were not reviewed.
 
-Include source-grounded advice in each meaningful review round. This can be a dedicated `Office Hours` section or embedded tips next to the relevant critique. Aim for 4-5 relevant quotes, tips, examples, or advice nuggets with links when the application has enough surface area and the corpus has real support. Use fewer when the review is narrow or additional sources would become filler. Final answers should cite public URLs the founder can read or watch, not local skill file paths.
+Include source-grounded advice in each meaningful review round using `founder-advice-notes.md` first. This can be a dedicated `Office Hours` or `Helpful Notes` section, or embedded tips next to the relevant critique. Aim for 4-5 relevant quotes, tips, examples, or advice nuggets with links when the application has enough surface area and the corpus has real support. Use fewer when the review is narrow or additional sources would become filler. Final answers should cite public URLs the founder can read or watch, not local skill file paths.
 
 When an important answer is seriously weak, way off, or the founder explicitly asks for guidance, calibrate before rewriting. For core prompts such as "What is your company going to make?", show 1-2 short exact examples from the most relevant YC sources: official YC guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Use examples to teach answer shape, not as templates to imitate. Expand the example set only if the founder asks.
 

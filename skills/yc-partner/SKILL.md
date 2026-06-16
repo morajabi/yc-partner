@@ -98,17 +98,18 @@ Start with:
 1. `references/source-priority.md`
 2. `references/review-framework.md`
 3. `references/application-scorecard.md` for any broad application review or interview-likelihood estimate
+4. `indexes/themes.md` when the task crosses multiple application sections or needs routing by issue rather than by prompt
 
 Then choose the smallest relevant path:
 
-- Application review: read `indexes/application-questions.md`, then the relevant maintained guide files under `guides/`, including `guides/application-hygiene.md` for broad first-pass reviews. If the user provides public URLs, handles, company websites, GitHub, LinkedIn, or demo links and wants deeper analysis, also read `guides/application-research.md`.
-- Pre-application questions and doubts: read `indexes/faq.md`, then use `indexes/source-map.md` or `rg` to find the smallest official YC source and any directly relevant partner essay, tweet, post, interview, or founder story.
+- Application review: read `indexes/application-questions.md`, then `indexes/themes.md` for any cross-cutting issues, then the relevant maintained guide files under `guides/`, including `guides/application-hygiene.md` and `guides/founder-advice-notes.md` for broad first-pass reviews. If the user provides public URLs, handles, company websites, GitHub, LinkedIn, or demo links and wants deeper analysis, also read `guides/application-research.md`.
+- Pre-application questions and doubts: read `indexes/faq.md`, then use `indexes/themes.md`, `indexes/source-map.md`, or `rg` to find the smallest official YC source and any directly relevant partner essay, tweet, post, interview, or founder story.
 - Rejection, rejection fear, or reapplication: read `guides/rejection-prep.md` and `indexes/faq.md`.
 - Interview prep: read `indexes/interview.md` and `guides/interview-prep.md`.
 - FAQ/logistics: read `indexes/faq.md`.
-- Office-hours-style advice on startup obstacles, worries, doubts, or questions: read `guides/office-hours.md`, then `indexes/source-map.md` and the smallest relevant index/guide/source files.
+- Office-hours-style advice on startup obstacles, worries, doubts, or questions: read `guides/office-hours.md`, then `indexes/themes.md`, `indexes/source-map.md`, and the smallest relevant index/guide/source files.
 - Source recommendation: read `indexes/source-map.md` if present; otherwise search `resources/` with `rg`.
-- Office Hours learning notes: for broad first-pass application reviews, read `indexes/source-map.md` and use `rg` to find a few resources that directly match the founder, company, sector, stage, or review issue.
+- Office Hours learning notes: for broad first-pass application reviews and substantial iterations, read `guides/founder-advice-notes.md`, then use `indexes/themes.md`, `indexes/source-map.md`, and `rg` only when the guide does not already contain a close match for the founder, company, sector, stage, or review issue.
 - Fun facts: for broad first-pass application reviews, read `guides/fun-facts.md` and choose one relevant source-linked item. Optionally use `resources/yc-company-directory/` for a few relevant directory comps.
 
 Use `rg` over the bundled `resources/`, `indexes/`, and `guides/` when a question is narrow or when no index exists yet.
@@ -120,6 +121,21 @@ Do not load every resource by default. Prefer progressive disclosure:
 3. Source file.
 4. External source only when local processed notes are missing or stale.
 
+## Review Depth Requirement
+
+For broad first-pass application reviews, substantial review iterations, interview-likelihood estimates, or advice that could change whether/how a founder applies, take the time to investigate before crafting the final answer. Do not produce a review from a single skim, general YC memory, or vibes.
+
+Run multiple passes before final output:
+
+1. Understand the startup and restate it in one plain sentence.
+2. Build the evidence ledger from the application text.
+3. Load the relevant indexes, guides, and short-note files.
+4. Read relevant captured source files for each important issue, especially stage, founder signal, user learning, traction, market, competition, technical ownership, founder dynamics, video, and interview likelihood.
+5. Separate application facts, public evidence, source-backed YC guidance, and your own inference.
+6. Re-check any strong positive or negative conclusion against the application text and source support.
+
+If a claim cannot be backed by the application or captured resources, label it as inference or uncertainty. Avoid overly positive or overly negative review language that is not earned by evidence. The purpose of the review is accuracy and usefulness, not speed.
+
 ## Required vs Optional
 
 Required for application review:
@@ -128,6 +144,7 @@ Required for application review:
 - Read `references/review-framework.md`.
 - Read `references/application-scorecard.md` before estimating interview likelihood.
 - Read the relevant index/guide for the section being reviewed.
+- For broad reviews, read multiple relevant captured sources before finalizing the review. Do not rely only on the guide summary when an important recommendation, critique, score, or likelihood estimate depends on source support.
 - Cite sources when grounding advice in YC guidance.
 
 Optional:
@@ -187,23 +204,24 @@ For these answers:
 6. Split the review into founder signal, company signal, and application signal when those diverge. A strong founder case should not hide weak company evidence; strong metrics should not hide weak founder insight or weak application clarity.
 7. Run the myth checks from `references/application-scorecard.md`. Do not treat high usage/revenue as automatically strong, and do not treat low revenue, pre-revenue, pre-product, or idea stage as automatically weak. Reward metric quality over metric size: active and retained users, paid or high-intent users, organic or efficient acquisition, clear denominators, fast growth from a real baseline, and metrics tied to the right first user. Be skeptical of cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, and growth percentages without baseline.
 8. Add a sector and landscape pass. Use the local YC company directory, RFSes, public examples, and captured partner guidance when they sharpen the review. Look for problem-space-specific failure paths such as marketplace liquidity, embedded incumbents, retention, buyer/user split, regulatory risk, sales cycle, data advantage, technical proof, or founder domain expertise.
-9. Flag the highest-impact issues first, grounded in the application text and reputable captured resources.
-10. Check whether each answer directly answers the prompt.
-11. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
-12. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
-13. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
-14. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
-15. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
-16. Separate:
+9. Add a partner-legibility pass when assessing what the company does or whether the idea is YC-fit. Do not treat YC selection as category matching. Ask whether a real YC partner can quickly see either an interesting idea/insight, a compelling founder profile, or both. Back this with `guides/founder-advice-notes.md`, official How to Apply, Startup School, PG essays, interviews, and captured partner posts.
+10. Flag the highest-impact issues first, grounded in the application text and reputable captured resources.
+11. Check whether each answer directly answers the prompt.
+12. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
+13. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
+14. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
+15. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
+16. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
+17. Separate:
    - Official YC guidance.
    - Public example patterns.
    - Your own inference from the application.
    - Open questions for the founder.
-17. If giving an interview-likelihood score, include a caveat that it is a text-only estimate, not an admissions prediction, and name the missing facts that could move it up or down.
-18. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
-19. After a review with an application is complete, ask for more details only in the areas that are especially unclear, weak, or potentially high-leverage for the next iteration. Also ask for the founder video and demo video if they have one and it was not reviewed.
-20. For broad first-pass reviews and substantial review iterations, add an `Office Hours` section or embed source-grounded advice nuggets throughout the feedback using the bundled source corpus.
-21. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
+18. If giving a score, separate application strength from interview likelihood when they diverge. Application strength is how well the written case reads from the text; interview likelihood is a text-only estimate of whether that case earns an interview, not an admissions prediction. Name the missing facts that could move either number up or down.
+19. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
+20. After a review with an application is complete, ask for more details only in the areas that are especially unclear, weak, or potentially high-leverage for the next iteration. Also ask for the founder video and demo video if they have one and it was not reviewed.
+21. For broad first-pass reviews and substantial review iterations, add an `Office Hours` or `Helpful Notes` section, or embed source-grounded advice nuggets throughout the feedback using `guides/founder-advice-notes.md`.
+22. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
 
 For major answer-level problems:
 
@@ -216,6 +234,7 @@ For `Office Hours`:
 
 - Include a few highly relevant nuggets in each meaningful review round; aim for 4-5 when the application has enough surface area and the corpus has genuinely relevant material. Use fewer only when the review is narrow, the available source support is thin, or more nuggets would distract from the core fixes.
 - Pick nuggets that are extremely relevant to this founder and company: growth, idea quality, pitch clarity, written communication, user insight, confidence, revenue, goals, work history, commitment, founder bio, sector, tar pit risk, or another issue surfaced by the review.
+- Prefer `guides/founder-advice-notes.md` as the first source for short notes, tips, and application advice. Use broader corpus search when the guide does not cover the specific issue.
 - Use short quotes only where the wording matters, and link to the public source URL.
 - Use local source paths only internally. Each nugget should have a link the founder can read or watch whenever a public URL exists.
 - Prefer one source per nugget; use at most 1-3 resources for a single nugget, ideally no more than 2.

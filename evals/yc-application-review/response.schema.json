@@ -6,6 +6,7 @@
     "company_description",
     "evidence_ledger",
     "signal_split",
+    "application_strength",
     "interview_likelihood",
     "verdict",
     "score_caveat",
@@ -26,6 +27,11 @@
       "minLength": 1
     },
     "interview_likelihood": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "application_strength": {
       "type": "number",
       "minimum": 0,
       "maximum": 1

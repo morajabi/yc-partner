@@ -43,6 +43,30 @@ Use YC Partner to answer my questions before I write my YC application
 
 For video review, provide local paths to your founder video or demo video. If you want transcription handled locally, your environment needs `ffmpeg` and an `OPENAI_TOKEN`.
 
+## Example Runs
+
+These are demo reviews of public YC applications, included so you can see the kind of feedback YC Partner gives. They are not YC feedback, not admissions predictions, and not templates to copy.
+
+- [Dropbox public application review](examples/yc-application-reviews/dropbox.md) - Shows how the skill handles an early, pre-revenue product with a strong demo, sharp user pain, and clear founder technical signal.
+- [GitLab public application review](examples/yc-application-reviews/gitlab.md) - Shows how the skill reviews a later-stage devtools application with strong traction, revenue, open-source distribution, and a few claim-discipline issues.
+- [Paystack public application review](examples/yc-application-reviews/paystack.md) - Shows how the skill surfaces founder-market fit, customer pull, geography context, fintech risk, and technical-ownership questions.
+
+## Resources Used
+
+YC Partner ships with a processed public corpus, not just a prompt. The current snapshot includes:
+
+- 262 processed Markdown source files, excluding README notes inside resource folders.
+- 96 official YC resources: 12 YC website/library pages, 1 application-form capture, and 83 Requests for Startups pages.
+- 57 video transcripts: 7 official YC YouTube videos, 49 Dalton + Michael videos, and 1 Garry Tan interview-prep video.
+- 4 long-form interviews.
+- 27 partner/PG written resources: 7 YC-partner posts, 13 Startup Playbook chapters, and 7 Paul Graham essays.
+- 28 public tweet/X captures from YC-affiliated people and relevant startup sources.
+- 44 public example application/demo resources, including successful historical applications and application videos.
+- 6 founder-story, external-context, and company-directory Markdown resources.
+- A YC public company-directory snapshot with 5,960 companies and 17 group-partner profiles.
+
+When YC Partner quotes or cites a resource, it should show the public URL so founders can check the original source instead of being pointed at internal skill files.
+
 ## How To Use It
 
 Use this as a fresh reviewer that gives you a high-level perspective on what you wrote. Founders are often too close to their product and know too much; they can become blind to descriptions that are too complicated for a YC partner to understand quickly. This is meant to help you close that gap.

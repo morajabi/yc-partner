@@ -6,7 +6,12 @@ Use this for broad YC application reviews and for interview-likelihood estimates
 
 Do not treat historical public examples as a clean binary label. Some unsuccessful public applications may still have earned an interview and then been rejected. Some successful applications are historically successful because of private interview, timing, founder, or market information not visible in the public text.
 
-Use `interview likelihood` to describe how strong the application looks from the available text, not whether YC actually accepted the company. If a historically not-accepted application has strong usage, founder insight, or interview-worthy evidence, a high score can be correct; the review should then explain the remaining risks that could matter in an interview or final decision.
+Separate `application strength` from `interview likelihood` when the distinction matters:
+
+- Application strength: how well the written application makes its case from the available text.
+- Interview likelihood: how likely the written case is to earn an interview, still as a text-only estimate and not an admissions prediction.
+
+If a historically not-accepted application has strong usage, founder insight, or interview-worthy evidence, a high application-strength score can be correct. Interview likelihood should still account for missing company proof, unclear switching behavior, weak retention evidence, batch timing, and whether YC can quickly see a non-incremental wedge. The review should explain the remaining risks that could matter in an interview or final decision instead of forcing the score to match the historical outcome.
 
 ## Evidence Ledger
 
@@ -35,7 +40,7 @@ A strong founder case can justify a higher interview-case score even when compan
 
 ## Score Movers
 
-When giving an interview-likelihood estimate, name the facts that would move the score.
+When giving an application-strength or interview-likelihood estimate, name the facts that would move each score.
 
 Examples that move a score up:
 
@@ -153,5 +158,7 @@ Use these bands softly, and include confidence:
 - `0.60-0.79`: plausible interview case. The application has real signal, but important proof, differentiation, or context is missing.
 - `0.40-0.59`: mixed or unclear. Some signal exists, but the application does not yet make the case quickly enough.
 - `0.00-0.39`: weak from the text alone. The product, user, proof, founder fit, or seriousness is too unclear.
+
+Use the word `likely` conservatively. A score in the high 0.60s can be a credible application and still be better labeled `borderline` if the company wedge, retention, switching behavior, or source-grounded proof is not clear.
 
 Do not let the score be the main deliverable. The value is the tailored evidence ledger, myth correction, source-grounded risks, and next questions.

@@ -9,6 +9,7 @@ Guides may cite bundled source files they depend on and should keep official YC 
 - `application-review.md` - maintained review rubric and source-grounded review passes.
 - `application-research.md` - public URL, founder profile, company profile, website/demo, and YC-directory research workflow for deeper application reviews.
 - `application-hygiene.md` - concise required-field, typo, link, video, demo, and directness checklist for application reviews.
+- `founder-advice-notes.md` - short source-grounded notes, tips, and application/interview advice selected per founder, stage, profile, question, or review issue.
 - `office-hours.md` - source-grounded office-hours mode for founder obstacles, worries, doubts, and advice requests.
 - `rejection-prep.md` - rejection, reapplication, acceptance-rate, myth-busting, and post-rejection review guidance.
 - `interview-prep.md` - maintained YC interview-prep guidance.

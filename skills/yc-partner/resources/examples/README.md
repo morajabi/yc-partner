@@ -11,3 +11,7 @@ Label every file with its public source and avoid including private application 
 - `doordash-s-application-video-for-yc-s13-Rzlr2tNSl0U.md` - public official YC upload of DoorDash's YC S13 application video.
 - `embark-trucks-application-video-for-yc-w16-8MdVFF5HU0g.md` - public official YC upload of Embark Trucks' YC W16 application video.
 - `weave-s-application-video-for-yc-w14-rpyvQJGcQGw.md` - public official YC upload of Weave's YC W14 application video.
+- `teespring-yc-w2013-application-video.md` - public official YC Library transcript of Teespring's YC W2013 application video.
+- `zenefits-yc-w2013-application-video.md` - public official YC Library transcript of Zenefits' YC W2013 application video.
+- `flip-yc-w2015-application-video.md` - public official YC Library transcript of Flip's YC W2015 application video.
+- `campus-job-yc-w2015-application-video.md` - public official YC Library transcript of Campus Job's YC W2015 application video.

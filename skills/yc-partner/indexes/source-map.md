@@ -2,6 +2,8 @@
 
 High-level source navigation.
 
+For cross-cutting review issues, use `themes.md` first, then come back here for folder-level navigation.
+
 ## YC Website
 
 - Folder: `../resources/yc-website/`
@@ -15,6 +17,7 @@ High-level source navigation.
   - `../resources/yc-website/why-didnt-my-group-get-an-interview.md` - official YC explanation of why many good applications do not receive interviews and why YC generally does not provide application feedback.
   - `../resources/yc-website/yc-rejection-email-excerpts-2024.md` - official YC rejection-email excerpts from screenshots: no individual feedback, encouragement to reapply, repeat-applicant stat, solo-founder cofounder-matching tip, and Work at a Startup tip.
   - `../resources/yc-website/yc-people-leadership.md` - concise official YC People roster for the President & CEO, managing partners, general partners, and retired founders, captured 2026-06-16.
+  - `../resources/yc-website/yc-library/` - official YC Startup Library video transcripts captured from public YC Library page payloads, including application tips on timing, not needing connections, including a demo, and Dalton Caldwell's "How to apply and succeed at YC."
 
 ## YC Requests for Startups
 
@@ -57,6 +60,13 @@ High-level source navigation.
 - Use for YC partner blogs, talks, and related material.
 - Source notes:
   - `../resources/yc-partners/garry-tan-3-tips-to-nail-the-y-combinator-interview-rfTgzA6iKZc.md` - Garry Tan YouTube video on YC interview preparation: problem, solution/team, market size, plain English, metrics, and interrupted-answer practice.
+  - `../resources/yc-partners/michael-seibel-how-to-email-early-stage-investors.md` - Michael Seibel on concise investor emails: clear company sentence, strongest reason to care, and direct ask.
+  - `../resources/yc-partners/michael-seibel-how-to-pitch-your-company.md` - Michael Seibel on company pitch clarity, market, progress, unique insight, business model, team, ask, and the email retelling test.
+  - `../resources/yc-partners/michael-seibel-yc-s-essential-startup-advice.md` - Geoff Ralston and Michael Seibel on YC's essential advice: launch now, talk to users, do things that do not scale, 90/10 solutions, customer love, focus, growth, and cofounder relationships.
+  - `../resources/yc-partners/sam-altman-applying-to-yc.md` - Sam Altman on applying to YC too early/late, reapplying, not needing a pre-existing YC relationship, and YC value across stages.
+  - `../resources/yc-partners/sam-altman-startup-advice.md` - Sam Altman's compact startup operating advice: make something people want, write code, talk to users, focus, product quality, speed, customer relationships, and execution.
+  - `../resources/yc-partners/sam-altman-the-worst-part-of-yc.md` - Sam Altman on rejection, capacity constraints, YC mistakes, not being deterred when users love the product, and reapplying after progress.
+  - `../resources/yc-partners/sam-altman-what-i-ve-learned-from-female-founders-so-far.md` - Sam Altman on female-founder outreach, equal standards, recognizing different confidence styles, and avoiding narrow founder stereotypes; use especially when responding to female founders or gendered founder doubts.
   - `../resources/yc-partners/startup-playbook/` - Sam Altman's public Startup Playbook, captured from `https://playbook.samaltman.com/` on 2026-06-16 and split into introduction plus chapter files.
 
 ## Tweets
@@ -144,6 +154,10 @@ High-level source navigation.
 - Source notes:
   - `../resources/examples/doordash-s-application-video-for-yc-s13-Rzlr2tNSl0U.md` - public official YC upload of DoorDash's YC S13 application video, useful as an example of customer discovery, manual founder work, and early paying-customer traction.
   - `../resources/examples/embark-trucks-application-video-for-yc-w16-8MdVFF5HU0g.md` - public official YC upload of Embark Trucks' YC W16 application video, useful as an example of founder/team technical credibility and prototype proof.
+  - `../resources/examples/teespring-yc-w2013-application-video.md` - public official YC Library transcript of Teespring's YC W2013 application video, useful as an example of concise product, traction, revenue, growth, and a clear YC ask.
+  - `../resources/examples/zenefits-yc-w2013-application-video.md` - public official YC Library transcript of Zenefits' YC W2013 application video, useful as a B2B example with workflow, regulatory timing, founder background, and business-model detail.
+  - `../resources/examples/flip-yc-w2015-application-video.md` - public official YC Library transcript of Flip's YC W2015 application video, useful as an example of founder-market fit and a narrow marketplace wedge.
+  - `../resources/examples/campus-job-yc-w2015-application-video.md` - public official YC Library transcript of Campus Job's YC W2015 application video, useful as a marketplace example with supply/demand traction and founder roles.
   - `../resources/examples/getintoyc/` - 36 public Get into YC applications labeled Successful, captured 2026-06-16 as one Markdown file per company.
   - `../resources/examples/lago-yc-application.md` - public Lago blog post with the successful application that got Lago into YC S21.
   - `../resources/examples/weave-s-application-video-for-yc-w14-rpyvQJGcQGw.md` - public official YC upload of Weave's YC W14 application video, useful as an example of clear product description, vertical focus, traction, revenue, and technical progress.

@@ -178,8 +178,13 @@ def build_candidate_prompt(fixture: Fixture) -> str:
           distribution, and competitive context.
         - Split founder signal, company signal, and application signal. If one
           is much stronger than another, say that directly.
-        - Estimate how strong the application text is as an interview case.
-          This is a text-only estimate, not an admissions prediction.
+        - Estimate application_strength first: how strong the written case is
+          from the text alone, independent of the hidden historical outcome.
+        - Separately estimate interview_likelihood: how likely this text is to
+          earn an interview, not an admissions prediction. Interview likelihood
+          can be lower than application strength when the founder case is strong
+          but the company wedge, retention, switching reason, or source-grounded
+          proof is still thin.
         - Do not treat high usage or high revenue as automatically strong.
           Ask whether the evidence is retained, urgent, monetizable, defensible,
           and tied to a large-company path.
@@ -214,8 +219,11 @@ def build_candidate_prompt(fixture: Fixture) -> str:
         - evidence_ledger: short text for every required evidence category
         - signal_split: founder_signal, company_signal, application_signal,
           and the main gap between them
-        - interview_likelihood: 0.0 to 1.0
-        - verdict: "likely", "borderline", or "unlikely"
+        - application_strength: 0.0 to 1.0 for the written application case
+        - interview_likelihood: 0.0 to 1.0 for text-only interview likelihood
+        - verdict: "likely", "borderline", or "unlikely"; use "likely"
+          when interview_likelihood is >= 0.72, "unlikely" when it is <= 0.40,
+          and "borderline" otherwise
         - score_caveat: one sentence explaining that this is a text-only
           estimate and naming what could move it
         - score_movers: concrete facts that could move the score up or down
@@ -326,8 +334,18 @@ def run_heuristic_candidate(fixture: Fixture) -> tuple[str, dict[str, Any]]:
     if "revenue" in lower and re.search(r"\$|\bpaid|paying\b", lower):
         score += 0.05
 
-    score = max(0.05, min(0.92, score))
-    verdict = "likely" if score >= 0.66 else "unlikely" if score <= 0.4 else "borderline"
+    application_strength = max(0.05, min(0.92, score))
+    interview_score = application_strength
+    if no_traction_terms or not numbers:
+        interview_score -= 0.04
+    if vague_terms:
+        interview_score -= min(len(set(term.lower() for term in vague_terms)), 5) * 0.01
+    if not learning_terms:
+        interview_score -= 0.03
+    if "competitor" not in lower and "substitutes" not in lower:
+        interview_score -= 0.02
+    interview_score = max(0.05, min(0.92, interview_score))
+    verdict = "likely" if interview_score >= 0.72 else "unlikely" if interview_score <= 0.4 else "borderline"
 
     positives = []
     if numbers:
@@ -372,9 +390,10 @@ def run_heuristic_candidate(fixture: Fixture) -> tuple[str, dict[str, Any]]:
             "application_signal": "Application signal is inferred from clarity, directness, metric quality, and completeness of answers.",
             "main_gap": "The main gap should name whether founder strength, company evidence, or application clarity is the limiting factor.",
         },
-        "interview_likelihood": round(score, 2),
+        "application_strength": round(application_strength, 2),
+        "interview_likelihood": round(interview_score, 2),
         "verdict": verdict,
-        "score_caveat": "This is a text-only estimate from the application; stronger source-backed user learning, retention, founder insight, or sector context could move it up or down.",
+        "score_caveat": "Application strength and interview likelihood are text-only estimates; stronger source-backed user learning, retention, founder insight, or sector context could move either number up or down.",
         "score_movers": {
             "could_move_up": [
                 "Retained active usage for the core workflow with clear denominators.",
@@ -489,7 +508,7 @@ def has_ghostwriting(parsed: dict[str, Any] | None) -> list[str]:
 def verdict_consistent(score: float | None, verdict: Any) -> bool:
     if not isinstance(score, (int, float)) or not isinstance(verdict, str):
         return False
-    if score >= 0.66:
+    if score >= 0.72:
         return verdict == "likely"
     if score <= 0.4:
         return verdict == "unlikely"
@@ -546,8 +565,10 @@ def response_quality(fixture: Fixture, parsed: dict[str, Any] | None, parse_erro
         return 0.0, [parse_error or "parse failed"]
 
     checks: list[tuple[str, bool]] = []
+    application_strength = parsed.get("application_strength")
     score = parsed.get("interview_likelihood")
-    checks.append(("score_range", isinstance(score, (int, float)) and 0 <= score <= 1))
+    checks.append(("application_strength_range", isinstance(application_strength, (int, float)) and 0 <= application_strength <= 1))
+    checks.append(("interview_likelihood_range", isinstance(score, (int, float)) and 0 <= score <= 1))
     checks.append(("verdict_consistent", verdict_consistent(float(score) if isinstance(score, (int, float)) else None, parsed.get("verdict"))))
     checks.append(("score_caveat", isinstance(parsed.get("score_caveat"), str) and len(parsed["score_caveat"].strip()) >= 30))
     ledger = parsed.get("evidence_ledger")
@@ -700,6 +721,16 @@ def mean(values: list[float]) -> float | None:
 
 
 def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -> dict[str, Any]:
+    success_strengths = [
+        row["application_strength"]
+        for row in per_fixture
+        if row["expected_outcome"] == "successful" and isinstance(row.get("application_strength"), (int, float))
+    ]
+    unsuccessful_strengths = [
+        row["application_strength"]
+        for row in per_fixture
+        if row["expected_outcome"] == "unsuccessful" and isinstance(row.get("application_strength"), (int, float))
+    ]
     success_scores = [
         row["interview_likelihood"]
         for row in per_fixture
@@ -713,6 +744,9 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
     mean_success = mean(success_scores)
     mean_unsuccessful = mean(unsuccessful_scores)
     score_gap = None if mean_success is None or mean_unsuccessful is None else mean_success - mean_unsuccessful
+    mean_success_strength = mean(success_strengths)
+    mean_unsuccessful_strength = mean(unsuccessful_strengths)
+    strength_gap = None if mean_success_strength is None or mean_unsuccessful_strength is None else mean_success_strength - mean_unsuccessful_strength
     auc_value = auc(per_fixture)
     quality_scores = [row["quality_score"] for row in per_fixture]
     quality_mean = mean(quality_scores) or 0.0
@@ -759,6 +793,9 @@ def summarize(per_fixture: list[dict[str, Any]], thresholds: dict[str, float]) -
         "count": len(per_fixture),
         "successful_count": len([row for row in per_fixture if row["expected_outcome"] == "successful"]),
         "unsuccessful_count": len([row for row in per_fixture if row["expected_outcome"] == "unsuccessful"]),
+        "mean_successful_application_strength": round(mean_success_strength, 4) if mean_success_strength is not None else None,
+        "mean_unsuccessful_application_strength": round(mean_unsuccessful_strength, 4) if mean_unsuccessful_strength is not None else None,
+        "application_strength_gap": round(strength_gap, 4) if strength_gap is not None else None,
         "mean_successful_score": round(mean_success, 4) if mean_success is not None else None,
         "mean_unsuccessful_score": round(mean_unsuccessful, 4) if mean_unsuccessful is not None else None,
         "score_gap": round(score_gap, 4) if score_gap is not None else None,
@@ -793,8 +830,14 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         leak_patterns = has_leak(raw, parsed)
         ghostwriting_patterns = has_ghostwriting(parsed)
         quality_score, quality_failures = response_quality(fixture, parsed, parse_error)
+        application_strength = parsed.get("application_strength") if parsed else None
         score = parsed.get("interview_likelihood") if parsed else None
-        range_failure = not isinstance(score, (int, float)) or not 0 <= score <= 1
+        range_failure = (
+            not isinstance(application_strength, (int, float))
+            or not 0 <= application_strength <= 1
+            or not isinstance(score, (int, float))
+            or not 0 <= score <= 1
+        )
 
         expected = fixture.expected
         row = {
@@ -803,6 +846,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             "source": fixture.source,
             "expected_outcome": expected["known_outcome"],
             "score_band": expected.get("score_band"),
+            "application_strength": round(float(application_strength), 4) if isinstance(application_strength, (int, float)) and math.isfinite(application_strength) else None,
             "interview_likelihood": round(float(score), 4) if isinstance(score, (int, float)) and math.isfinite(score) else None,
             "verdict": parsed.get("verdict") if parsed else None,
             "parse_error": parse_error,
@@ -891,6 +935,7 @@ def main() -> int:
     print(f"Wrote receipt to {out_path}")
     print(f"Verdict: {aggregate['verdict']}")
     print(f"Fixtures: {aggregate['count']} ({aggregate['successful_count']} successful / {aggregate['unsuccessful_count']} unsuccessful)")
+    print(f"Mean application strength: successful={aggregate['mean_successful_application_strength']} unsuccessful={aggregate['mean_unsuccessful_application_strength']} gap={aggregate['application_strength_gap']}")
     print(f"Mean scores: successful={aggregate['mean_successful_score']} unsuccessful={aggregate['mean_unsuccessful_score']} gap={aggregate['score_gap']}")
     print(f"AUC: {aggregate['auc']}")
     print(f"Calibration gated: {aggregate['calibration_gated']}")

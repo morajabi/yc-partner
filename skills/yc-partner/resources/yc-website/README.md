@@ -4,4 +4,5 @@ Processed Markdown from YC website pages, YC blog posts, YC application pages, Y
 
 Use these first for YC-specific guidance.
 
+- `yc-library/` - official YC Startup Library video transcripts, captured from public YC Library page payloads with underlying YouTube URLs preserved.
 - `yc-rejection-email-excerpts-2024.md` - screenshot-derived official YC rejection-email excerpts for reapplying, repeat applicants, solo-founder cofounder matching, and Work at a Startup.
