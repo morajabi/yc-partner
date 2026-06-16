@@ -318,29 +318,21 @@ function buildTranscriptMarkdown(options) {
       ? relative(cwd, audioFiles[0])
       : audioFiles.map((filePath) => relative(cwd, filePath)).join(", ");
 
-  return `---
-title: ${yamlString(title)}
-source_type: private ${kind} video transcript
-source_status: private user-provided
-source_file: ${yamlString(relative(cwd, sourcePath))}
-audio_file: ${yamlString(relative(cwd, audioPath))}
-uploaded_audio: ${yamlString(uploadedAudio)}
-processed_date: ${yamlString(processedDate)}
-processing_method: ${yamlString("ffmpeg audio extraction, then OpenAI audio transcription")}
-model: ${yamlString(model)}
-language: ${yamlString(language ?? "auto")}
----
+  return `# ${title}
 
-# ${title}
+- Type: private ${kind} video transcript
+- Status: private local review material
+- Source: \`${relative(cwd, sourcePath)}\`
+- Captured: ${processedDate}
+- Method: ffmpeg audio extraction, then OpenAI audio transcription; model \`${model}\`; language \`${language ?? "auto"}\`
+- Caveat: references/caveats/private-local-material.md
 
-Private user-provided transcript. Keep this out of public repositories unless the founder explicitly chooses to publish it.
+## Summary
 
-## Transcription Context
-
-- Source video: \`${relative(cwd, sourcePath)}\`
+- Keep this transcript out of public repositories unless the founder explicitly chooses to publish it.
 - Extracted audio: \`${relative(cwd, audioPath)}\`
-- Model: \`${model}\`
-- Prompt used: ${prompt ? yamlString(prompt) : "none"}
+- Uploaded audio: \`${uploadedAudio}\`
+- Prompt: ${prompt ? yamlString(prompt) : "none"}
 
 ## Transcript
 

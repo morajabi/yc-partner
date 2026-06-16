@@ -1,0 +1,6361 @@
+[
+  {
+    "group_partner": {
+      "id": 9999,
+      "full_name": "Gustaf Alstromer",
+      "url": "https://www.ycombinator.com/people/gustaf-alstromer"
+    },
+    "company_count": 352,
+    "top_industries": [
+      [
+        "B2B",
+        193
+      ],
+      [
+        "Industrials",
+        47
+      ],
+      [
+        "Fintech",
+        37
+      ],
+      [
+        "Healthcare",
+        30
+      ],
+      [
+        "Consumer",
+        26
+      ],
+      [
+        "Real Estate and Construction",
+        10
+      ],
+      [
+        "Education",
+        5
+      ],
+      [
+        "Government",
+        4
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        193
+      ],
+      [
+        "Industrials",
+        47
+      ],
+      [
+        "Fintech",
+        37
+      ],
+      [
+        "Engineering, Product and Design",
+        37
+      ],
+      [
+        "Healthcare",
+        30
+      ],
+      [
+        "Consumer",
+        26
+      ],
+      [
+        "Climate",
+        22
+      ],
+      [
+        "Productivity",
+        13
+      ],
+      [
+        "Operations",
+        13
+      ],
+      [
+        "Finance and Accounting",
+        13
+      ],
+      [
+        "Payments",
+        12
+      ],
+      [
+        "Healthcare IT",
+        12
+      ],
+      [
+        "Supply Chain and Logistics",
+        11
+      ],
+      [
+        "Energy",
+        11
+      ],
+      [
+        "Real Estate and Construction",
+        10
+      ]
+    ],
+    "top_tags": [
+      [
+        "B2B",
+        84
+      ],
+      [
+        "SaaS",
+        79
+      ],
+      [
+        "Artificial Intelligence",
+        67
+      ],
+      [
+        "AI",
+        51
+      ],
+      [
+        "Fintech",
+        50
+      ],
+      [
+        "Climate",
+        48
+      ],
+      [
+        "Developer Tools",
+        22
+      ],
+      [
+        "E-commerce",
+        17
+      ],
+      [
+        "Marketplace",
+        15
+      ],
+      [
+        "Generative AI",
+        13
+      ],
+      [
+        "Machine Learning",
+        13
+      ],
+      [
+        "Consumer",
+        13
+      ],
+      [
+        "API",
+        12
+      ],
+      [
+        "Energy",
+        11
+      ],
+      [
+        "Enterprise Software",
+        10
+      ],
+      [
+        "AI Assistant",
+        10
+      ],
+      [
+        "HR Tech",
+        10
+      ],
+      [
+        "Analytics",
+        10
+      ],
+      [
+        "Logistics",
+        9
+      ],
+      [
+        "Open Source",
+        9
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2022",
+        39
+      ],
+      [
+        "Summer 2020",
+        31
+      ],
+      [
+        "Winter 2023",
+        29
+      ],
+      [
+        "Summer 2021",
+        25
+      ],
+      [
+        "Summer 2022",
+        24
+      ],
+      [
+        "Winter 2021",
+        24
+      ],
+      [
+        "Winter 2026",
+        24
+      ],
+      [
+        "Winter 2025",
+        23
+      ],
+      [
+        "Winter 2024",
+        21
+      ],
+      [
+        "Summer 2024",
+        19
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        287
+      ],
+      [
+        "Growth",
+        65
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Parametric",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/parametric",
+        "one_liner": "Physical businesses that run themselves",
+        "sectors": [
+          "Industrials",
+          "Manufacturing and Robotics"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Xendit",
+        "batch": "Summer 2015",
+        "url": "https://www.ycombinator.com/companies/xendit",
+        "one_liner": "Provides payment infrastructure for Southeast Asia",
+        "sectors": [
+          "Fintech",
+          "Payments"
+        ],
+        "tags": [
+          "Fintech",
+          "Payments"
+        ]
+      },
+      {
+        "name": "FAZZ",
+        "batch": "Summer 2017",
+        "url": "https://www.ycombinator.com/companies/fazz",
+        "one_liner": "All-in-one Finance for Every Southeast Asia Business",
+        "sectors": [
+          "Fintech"
+        ],
+        "tags": [
+          "Fintech",
+          "Payments",
+          "Neobank"
+        ]
+      },
+      {
+        "name": "Meetingbird",
+        "batch": "Summer 2017",
+        "url": "https://www.ycombinator.com/companies/meetingbird",
+        "one_liner": "Automated meeting scheduling for teams",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Scheduling"
+        ]
+      },
+      {
+        "name": "Anima App",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/anima-app",
+        "one_liner": "Design to Code & On-brand Vibe-coding",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "SaaS",
+          "B2B",
+          "Design Tools"
+        ]
+      },
+      {
+        "name": "BlueCargo",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/bluecargo",
+        "one_liner": "The automated solution for complex freight transactions.",
+        "sectors": [
+          "B2B",
+          "Supply Chain and Logistics"
+        ],
+        "tags": [
+          "Logistics",
+          "Supply Chain"
+        ]
+      },
+      {
+        "name": "BrainHi",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/brainhi",
+        "one_liner": "Automated receptionist that answers missed calls for local businesses ",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS"
+        ]
+      },
+      {
+        "name": "Canary Technologies",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/canary-technologies",
+        "one_liner": "Modernizing the hospitality tech stack. ",
+        "sectors": [
+          "B2B",
+          "Operations"
+        ],
+        "tags": [
+          "SaaS"
+        ]
+      },
+      {
+        "name": "Easol",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/easol",
+        "one_liner": "Shopify for experiences ",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "SaaS",
+          "Travel",
+          "E-commerce",
+          "Creator Economy"
+        ]
+      },
+      {
+        "name": "Khatabook",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/khatabook",
+        "one_liner": "Manage your ledgers and avail Financial Services like Lending on your…",
+        "sectors": [
+          "Fintech",
+          "Payments"
+        ],
+        "tags": [
+          "Fintech"
+        ]
+      },
+      {
+        "name": "Leena AI",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/leena-ai",
+        "one_liner": "We at Leena AI build a virtual assistant that answers employee's…",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Generative AI",
+          "Chatbot",
+          "Enterprise Software",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Mark Cuban Cost Plus Drug Company, PBC",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/mark-cuban-cost-plus-drug-company-pbc",
+        "one_liner": "Making low cost versions of high cost generic drugs.",
+        "sectors": [
+          "Healthcare",
+          "Consumer Health and Wellness"
+        ],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 28441,
+      "full_name": "Jared Friedman",
+      "url": "https://www.ycombinator.com/people/jared-friedman"
+    },
+    "company_count": 346,
+    "top_industries": [
+      [
+        "B2B",
+        180
+      ],
+      [
+        "Healthcare",
+        70
+      ],
+      [
+        "Consumer",
+        35
+      ],
+      [
+        "Industrials",
+        27
+      ],
+      [
+        "Fintech",
+        24
+      ],
+      [
+        "Real Estate and Construction",
+        6
+      ],
+      [
+        "Education",
+        4
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        180
+      ],
+      [
+        "Healthcare",
+        70
+      ],
+      [
+        "Engineering, Product and Design",
+        44
+      ],
+      [
+        "Consumer",
+        35
+      ],
+      [
+        "Infrastructure",
+        27
+      ],
+      [
+        "Industrials",
+        27
+      ],
+      [
+        "Fintech",
+        24
+      ],
+      [
+        "Therapeutics",
+        14
+      ],
+      [
+        "Productivity",
+        13
+      ],
+      [
+        "Healthcare IT",
+        12
+      ],
+      [
+        "Operations",
+        12
+      ],
+      [
+        "Supply Chain and Logistics",
+        11
+      ],
+      [
+        "Aviation and Space",
+        10
+      ],
+      [
+        "Drug Discovery and Delivery",
+        9
+      ],
+      [
+        "Manufacturing and Robotics",
+        9
+      ]
+    ],
+    "top_tags": [
+      [
+        "Artificial Intelligence",
+        72
+      ],
+      [
+        "B2B",
+        63
+      ],
+      [
+        "AI",
+        61
+      ],
+      [
+        "SaaS",
+        60
+      ],
+      [
+        "Developer Tools",
+        42
+      ],
+      [
+        "Healthcare",
+        28
+      ],
+      [
+        "Fintech",
+        27
+      ],
+      [
+        "Biotech",
+        21
+      ],
+      [
+        "Consumer",
+        19
+      ],
+      [
+        "Machine Learning",
+        18
+      ],
+      [
+        "Generative AI",
+        17
+      ],
+      [
+        "Open Source",
+        15
+      ],
+      [
+        "Marketplace",
+        13
+      ],
+      [
+        "Enterprise Software",
+        13
+      ],
+      [
+        "Health Tech",
+        13
+      ],
+      [
+        "AI Assistant",
+        13
+      ],
+      [
+        "Logistics",
+        11
+      ],
+      [
+        "Therapeutics",
+        11
+      ],
+      [
+        "Consumer Health Services",
+        11
+      ],
+      [
+        "Robotics",
+        11
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2023",
+        37
+      ],
+      [
+        "Winter 2021",
+        33
+      ],
+      [
+        "Winter 2026",
+        31
+      ],
+      [
+        "Winter 2025",
+        29
+      ],
+      [
+        "Winter 2024",
+        28
+      ],
+      [
+        "Summer 2025",
+        27
+      ],
+      [
+        "Summer 2023",
+        23
+      ],
+      [
+        "Summer 2021",
+        22
+      ],
+      [
+        "Summer 2022",
+        20
+      ],
+      [
+        "Summer 2024",
+        20
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        276
+      ],
+      [
+        "Growth",
+        70
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Bird",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/bird",
+        "one_liner": "The world’s largest omnichannel communications platform",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Messaging",
+          "API"
+        ]
+      },
+      {
+        "name": "CareRev",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/carerev",
+        "one_liner": "Seamlessly connecting healthcare facilities and professionals through…",
+        "sectors": [
+          "Healthcare",
+          "Healthcare Services"
+        ],
+        "tags": [
+          "Marketplace",
+          "Healthcare",
+          "Enterprise Software"
+        ]
+      },
+      {
+        "name": "Flutterwave",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/flutterwave",
+        "one_liner": "Helping businesses make and accept payments from anywhere in Africa.",
+        "sectors": [
+          "Fintech",
+          "Payments"
+        ],
+        "tags": [
+          "Fintech"
+        ]
+      },
+      {
+        "name": "Nova Credit",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/nova-credit",
+        "one_liner": "Bridging a world of consumer-permissioned credit data",
+        "sectors": [
+          "Fintech",
+          "Credit and Lending"
+        ],
+        "tags": [
+          "Fintech",
+          "Data Science"
+        ]
+      },
+      {
+        "name": "OneChronos",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/onechronos",
+        "one_liner": "The Smart Market for Institutional Investors",
+        "sectors": [
+          "Fintech",
+          "Banking and Exchange"
+        ],
+        "tags": [
+          "Fintech",
+          "Marketplace",
+          "AI"
+        ]
+      },
+      {
+        "name": "Rose Rocket",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/rose-rocket",
+        "one_liner": "Rose Rocket is ERP software for trucking companies.",
+        "sectors": [
+          "B2B",
+          "Supply Chain and Logistics"
+        ],
+        "tags": [
+          "Logistics",
+          "Enterprise Software"
+        ]
+      },
+      {
+        "name": "Scale AI",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/scale-ai",
+        "one_liner": "Data-centric infrastructure to accelerate the development of AI ",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Vetcove",
+        "batch": "Summer 2016",
+        "url": "https://www.ycombinator.com/companies/vetcove",
+        "one_liner": "Powering the animal health supply chain.",
+        "sectors": [
+          "B2B",
+          "Supply Chain and Logistics"
+        ],
+        "tags": [
+          "Marketplace",
+          "B2B",
+          "Healthcare",
+          "E-commerce",
+          "Enterprise Software"
+        ]
+      },
+      {
+        "name": "BillionToOne",
+        "batch": "Summer 2017",
+        "url": "https://www.ycombinator.com/companies/billiontoone",
+        "one_liner": "The genetic testing platform detecting and measuring disease.",
+        "sectors": [
+          "Healthcare",
+          "Diagnostics"
+        ],
+        "tags": [
+          "Diagnostics",
+          "Genomics"
+        ]
+      },
+      {
+        "name": "Curebase",
+        "batch": "Summer 2018",
+        "url": "https://www.ycombinator.com/companies/curebase",
+        "one_liner": "Modern, AI-powered clinical trial software platform.",
+        "sectors": [
+          "Healthcare",
+          "Healthcare Services"
+        ],
+        "tags": [
+          "Healthcare"
+        ]
+      },
+      {
+        "name": "Asher Bio",
+        "batch": "Summer 2019",
+        "url": "https://www.ycombinator.com/companies/asher-bio",
+        "one_liner": "We build better immunotherapies",
+        "sectors": [
+          "Healthcare",
+          "Therapeutics"
+        ],
+        "tags": [
+          "Biotech"
+        ]
+      },
+      {
+        "name": "Bun",
+        "batch": "Summer 2019",
+        "url": "https://www.ycombinator.com/companies/bun",
+        "one_liner": "Bun is an incredibly fast all-in-one JavaScript toolkit",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Developer Tools",
+          "Open Source"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 23162,
+      "full_name": "Brad Flora",
+      "url": "https://www.ycombinator.com/people/brad-flora"
+    },
+    "company_count": 311,
+    "top_industries": [
+      [
+        "B2B",
+        194
+      ],
+      [
+        "Fintech",
+        47
+      ],
+      [
+        "Industrials",
+        22
+      ],
+      [
+        "Consumer",
+        20
+      ],
+      [
+        "Real Estate and Construction",
+        11
+      ],
+      [
+        "Healthcare",
+        11
+      ],
+      [
+        "Government",
+        4
+      ],
+      [
+        "Education",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        194
+      ],
+      [
+        "Fintech",
+        47
+      ],
+      [
+        "Engineering, Product and Design",
+        38
+      ],
+      [
+        "Industrials",
+        22
+      ],
+      [
+        "Consumer",
+        20
+      ],
+      [
+        "Infrastructure",
+        19
+      ],
+      [
+        "Payments",
+        14
+      ],
+      [
+        "Analytics",
+        13
+      ],
+      [
+        "Finance and Accounting",
+        12
+      ],
+      [
+        "Real Estate and Construction",
+        11
+      ],
+      [
+        "Healthcare",
+        11
+      ],
+      [
+        "Productivity",
+        10
+      ],
+      [
+        "Sales",
+        10
+      ],
+      [
+        "Marketing",
+        9
+      ],
+      [
+        "Retail",
+        8
+      ]
+    ],
+    "top_tags": [
+      [
+        "B2B",
+        91
+      ],
+      [
+        "SaaS",
+        78
+      ],
+      [
+        "AI",
+        61
+      ],
+      [
+        "Fintech",
+        54
+      ],
+      [
+        "Artificial Intelligence",
+        49
+      ],
+      [
+        "Developer Tools",
+        38
+      ],
+      [
+        "Payments",
+        18
+      ],
+      [
+        "Consumer",
+        18
+      ],
+      [
+        "Generative AI",
+        18
+      ],
+      [
+        "Marketplace",
+        14
+      ],
+      [
+        "Machine Learning",
+        12
+      ],
+      [
+        "Enterprise",
+        12
+      ],
+      [
+        "Data Engineering",
+        12
+      ],
+      [
+        "Proptech",
+        11
+      ],
+      [
+        "Sales",
+        10
+      ],
+      [
+        "Enterprise Software",
+        10
+      ],
+      [
+        "Computer Vision",
+        9
+      ],
+      [
+        "API",
+        9
+      ],
+      [
+        "Crypto / Web3",
+        9
+      ],
+      [
+        "Productivity",
+        8
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2022",
+        41
+      ],
+      [
+        "Winter 2023",
+        40
+      ],
+      [
+        "Summer 2022",
+        34
+      ],
+      [
+        "Summer 2025",
+        25
+      ],
+      [
+        "Winter 2026",
+        25
+      ],
+      [
+        "Winter 2021",
+        24
+      ],
+      [
+        "Summer 2021",
+        21
+      ],
+      [
+        "Summer 2024",
+        20
+      ],
+      [
+        "Summer 2020",
+        19
+      ],
+      [
+        "Winter 2025",
+        19
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        262
+      ],
+      [
+        "Growth",
+        49
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Null Labs",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/null-labs",
+        "one_liner": "End-to-end Simulation for Defense Autonomy",
+        "sectors": [
+          "Industrials",
+          "Defense"
+        ],
+        "tags": [
+          "Robotics",
+          "Aerospace"
+        ]
+      },
+      {
+        "name": "Skyways",
+        "batch": "Summer 2017",
+        "url": "https://www.ycombinator.com/companies/skyways",
+        "one_liner": "Creating a new form of air transportation to advance our civilization",
+        "sectors": [
+          "Industrials",
+          "Drones"
+        ],
+        "tags": [
+          "Air Taxis",
+          "Robotics",
+          "Computer Vision",
+          "AI",
+          "ML"
+        ]
+      },
+      {
+        "name": "CoLab",
+        "batch": "Summer 2019",
+        "url": "https://www.ycombinator.com/companies/colab",
+        "one_liner": "Human and AI design review for hardware",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Hardware",
+          "SaaS",
+          "Collaboration"
+        ]
+      },
+      {
+        "name": "Courier",
+        "batch": "Summer 2019",
+        "url": "https://www.ycombinator.com/companies/courier",
+        "one_liner": "The fastest way for developers to build notifications for their app.",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "Messaging"
+        ]
+      },
+      {
+        "name": "Akiflow",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/akiflow",
+        "one_liner": "All your tasks and calendars into an AI-powered productivity app",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Productivity"
+        ]
+      },
+      {
+        "name": "Bits",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/bits",
+        "one_liner": "Bits is a credit card designed to help people build credit",
+        "sectors": [
+          "Fintech",
+          "Consumer Finance"
+        ],
+        "tags": [
+          "Fintech"
+        ]
+      },
+      {
+        "name": "Blue Onion",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/blue-onion",
+        "one_liner": "Financial data layer for AI-powered finance and accounting",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": [
+          "Machine Learning",
+          "Finance",
+          "AI"
+        ]
+      },
+      {
+        "name": "Conta Simples",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/conta-simples",
+        "one_liner": "All-in-one financial platform for latam Startups and SMBs.",
+        "sectors": [
+          "Fintech",
+          "Banking and Exchange"
+        ],
+        "tags": [
+          "Fintech",
+          "Latin America",
+          "SMB"
+        ]
+      },
+      {
+        "name": "Finch",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/finch",
+        "one_liner": "Finch is the Employment Data Platform",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Fintech",
+          "HR Tech",
+          "API"
+        ]
+      },
+      {
+        "name": "Formal",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/formal",
+        "one_liner": "Take control of your data in real-time.",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Cybersecurity"
+        ]
+      },
+      {
+        "name": "Hellometer",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/hellometer",
+        "one_liner": "Making fast food faster",
+        "sectors": [
+          "B2B",
+          "Retail"
+        ],
+        "tags": [
+          "SaaS",
+          "Computer Vision",
+          "B2B"
+        ]
+      },
+      {
+        "name": "Heron Data",
+        "batch": "Summer 2020",
+        "url": "https://www.ycombinator.com/companies/heron-data",
+        "one_liner": "We automate document-heavy workflows in financial services and beyond",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Fintech",
+          "SaaS",
+          "B2B",
+          "AI"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 5630,
+      "full_name": "Aaron Epstein",
+      "url": "https://www.ycombinator.com/people/aaron-epstein"
+    },
+    "company_count": 277,
+    "top_industries": [
+      [
+        "B2B",
+        167
+      ],
+      [
+        "Fintech",
+        35
+      ],
+      [
+        "Consumer",
+        28
+      ],
+      [
+        "Industrials",
+        19
+      ],
+      [
+        "Healthcare",
+        17
+      ],
+      [
+        "Real Estate and Construction",
+        7
+      ],
+      [
+        "Education",
+        3
+      ],
+      [
+        "Government",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        167
+      ],
+      [
+        "Engineering, Product and Design",
+        41
+      ],
+      [
+        "Fintech",
+        35
+      ],
+      [
+        "Consumer",
+        28
+      ],
+      [
+        "Industrials",
+        19
+      ],
+      [
+        "Healthcare",
+        17
+      ],
+      [
+        "Productivity",
+        14
+      ],
+      [
+        "Operations",
+        12
+      ],
+      [
+        "Infrastructure",
+        12
+      ],
+      [
+        "Marketing",
+        8
+      ],
+      [
+        "Finance and Accounting",
+        8
+      ],
+      [
+        "Real Estate and Construction",
+        7
+      ],
+      [
+        "Healthcare IT",
+        7
+      ],
+      [
+        "Housing and Real Estate",
+        6
+      ],
+      [
+        "Retail",
+        6
+      ]
+    ],
+    "top_tags": [
+      [
+        "B2B",
+        66
+      ],
+      [
+        "SaaS",
+        62
+      ],
+      [
+        "Artificial Intelligence",
+        48
+      ],
+      [
+        "Fintech",
+        45
+      ],
+      [
+        "AI",
+        44
+      ],
+      [
+        "Developer Tools",
+        25
+      ],
+      [
+        "Generative AI",
+        19
+      ],
+      [
+        "Consumer",
+        17
+      ],
+      [
+        "Marketplace",
+        16
+      ],
+      [
+        "Machine Learning",
+        15
+      ],
+      [
+        "API",
+        13
+      ],
+      [
+        "Open Source",
+        12
+      ],
+      [
+        "Productivity",
+        11
+      ],
+      [
+        "Finance",
+        9
+      ],
+      [
+        "Analytics",
+        9
+      ],
+      [
+        "AI Assistant",
+        8
+      ],
+      [
+        "Design Tools",
+        8
+      ],
+      [
+        "E-commerce",
+        8
+      ],
+      [
+        "Marketing",
+        7
+      ],
+      [
+        "Data Engineering",
+        7
+      ]
+    ],
+    "top_batches": [
+      [
+        "Summer 2021",
+        32
+      ],
+      [
+        "Winter 2023",
+        29
+      ],
+      [
+        "Spring 2026",
+        27
+      ],
+      [
+        "Winter 2022",
+        27
+      ],
+      [
+        "Winter 2021",
+        24
+      ],
+      [
+        "Fall 2025",
+        23
+      ],
+      [
+        "Winter 2025",
+        23
+      ],
+      [
+        "Summer 2020",
+        22
+      ],
+      [
+        "Summer 2024",
+        18
+      ],
+      [
+        "Summer 2022",
+        13
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        229
+      ],
+      [
+        "Growth",
+        48
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Absurd",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/absurd",
+        "one_liner": "AI Videos",
+        "sectors": [
+          "B2B",
+          "Marketing"
+        ],
+        "tags": [
+          "Generative AI",
+          "Video",
+          "Media",
+          "Marketing",
+          "Advertising"
+        ]
+      },
+      {
+        "name": "AirCaps",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/aircaps",
+        "one_liner": "The AI copilot for in-person conversations.",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Antigen",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/antigen",
+        "one_liner": "Continuous offensive security for the enterprise.",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Cybersecurity",
+          "AI"
+        ]
+      },
+      {
+        "name": "Aspect",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/aspect-inc",
+        "one_liner": "Intelligent media storage for creative teams.",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Computer Vision",
+          "B2B",
+          "Video",
+          "Media",
+          "AI"
+        ]
+      },
+      {
+        "name": "Automax.ai",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/automax-ai",
+        "one_liner": "AI native real-estate appraisal firm",
+        "sectors": [
+          "Real Estate and Construction",
+          "Housing and Real Estate"
+        ],
+        "tags": [
+          "B2B",
+          "Proptech"
+        ]
+      },
+      {
+        "name": "Caddy",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/caddy",
+        "one_liner": "Your partner for everyday work, lives in iMessage",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Inspector",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/inspector",
+        "one_liner": "AI IDE for front-end development",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "Design",
+          "Design Tools"
+        ]
+      },
+      {
+        "name": "Lapis",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/lapis",
+        "one_liner": "AI that creates and runs ads, end-end",
+        "sectors": [
+          "B2B",
+          "Marketing"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "B2B",
+          "Marketing",
+          "Advertising",
+          "AI"
+        ]
+      },
+      {
+        "name": "Locus",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/locus",
+        "one_liner": "Payment infrastructure for AI agents",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Finance",
+          "AI"
+        ]
+      },
+      {
+        "name": "Logical",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/logical",
+        "one_liner": "A proactive desktop copilot. Clippy, but actually good.",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Consumer",
+          "B2B",
+          "Productivity",
+          "AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "LunaBill",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/lunabill",
+        "one_liner": "AI Voice callers for healthcare billing teams",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": [
+          "Generative AI",
+          "Health Tech",
+          "Healthcare",
+          "Healthcare IT",
+          "AI"
+        ]
+      },
+      {
+        "name": "Mantle",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/mantle",
+        "one_liner": "Build internal agents to automate back office work with one prompt",
+        "sectors": [
+          "B2B",
+          "Operations"
+        ],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 5628,
+      "full_name": "Nicolas Dessaigne",
+      "url": "https://www.ycombinator.com/people/nicolas-dessaigne"
+    },
+    "company_count": 247,
+    "top_industries": [
+      [
+        "B2B",
+        171
+      ],
+      [
+        "Healthcare",
+        28
+      ],
+      [
+        "Fintech",
+        20
+      ],
+      [
+        "Industrials",
+        13
+      ],
+      [
+        "Consumer",
+        9
+      ],
+      [
+        "Real Estate and Construction",
+        4
+      ],
+      [
+        "Education",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        171
+      ],
+      [
+        "Engineering, Product and Design",
+        40
+      ],
+      [
+        "Healthcare",
+        28
+      ],
+      [
+        "Infrastructure",
+        23
+      ],
+      [
+        "Fintech",
+        20
+      ],
+      [
+        "Analytics",
+        13
+      ],
+      [
+        "Industrials",
+        13
+      ],
+      [
+        "Consumer",
+        9
+      ],
+      [
+        "Security",
+        9
+      ],
+      [
+        "Healthcare IT",
+        8
+      ],
+      [
+        "Sales",
+        8
+      ],
+      [
+        "Productivity",
+        8
+      ],
+      [
+        "Manufacturing and Robotics",
+        5
+      ],
+      [
+        "Operations",
+        5
+      ],
+      [
+        "Real Estate and Construction",
+        4
+      ]
+    ],
+    "top_tags": [
+      [
+        "B2B",
+        58
+      ],
+      [
+        "AI",
+        57
+      ],
+      [
+        "Artificial Intelligence",
+        57
+      ],
+      [
+        "Developer Tools",
+        52
+      ],
+      [
+        "SaaS",
+        52
+      ],
+      [
+        "Generative AI",
+        24
+      ],
+      [
+        "Open Source",
+        23
+      ],
+      [
+        "Fintech",
+        21
+      ],
+      [
+        "Infrastructure",
+        15
+      ],
+      [
+        "Machine Learning",
+        14
+      ],
+      [
+        "Analytics",
+        12
+      ],
+      [
+        "API",
+        12
+      ],
+      [
+        "Healthcare",
+        11
+      ],
+      [
+        "AIOps",
+        9
+      ],
+      [
+        "Security",
+        9
+      ],
+      [
+        "AI Assistant",
+        8
+      ],
+      [
+        "Compliance",
+        8
+      ],
+      [
+        "Enterprise",
+        8
+      ],
+      [
+        "Sales",
+        8
+      ],
+      [
+        "Automation",
+        7
+      ]
+    ],
+    "top_batches": [
+      [
+        "Summer 2022",
+        29
+      ],
+      [
+        "Spring 2025",
+        26
+      ],
+      [
+        "Spring 2026",
+        26
+      ],
+      [
+        "Fall 2025",
+        23
+      ],
+      [
+        "Winter 2023",
+        23
+      ],
+      [
+        "Summer 2024",
+        22
+      ],
+      [
+        "Winter 2024",
+        21
+      ],
+      [
+        "Fall 2024",
+        17
+      ],
+      [
+        "Winter 2022",
+        17
+      ],
+      [
+        "Winter 2021",
+        15
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        207
+      ],
+      [
+        "Growth",
+        40
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Archil",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/archil",
+        "one_liner": "The high-performance file system that connects AI to data",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Developer Tools",
+          "Machine Learning",
+          "Big Data",
+          "Infrastructure",
+          "AI"
+        ]
+      },
+      {
+        "name": "ArchiLabs",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/archilabs",
+        "one_liner": "AI CAD for AEC",
+        "sectors": [
+          "Real Estate and Construction",
+          "Construction"
+        ],
+        "tags": [
+          "SaaS",
+          "Construction",
+          "B2B",
+          "Proptech",
+          "AI"
+        ]
+      },
+      {
+        "name": "Asha Health",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/asha-health",
+        "one_liner": "We help medical practices become AI-native",
+        "sectors": [
+          "Healthcare"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Careforce",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/careforce",
+        "one_liner": "AI Workers for Healthcare Orgs to Find, Call & Schedule More Patients.",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": [
+          "Health Tech",
+          "Healthcare",
+          "Healthcare IT",
+          "Call Center",
+          "AI"
+        ]
+      },
+      {
+        "name": "Cekura",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/cekura-ai",
+        "one_liner": "Voice AI and Chat AI agents: Testing and Observability",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "SaaS",
+          "B2B"
+        ]
+      },
+      {
+        "name": "CollectWise",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/collectwise",
+        "one_liner": "Automating consumer debt collection with AI",
+        "sectors": [
+          "Fintech"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Durate",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/durate",
+        "one_liner": "Automated physician scheduling",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": [
+          "SaaS",
+          "Healthcare",
+          "Healthcare IT"
+        ]
+      },
+      {
+        "name": "Innate",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/innate",
+        "one_liner": "Personal AI Robots",
+        "sectors": [
+          "Consumer",
+          "Consumer Electronics"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "Robotics"
+        ]
+      },
+      {
+        "name": "Metreecs",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/metreecs",
+        "one_liner": "AI-powered demand forecasting for retail",
+        "sectors": [
+          "B2B",
+          "Retail"
+        ],
+        "tags": [
+          "Machine Learning",
+          "Retail Tech",
+          "AI"
+        ]
+      },
+      {
+        "name": "Pearson Labs",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/pearson-labs",
+        "one_liner": "AI agents to automate corporate transactions",
+        "sectors": [
+          "B2B",
+          "Legal"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Generative AI",
+          "Legal",
+          "LegalTech"
+        ]
+      },
+      {
+        "name": "Revi",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/revi",
+        "one_liner": "AI-enabled M&A deal origination",
+        "sectors": [
+          "B2B",
+          "Sales"
+        ],
+        "tags": []
+      },
+      {
+        "name": "RevisionDojo",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/revisiondojo",
+        "one_liner": "AI tutors for students.",
+        "sectors": [
+          "Education"
+        ],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 184915,
+      "full_name": "Diana Hu",
+      "url": "https://www.ycombinator.com/people/diana-hu"
+    },
+    "company_count": 215,
+    "top_industries": [
+      [
+        "B2B",
+        156
+      ],
+      [
+        "Consumer",
+        15
+      ],
+      [
+        "Fintech",
+        14
+      ],
+      [
+        "Industrials",
+        13
+      ],
+      [
+        "Healthcare",
+        12
+      ],
+      [
+        "Education",
+        3
+      ],
+      [
+        "Government",
+        1
+      ],
+      [
+        "Real Estate and Construction",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        156
+      ],
+      [
+        "Engineering, Product and Design",
+        37
+      ],
+      [
+        "Infrastructure",
+        20
+      ],
+      [
+        "Consumer",
+        15
+      ],
+      [
+        "Fintech",
+        14
+      ],
+      [
+        "Industrials",
+        13
+      ],
+      [
+        "Healthcare",
+        12
+      ],
+      [
+        "Security",
+        10
+      ],
+      [
+        "Productivity",
+        9
+      ],
+      [
+        "Finance and Accounting",
+        8
+      ],
+      [
+        "Operations",
+        6
+      ],
+      [
+        "Manufacturing and Robotics",
+        5
+      ],
+      [
+        "Sales",
+        5
+      ],
+      [
+        "Supply Chain and Logistics",
+        5
+      ],
+      [
+        "Analytics",
+        4
+      ]
+    ],
+    "top_tags": [
+      [
+        "AI",
+        59
+      ],
+      [
+        "Artificial Intelligence",
+        57
+      ],
+      [
+        "B2B",
+        51
+      ],
+      [
+        "Developer Tools",
+        40
+      ],
+      [
+        "SaaS",
+        36
+      ],
+      [
+        "Generative AI",
+        17
+      ],
+      [
+        "Fintech",
+        15
+      ],
+      [
+        "Consumer",
+        14
+      ],
+      [
+        "Infrastructure",
+        11
+      ],
+      [
+        "Open Source",
+        11
+      ],
+      [
+        "Analytics",
+        10
+      ],
+      [
+        "AI Assistant",
+        9
+      ],
+      [
+        "Hard Tech",
+        9
+      ],
+      [
+        "Hardware",
+        9
+      ],
+      [
+        "Enterprise Software",
+        8
+      ],
+      [
+        "Machine Learning",
+        8
+      ],
+      [
+        "Robotics",
+        8
+      ],
+      [
+        "Automation",
+        7
+      ],
+      [
+        "Sales",
+        7
+      ],
+      [
+        "Finance",
+        6
+      ]
+    ],
+    "top_batches": [
+      [
+        "Summer 2021",
+        28
+      ],
+      [
+        "Summer 2023",
+        25
+      ],
+      [
+        "Winter 2026",
+        25
+      ],
+      [
+        "Summer 2024",
+        23
+      ],
+      [
+        "Winter 2023",
+        22
+      ],
+      [
+        "Spring 2025",
+        20
+      ],
+      [
+        "Winter 2022",
+        20
+      ],
+      [
+        "Winter 2024",
+        17
+      ],
+      [
+        "Fall 2024",
+        16
+      ],
+      [
+        "Summer 2025",
+        8
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        184
+      ],
+      [
+        "Growth",
+        31
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Abundant",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/abundant",
+        "one_liner": "Agent simulation and RL for researchers",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "AIOps",
+          "Artificial Intelligence",
+          "API",
+          "AI"
+        ]
+      },
+      {
+        "name": "attimet",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/attimet",
+        "one_liner": "we predict stuff",
+        "sectors": [
+          "Fintech"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Finance",
+          "Trading"
+        ]
+      },
+      {
+        "name": "AutoComputer",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/autocomputer",
+        "one_liner": "Desktop RPA with AI computer use",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Deep Learning",
+          "B2B",
+          "Enterprise",
+          "Automation"
+        ]
+      },
+      {
+        "name": "Clarus",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/clarus",
+        "one_liner": "LP clarity across private markets",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Finance"
+        ]
+      },
+      {
+        "name": "Dexter",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/dexter",
+        "one_liner": "Spend Intelligence for Complex Enterprises",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": [
+          "SaaS",
+          "B2B",
+          "Analytics",
+          "Procurement",
+          "Automation"
+        ]
+      },
+      {
+        "name": "Friday",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/friday",
+        "one_liner": "The AI Assistant for Gmail",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": [
+          "Productivity",
+          "Email",
+          "AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Galini",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/galini",
+        "one_liner": "Compliance guardrails-as-a-service for AI applications",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS",
+          "B2B",
+          "Compliance",
+          "Enterprise"
+        ]
+      },
+      {
+        "name": "Melder",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/melder",
+        "one_liner": "AI formulas and document support for Microsoft Excel",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Generative AI",
+          "Data Engineering"
+        ]
+      },
+      {
+        "name": "Raycaster",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/raycaster",
+        "one_liner": "AI for life sciences documents",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS",
+          "Biotech",
+          "Enterprise Software"
+        ]
+      },
+      {
+        "name": "Riveter",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/riveter",
+        "one_liner": "Turn the web into structured data",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "B2B",
+          "E-commerce",
+          "Market Research",
+          "AI"
+        ]
+      },
+      {
+        "name": "Ryvn",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/ryvn",
+        "one_liner": "Easy and secure customer cloud deployments",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Developer Tools",
+          "SaaS",
+          "DevOps",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Smooth",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/smooth",
+        "one_liner": "Fast, simple, reliable AI browser agent",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 24083,
+      "full_name": "Tom Blomfield",
+      "url": "https://www.ycombinator.com/people/tom-blomfield"
+    },
+    "company_count": 213,
+    "top_industries": [
+      [
+        "B2B",
+        119
+      ],
+      [
+        "Fintech",
+        38
+      ],
+      [
+        "Healthcare",
+        17
+      ],
+      [
+        "Industrials",
+        15
+      ],
+      [
+        "Consumer",
+        14
+      ],
+      [
+        "Real Estate and Construction",
+        5
+      ],
+      [
+        "Government",
+        3
+      ],
+      [
+        "Education",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        119
+      ],
+      [
+        "Fintech",
+        38
+      ],
+      [
+        "Engineering, Product and Design",
+        17
+      ],
+      [
+        "Healthcare",
+        17
+      ],
+      [
+        "Industrials",
+        15
+      ],
+      [
+        "Consumer",
+        14
+      ],
+      [
+        "Infrastructure",
+        11
+      ],
+      [
+        "Operations",
+        11
+      ],
+      [
+        "Supply Chain and Logistics",
+        10
+      ],
+      [
+        "Finance and Accounting",
+        8
+      ],
+      [
+        "Payments",
+        8
+      ],
+      [
+        "Productivity",
+        6
+      ],
+      [
+        "Real Estate and Construction",
+        5
+      ],
+      [
+        "Consumer Finance",
+        5
+      ],
+      [
+        "Marketing",
+        5
+      ]
+    ],
+    "top_tags": [
+      [
+        "AI",
+        60
+      ],
+      [
+        "B2B",
+        48
+      ],
+      [
+        "Artificial Intelligence",
+        40
+      ],
+      [
+        "Fintech",
+        39
+      ],
+      [
+        "SaaS",
+        30
+      ],
+      [
+        "Machine Learning",
+        15
+      ],
+      [
+        "AI Assistant",
+        13
+      ],
+      [
+        "Payments",
+        13
+      ],
+      [
+        "Developer Tools",
+        12
+      ],
+      [
+        "Consumer",
+        12
+      ],
+      [
+        "Generative AI",
+        12
+      ],
+      [
+        "Enterprise Software",
+        11
+      ],
+      [
+        "Compliance",
+        10
+      ],
+      [
+        "Healthcare",
+        10
+      ],
+      [
+        "Data Engineering",
+        8
+      ],
+      [
+        "Workflow Automation",
+        8
+      ],
+      [
+        "Neobank",
+        8
+      ],
+      [
+        "Supply Chain",
+        7
+      ],
+      [
+        "Infrastructure",
+        6
+      ],
+      [
+        "Conversational AI",
+        6
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2024",
+        27
+      ],
+      [
+        "Spring 2026",
+        26
+      ],
+      [
+        "Winter 2022",
+        25
+      ],
+      [
+        "Fall 2025",
+        24
+      ],
+      [
+        "Summer 2024",
+        24
+      ],
+      [
+        "Winter 2025",
+        23
+      ],
+      [
+        "Spring 2025",
+        19
+      ],
+      [
+        "Summer 2023",
+        19
+      ],
+      [
+        "Winter 2023",
+        15
+      ],
+      [
+        "Summer 2022",
+        5
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        188
+      ],
+      [
+        "Growth",
+        25
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Amika",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/amika",
+        "one_liner": "Infra to build your own software factory",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "B2B",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Bolna AI",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/bolna-ai",
+        "one_liner": "Voice AI to enable India's next billion",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "B2B",
+          "Infrastructure",
+          "Conversational AI"
+        ]
+      },
+      {
+        "name": "Brickwise",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/brickwise",
+        "one_liner": "AI property manager for landlords and estate agents",
+        "sectors": [
+          "Real Estate and Construction",
+          "Housing and Real Estate"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Clicks",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/clicks",
+        "one_liner": "AI agents for your back-office operations.",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "AI"
+        ]
+      },
+      {
+        "name": "Cranston AI",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/cranston-ai",
+        "one_liner": "Full Stack AI Accounting Firm",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Denki",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/denki",
+        "one_liner": "The full-stack AI financial audit firm",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": [
+          "FinOps",
+          "Compliance",
+          "AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Dome",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/dome",
+        "one_liner": "A unified API for prediction markets, like Kalshi and Polymarket",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Fastshot",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/fastshot",
+        "one_liner": "Lovable for mobile apps",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "No-code",
+          "AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Hyperspell",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/hyperspell",
+        "one_liner": "Memory for AI Agents",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "SaaS",
+          "Data Engineering"
+        ]
+      },
+      {
+        "name": "MarkIt",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/markit",
+        "one_liner": "AI Agents for Trade Compliance - Saving Companies from Tariffs",
+        "sectors": [
+          "B2B",
+          "Supply Chain and Logistics"
+        ],
+        "tags": [
+          "Workflow Automation",
+          "Logistics",
+          "Supply Chain",
+          "AI"
+        ]
+      },
+      {
+        "name": "Minro",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/minro",
+        "one_liner": "Identify churn risk and stay close to users at scale",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "B2B",
+          "Customer Success"
+        ]
+      },
+      {
+        "name": "Mod AI",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/mod-ai",
+        "one_liner": "Touchless AP Automation",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Fintech",
+          "SaaS",
+          "Finance",
+          "AI"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 36180,
+      "full_name": "Harj Taggar",
+      "url": "https://www.ycombinator.com/people/harj-taggar"
+    },
+    "company_count": 212,
+    "top_industries": [
+      [
+        "B2B",
+        147
+      ],
+      [
+        "Fintech",
+        30
+      ],
+      [
+        "Consumer",
+        17
+      ],
+      [
+        "Industrials",
+        7
+      ],
+      [
+        "Healthcare",
+        7
+      ],
+      [
+        "Education",
+        2
+      ],
+      [
+        "Real Estate and Construction",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        147
+      ],
+      [
+        "Fintech",
+        30
+      ],
+      [
+        "Engineering, Product and Design",
+        28
+      ],
+      [
+        "Infrastructure",
+        18
+      ],
+      [
+        "Consumer",
+        17
+      ],
+      [
+        "Productivity",
+        10
+      ],
+      [
+        "Operations",
+        9
+      ],
+      [
+        "Sales",
+        9
+      ],
+      [
+        "Marketing",
+        7
+      ],
+      [
+        "Payments",
+        7
+      ],
+      [
+        "Industrials",
+        7
+      ],
+      [
+        "Healthcare",
+        7
+      ],
+      [
+        "Analytics",
+        6
+      ],
+      [
+        "Asset Management",
+        5
+      ],
+      [
+        "Finance and Accounting",
+        5
+      ]
+    ],
+    "top_tags": [
+      [
+        "Artificial Intelligence",
+        55
+      ],
+      [
+        "B2B",
+        53
+      ],
+      [
+        "AI",
+        45
+      ],
+      [
+        "SaaS",
+        43
+      ],
+      [
+        "Developer Tools",
+        29
+      ],
+      [
+        "Fintech",
+        20
+      ],
+      [
+        "Generative AI",
+        20
+      ],
+      [
+        "AI Assistant",
+        11
+      ],
+      [
+        "Crypto / Web3",
+        11
+      ],
+      [
+        "Infrastructure",
+        10
+      ],
+      [
+        "Consumer",
+        10
+      ],
+      [
+        "Sales",
+        10
+      ],
+      [
+        "Analytics",
+        9
+      ],
+      [
+        "Workflow Automation",
+        9
+      ],
+      [
+        "Payments",
+        9
+      ],
+      [
+        "E-commerce",
+        8
+      ],
+      [
+        "Sales Enablement",
+        8
+      ],
+      [
+        "Open Source",
+        8
+      ],
+      [
+        "Enterprise",
+        8
+      ],
+      [
+        "Marketing",
+        7
+      ]
+    ],
+    "top_batches": [
+      [
+        "Summer 2023",
+        25
+      ],
+      [
+        "Winter 2025",
+        24
+      ],
+      [
+        "Summer 2022",
+        21
+      ],
+      [
+        "Winter 2024",
+        21
+      ],
+      [
+        "Winter 2023",
+        20
+      ],
+      [
+        "Spring 2026",
+        19
+      ],
+      [
+        "Winter 2021",
+        18
+      ],
+      [
+        "Summer 2021",
+        15
+      ],
+      [
+        "Summer 2025",
+        13
+      ],
+      [
+        "Summer 2024",
+        10
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        190
+      ],
+      [
+        "Growth",
+        22
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Bluma",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/bluma",
+        "one_liner": "Canva for short-form video ads",
+        "sectors": [
+          "B2B",
+          "Marketing"
+        ],
+        "tags": [
+          "B2B",
+          "Social Media",
+          "Video",
+          "Marketing",
+          "Advertising"
+        ]
+      },
+      {
+        "name": "dari.dev",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/daridev",
+        "one_liner": "The Production Layer for AI Agents",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "B2B"
+        ]
+      },
+      {
+        "name": "MadeThis",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/madethis",
+        "one_liner": "The autonomous business platform",
+        "sectors": [
+          "B2B",
+          "Operations"
+        ],
+        "tags": [
+          "Operations",
+          "AI"
+        ]
+      },
+      {
+        "name": "Prox",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/prox",
+        "one_liner": "AI technical support for complex physical products",
+        "sectors": [
+          "B2B",
+          "Retail"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Customer Success",
+          "E-commerce",
+          "Customer Support"
+        ]
+      },
+      {
+        "name": "Rovr",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/rovr",
+        "one_liner": "AI FDE Engine that runs your engineering workflows",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "B2B"
+        ]
+      },
+      {
+        "name": "Semble AI",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/semble-ai",
+        "one_liner": "AI workflow automation for operations",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS"
+        ]
+      },
+      {
+        "name": "SF Tensor",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/sf-tensor",
+        "one_liner": "Infrastructure for AI labs to focus on research.",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Allowance",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/allowance",
+        "one_liner": "The spend control layer for AI agents",
+        "sectors": [
+          "Fintech",
+          "Payments"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Archer",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/archer",
+        "one_liner": " AI-powered gifting for customer acquisition and retention",
+        "sectors": [
+          "B2B",
+          "Marketing"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Aster",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/asterlab",
+        "one_liner": "Automating open-ended research.",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Avea Robotics",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/avea-robotics",
+        "one_liner": "The human-in-the-loop system for robots",
+        "sectors": [
+          "Industrials",
+          "Manufacturing and Robotics"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Drip",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/drippay",
+        "one_liner": "AI that books meetings for you",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "B2B",
+          "Recruiting",
+          "Messaging",
+          "Sales Enablement"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 678,
+      "full_name": "Garry Tan",
+      "url": "https://www.ycombinator.com/people/garry-tan"
+    },
+    "company_count": 139,
+    "top_industries": [
+      [
+        "B2B",
+        69
+      ],
+      [
+        "Healthcare",
+        19
+      ],
+      [
+        "Consumer",
+        17
+      ],
+      [
+        "Industrials",
+        15
+      ],
+      [
+        "Fintech",
+        11
+      ],
+      [
+        "Real Estate and Construction",
+        4
+      ],
+      [
+        "Government",
+        2
+      ],
+      [
+        "Education",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        69
+      ],
+      [
+        "Healthcare",
+        19
+      ],
+      [
+        "Consumer",
+        17
+      ],
+      [
+        "Industrials",
+        15
+      ],
+      [
+        "Engineering, Product and Design",
+        13
+      ],
+      [
+        "Fintech",
+        11
+      ],
+      [
+        "Manufacturing and Robotics",
+        7
+      ],
+      [
+        "Infrastructure",
+        7
+      ],
+      [
+        "Consumer Health and Wellness",
+        5
+      ],
+      [
+        "Content",
+        4
+      ],
+      [
+        "Real Estate and Construction",
+        4
+      ],
+      [
+        "Healthcare IT",
+        4
+      ],
+      [
+        "Productivity",
+        3
+      ],
+      [
+        "Marketing",
+        3
+      ],
+      [
+        "Security",
+        3
+      ]
+    ],
+    "top_tags": [
+      [
+        "Artificial Intelligence",
+        41
+      ],
+      [
+        "AI",
+        35
+      ],
+      [
+        "B2B",
+        29
+      ],
+      [
+        "SaaS",
+        16
+      ],
+      [
+        "Developer Tools",
+        13
+      ],
+      [
+        "Consumer",
+        11
+      ],
+      [
+        "Fintech",
+        11
+      ],
+      [
+        "Healthcare",
+        8
+      ],
+      [
+        "AI Assistant",
+        7
+      ],
+      [
+        "Hard Tech",
+        7
+      ],
+      [
+        "Infrastructure",
+        7
+      ],
+      [
+        "Health Tech",
+        6
+      ],
+      [
+        "Digital Health",
+        6
+      ],
+      [
+        "Enterprise Software",
+        5
+      ],
+      [
+        "API",
+        5
+      ],
+      [
+        "Healthcare IT",
+        5
+      ],
+      [
+        "Generative AI",
+        5
+      ],
+      [
+        "Aerospace",
+        4
+      ],
+      [
+        "Finance",
+        4
+      ],
+      [
+        "Reinforcement Learning",
+        4
+      ]
+    ],
+    "top_batches": [
+      [
+        "Summer 2023",
+        25
+      ],
+      [
+        "Fall 2025",
+        23
+      ],
+      [
+        "Summer 2024",
+        17
+      ],
+      [
+        "Spring 2026",
+        15
+      ],
+      [
+        "Winter 2024",
+        14
+      ],
+      [
+        "Fall 2024",
+        10
+      ],
+      [
+        "Winter 2025",
+        7
+      ],
+      [
+        "Spring 2025",
+        5
+      ],
+      [
+        "Summer 2019",
+        3
+      ],
+      [
+        "Summer 2012",
+        2
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        119
+      ],
+      [
+        "Growth",
+        20
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Crustdata",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/crustdata",
+        "one_liner": "Real-time B2B data via simple APIs",
+        "sectors": [
+          "B2B",
+          "Sales"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Diffusion Studio",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/diffusion-studio",
+        "one_liner": "Professional-grade video editing, in your browser.",
+        "sectors": [
+          "Consumer",
+          "Content"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Consumer",
+          "Video",
+          "Media",
+          "AI"
+        ]
+      },
+      {
+        "name": "Ember",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/ember",
+        "one_liner": "AI RCM. A/R Analysis in 3 days or less. Reduce claim denials by 55%. ",
+        "sectors": [
+          "Healthcare"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Gander",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/gander",
+        "one_liner": "Automation System for Global Aviation",
+        "sectors": [
+          "B2B",
+          "Operations"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS",
+          "Aerospace"
+        ]
+      },
+      {
+        "name": "Keye",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/keye",
+        "one_liner": "The Smartest Private Equity Investor",
+        "sectors": [
+          "Fintech"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Finance",
+          "Investing",
+          "Enterprise Software",
+          "AI"
+        ]
+      },
+      {
+        "name": "Luthor",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/luthor",
+        "one_liner": "Real-time governance for enterprise communications",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "B2B",
+          "Compliance",
+          "Marketing",
+          "Regtech",
+          "AI"
+        ]
+      },
+      {
+        "name": "Relvy AI",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/relvy-ai",
+        "one_liner": "AI powered debugging notebooks for incident response",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "SaaS",
+          "B2B",
+          "DevOps",
+          "AI"
+        ]
+      },
+      {
+        "name": "Variant",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/variant",
+        "one_liner": "Creative intelligence",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "Design Tools",
+          "AI"
+        ]
+      },
+      {
+        "name": "Vespper",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/vespper",
+        "one_liner": "The first AI-native document editor for long-form content",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Documents",
+          "Artificial Intelligence",
+          "Developer Tools",
+          "B2B",
+          "API"
+        ]
+      },
+      {
+        "name": "VortexifyAI",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/vortexifyai",
+        "one_liner": "Build AI applications and automations for supply chain operations",
+        "sectors": [
+          "B2B",
+          "Supply Chain and Logistics"
+        ],
+        "tags": [
+          "IoT",
+          "Supply Chain",
+          "Data Science",
+          "AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Aleph Lab",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/aleph-lab",
+        "one_liner": "AI language buddy in the games kids love",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": [
+          "Artificial Intelligence"
+        ]
+      },
+      {
+        "name": "AtlasGrid",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/atlasgrid",
+        "one_liner": "Accelerate Product Iteration",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 11216,
+      "full_name": "David Lieb",
+      "url": "https://www.ycombinator.com/people/david-lieb"
+    },
+    "company_count": 117,
+    "top_industries": [
+      [
+        "B2B",
+        76
+      ],
+      [
+        "Healthcare",
+        9
+      ],
+      [
+        "Consumer",
+        8
+      ],
+      [
+        "Industrials",
+        7
+      ],
+      [
+        "Fintech",
+        6
+      ],
+      [
+        "Real Estate and Construction",
+        5
+      ],
+      [
+        "Education",
+        4
+      ],
+      [
+        "Government",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        76
+      ],
+      [
+        "Engineering, Product and Design",
+        17
+      ],
+      [
+        "Healthcare",
+        9
+      ],
+      [
+        "Consumer",
+        8
+      ],
+      [
+        "Industrials",
+        7
+      ],
+      [
+        "Infrastructure",
+        7
+      ],
+      [
+        "Fintech",
+        6
+      ],
+      [
+        "Real Estate and Construction",
+        5
+      ],
+      [
+        "Supply Chain and Logistics",
+        5
+      ],
+      [
+        "Operations",
+        4
+      ],
+      [
+        "Education",
+        4
+      ],
+      [
+        "Legal",
+        4
+      ],
+      [
+        "Construction",
+        3
+      ],
+      [
+        "Insurance",
+        3
+      ],
+      [
+        "Manufacturing and Robotics",
+        3
+      ]
+    ],
+    "top_tags": [
+      [
+        "AI",
+        24
+      ],
+      [
+        "Artificial Intelligence",
+        24
+      ],
+      [
+        "B2B",
+        22
+      ],
+      [
+        "Developer Tools",
+        17
+      ],
+      [
+        "SaaS",
+        15
+      ],
+      [
+        "Generative AI",
+        10
+      ],
+      [
+        "Consumer",
+        6
+      ],
+      [
+        "Security",
+        5
+      ],
+      [
+        "Infrastructure",
+        5
+      ],
+      [
+        "AI Assistant",
+        4
+      ],
+      [
+        "Healthcare",
+        4
+      ],
+      [
+        "AI-Enhanced Learning",
+        4
+      ],
+      [
+        "Hardware",
+        4
+      ],
+      [
+        "Manufacturing",
+        4
+      ],
+      [
+        "Education",
+        4
+      ],
+      [
+        "Productivity",
+        4
+      ],
+      [
+        "Open Source",
+        4
+      ],
+      [
+        "Health Tech",
+        3
+      ],
+      [
+        "Machine Learning",
+        3
+      ],
+      [
+        "Automation",
+        3
+      ]
+    ],
+    "top_batches": [
+      [
+        "Spring 2026",
+        28
+      ],
+      [
+        "Summer 2024",
+        21
+      ],
+      [
+        "Spring 2025",
+        20
+      ],
+      [
+        "Fall 2024",
+        16
+      ],
+      [
+        "Fall 2025",
+        16
+      ],
+      [
+        "Winter 2024",
+        11
+      ],
+      [
+        "Summer 2023",
+        4
+      ],
+      [
+        "Winter 2025",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        115
+      ],
+      [
+        "Growth",
+        2
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Afternoon.co",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/afternoon-co",
+        "one_liner": "Bookkeeping, compliance and tax for founders",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": [
+          "SaaS"
+        ]
+      },
+      {
+        "name": "Alex",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/alex",
+        "one_liner": "The Cursor for Xcode",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Capy",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/capy",
+        "one_liner": "The IDE for the parallel age",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Endstack",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/endstack",
+        "one_liner": "Cloud desktop OS for humans and agents",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "Generative AI",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Fresco",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/fresco",
+        "one_liner": "AI copilot for construction estimators",
+        "sectors": [
+          "Real Estate and Construction",
+          "Construction"
+        ],
+        "tags": []
+      },
+      {
+        "name": "FutureClinic",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/futureclinic",
+        "one_liner": "Personal doctors through chat",
+        "sectors": [
+          "Healthcare"
+        ],
+        "tags": [
+          "Health Tech",
+          "Digital Health",
+          "Healthcare"
+        ]
+      },
+      {
+        "name": "Karmen",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/karmen",
+        "one_liner": "Your AI scheduling assistant for construction",
+        "sectors": [
+          "Real Estate and Construction",
+          "Construction"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Matcha",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/astrix-health",
+        "one_liner": "The best way to hire clinical talent.",
+        "sectors": [
+          "Healthcare"
+        ],
+        "tags": [
+          "Machine Learning",
+          "Marketplace",
+          "Recruiting",
+          "Healthcare",
+          "AI"
+        ]
+      },
+      {
+        "name": "OpenFunnel",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/openfunnel",
+        "one_liner": "We monitor your TAM and surface companies when custom triggers fire.",
+        "sectors": [
+          "B2B",
+          "Sales"
+        ],
+        "tags": [
+          "SaaS",
+          "B2B",
+          "Sales Enablement",
+          "AI"
+        ]
+      },
+      {
+        "name": "Origami",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/origami-2",
+        "one_liner": "Get your perfect customers with one prompt",
+        "sectors": [
+          "B2B",
+          "Sales"
+        ],
+        "tags": [
+          "Workflow Automation",
+          "Sales",
+          "Search"
+        ]
+      },
+      {
+        "name": "Reticular",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/reticular",
+        "one_liner": "Scaling Genomic AI for Embryo Selection",
+        "sectors": [
+          "Healthcare",
+          "Consumer Health and Wellness"
+        ],
+        "tags": [
+          "Generative AI",
+          "Consumer Health Services",
+          "Biotech"
+        ]
+      },
+      {
+        "name": "Rulebase",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/rulebase",
+        "one_liner": "AI agents for financial services.",
+        "sectors": [
+          "B2B",
+          "Operations"
+        ],
+        "tags": [
+          "Customer Success",
+          "Customer Service",
+          "Customer Support"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 26554,
+      "full_name": "Pete Koomen",
+      "url": "https://www.ycombinator.com/people/pete-koomen"
+    },
+    "company_count": 109,
+    "top_industries": [
+      [
+        "B2B",
+        68
+      ],
+      [
+        "Industrials",
+        12
+      ],
+      [
+        "Fintech",
+        12
+      ],
+      [
+        "Healthcare",
+        6
+      ],
+      [
+        "Consumer",
+        5
+      ],
+      [
+        "Real Estate and Construction",
+        3
+      ],
+      [
+        "Government",
+        2
+      ],
+      [
+        "Education",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        68
+      ],
+      [
+        "Engineering, Product and Design",
+        13
+      ],
+      [
+        "Industrials",
+        12
+      ],
+      [
+        "Fintech",
+        12
+      ],
+      [
+        "Sales",
+        7
+      ],
+      [
+        "Healthcare",
+        6
+      ],
+      [
+        "Manufacturing and Robotics",
+        6
+      ],
+      [
+        "Consumer",
+        5
+      ],
+      [
+        "Infrastructure",
+        5
+      ],
+      [
+        "Security",
+        4
+      ],
+      [
+        "Aviation and Space",
+        3
+      ],
+      [
+        "Real Estate and Construction",
+        3
+      ],
+      [
+        "Finance and Accounting",
+        3
+      ],
+      [
+        "Payments",
+        3
+      ],
+      [
+        "Government",
+        2
+      ]
+    ],
+    "top_tags": [
+      [
+        "AI",
+        30
+      ],
+      [
+        "B2B",
+        18
+      ],
+      [
+        "Artificial Intelligence",
+        17
+      ],
+      [
+        "SaaS",
+        12
+      ],
+      [
+        "Developer Tools",
+        11
+      ],
+      [
+        "AI Assistant",
+        8
+      ],
+      [
+        "Sales",
+        8
+      ],
+      [
+        "Fintech",
+        7
+      ],
+      [
+        "Generative AI",
+        6
+      ],
+      [
+        "Open Source",
+        5
+      ],
+      [
+        "Security",
+        4
+      ],
+      [
+        "Construction",
+        4
+      ],
+      [
+        "Automation",
+        4
+      ],
+      [
+        "Consumer",
+        3
+      ],
+      [
+        "Machine Learning",
+        3
+      ],
+      [
+        "Reinforcement Learning",
+        3
+      ],
+      [
+        "Computer Vision",
+        3
+      ],
+      [
+        "Productivity",
+        3
+      ],
+      [
+        "Robotics",
+        3
+      ],
+      [
+        "Marketing",
+        3
+      ]
+    ],
+    "top_batches": [
+      [
+        "Spring 2026",
+        23
+      ],
+      [
+        "Fall 2025",
+        20
+      ],
+      [
+        "Spring 2025",
+        20
+      ],
+      [
+        "Winter 2024",
+        19
+      ],
+      [
+        "Fall 2024",
+        14
+      ],
+      [
+        "Summer 2023",
+        6
+      ],
+      [
+        "Summer 2022",
+        3
+      ],
+      [
+        "Summer 2024",
+        2
+      ],
+      [
+        "Summer 2025",
+        1
+      ],
+      [
+        "Winter 2023",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        103
+      ],
+      [
+        "Growth",
+        6
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Apolink",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/apolink",
+        "one_liner": "24/7 satellite connectivity in low Earth orbit",
+        "sectors": [
+          "Industrials",
+          "Aviation and Space"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Avora",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/avora",
+        "one_liner": "Agents for dental operations",
+        "sectors": [
+          "Healthcare"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Candle",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/candle",
+        "one_liner": "Candle helps friends and couples grow closer daily in just 5 minutes.",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Consumer",
+          "AI"
+        ]
+      },
+      {
+        "name": "Canvas",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/canvas",
+        "one_liner": "Continual learning for agents",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Curo",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/curo",
+        "one_liner": "Electric fleets park and charge anywhere with Curo",
+        "sectors": [
+          "Industrials",
+          "Automotive"
+        ],
+        "tags": [
+          "Transportation",
+          "Energy",
+          "Automotive"
+        ]
+      },
+      {
+        "name": "Gait",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/gait",
+        "one_liner": "Building Dev Infra for AI Software Engineers",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Developer Tools",
+          "AI"
+        ]
+      },
+      {
+        "name": "Gecko Security",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/gecko-security",
+        "one_liner": "The AI Security Engineer to Find and Fix Vulnerabilities ",
+        "sectors": [
+          "B2B",
+          "Security"
+        ],
+        "tags": [
+          "SaaS",
+          "B2B",
+          "Security",
+          "Cybersecurity",
+          "AI"
+        ]
+      },
+      {
+        "name": "Lingo.dev",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/lingodotdev",
+        "one_liner": "The Localization Engineering Platform",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "B2B",
+          "International",
+          "Infrastructure",
+          "AI"
+        ]
+      },
+      {
+        "name": "Loombotic",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/loombotic",
+        "one_liner": "Wire Harnesses in as little as 7 days",
+        "sectors": [
+          "Industrials",
+          "Manufacturing and Robotics"
+        ],
+        "tags": [
+          "Manufacturing"
+        ]
+      },
+      {
+        "name": "Moonset Health",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/moonset-health",
+        "one_liner": "AI for Post-Acute Senior Care (Hospice, Home Health, Skilled Nursing…",
+        "sectors": [
+          "B2B",
+          "Sales"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Moonshine",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/moonshine",
+        "one_liner": "Extending AI to interact with the real world",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Machine Learning",
+          "AI"
+        ]
+      },
+      {
+        "name": "PermitPortal",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/permitportal",
+        "one_liner": "AI Operating System for Pre-construction",
+        "sectors": [
+          "Real Estate and Construction"
+        ],
+        "tags": [
+          "Real Estate",
+          "Construction",
+          "AI"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 8363,
+      "full_name": "Tyler Bosmeny",
+      "url": "https://www.ycombinator.com/people/tyler-bosmeny"
+    },
+    "company_count": 80,
+    "top_industries": [
+      [
+        "B2B",
+        47
+      ],
+      [
+        "Industrials",
+        16
+      ],
+      [
+        "Healthcare",
+        7
+      ],
+      [
+        "Consumer",
+        5
+      ],
+      [
+        "Fintech",
+        3
+      ],
+      [
+        "Real Estate and Construction",
+        2
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        47
+      ],
+      [
+        "Industrials",
+        16
+      ],
+      [
+        "Infrastructure",
+        8
+      ],
+      [
+        "Healthcare",
+        7
+      ],
+      [
+        "Consumer",
+        5
+      ],
+      [
+        "Engineering, Product and Design",
+        4
+      ],
+      [
+        "Manufacturing and Robotics",
+        4
+      ],
+      [
+        "Aviation and Space",
+        4
+      ],
+      [
+        "Healthcare IT",
+        3
+      ],
+      [
+        "Defense",
+        3
+      ],
+      [
+        "Analytics",
+        3
+      ],
+      [
+        "Fintech",
+        3
+      ],
+      [
+        "Human Resources",
+        2
+      ],
+      [
+        "Sales",
+        2
+      ],
+      [
+        "Productivity",
+        2
+      ]
+    ],
+    "top_tags": [
+      [
+        "Artificial Intelligence",
+        20
+      ],
+      [
+        "AI",
+        18
+      ],
+      [
+        "B2B",
+        10
+      ],
+      [
+        "SaaS",
+        5
+      ],
+      [
+        "Infrastructure",
+        5
+      ],
+      [
+        "Developer Tools",
+        5
+      ],
+      [
+        "Conversational AI",
+        4
+      ],
+      [
+        "Fintech",
+        3
+      ],
+      [
+        "AIOps",
+        3
+      ],
+      [
+        "Productivity",
+        3
+      ],
+      [
+        "AI Assistant",
+        3
+      ],
+      [
+        "Automation",
+        3
+      ],
+      [
+        "Enterprise Software",
+        3
+      ],
+      [
+        "Consumer",
+        3
+      ],
+      [
+        "Hard Tech",
+        3
+      ],
+      [
+        "Analytics",
+        2
+      ],
+      [
+        "ML",
+        2
+      ],
+      [
+        "Reinforcement Learning",
+        2
+      ],
+      [
+        "Data Labeling",
+        2
+      ],
+      [
+        "Real Estate",
+        2
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2026",
+        30
+      ],
+      [
+        "Summer 2025",
+        27
+      ],
+      [
+        "Summer 2024",
+        7
+      ],
+      [
+        "Winter 2025",
+        5
+      ],
+      [
+        "Summer 2026",
+        4
+      ],
+      [
+        "Winter 2024",
+        3
+      ],
+      [
+        "Spring 2026",
+        2
+      ],
+      [
+        "Summer 2015",
+        1
+      ],
+      [
+        "Winter 2018",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        77
+      ],
+      [
+        "Growth",
+        3
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Fuchsia",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/fuchsia",
+        "one_liner": "Vanta for hardware",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Humwork",
+        "batch": "Spring 2026",
+        "url": "https://www.ycombinator.com/companies/humwork",
+        "one_liner": "Human experts as API for AI Agents",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Human Interest",
+        "batch": "Summer 2015",
+        "url": "https://www.ycombinator.com/companies/human-interest",
+        "one_liner": "The 401(k) for small and medium-sized businesses.",
+        "sectors": [
+          "B2B",
+          "Human Resources"
+        ],
+        "tags": [
+          "Fintech",
+          "SaaS",
+          "Human Resources",
+          "HR Tech",
+          "Investing"
+        ]
+      },
+      {
+        "name": "Cheers",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/cheers",
+        "one_liner": "Win local search on ChatGPT & other LLMs",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Analytics",
+          "Feedback",
+          "AI",
+          "Reviews"
+        ]
+      },
+      {
+        "name": "Glasskube",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/glasskube",
+        "one_liner": "Ship self-hosted software with Distr",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Pipeshift",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/pipeshift",
+        "one_liner": "Ultra-low latency inference cloud for real-time workloads",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "AIOps",
+          "Artificial Intelligence",
+          "Infrastructure",
+          "AI",
+          "ML"
+        ]
+      },
+      {
+        "name": "Rowboat Labs",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/rowboat-labs",
+        "one_liner": "Open-source AI coworker with memory ",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": [
+          "Productivity",
+          "Open Source",
+          "AI Assistant"
+        ]
+      },
+      {
+        "name": "Sage Care",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/sagecare",
+        "one_liner": "Automating home care agency operations with AI",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": [
+          "AIOps",
+          "Automation",
+          "AI"
+        ]
+      },
+      {
+        "name": "Sepal AI",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/sepal-ai",
+        "one_liner": "Data Development for Advanced AI",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "AIOps",
+          "Reinforcement Learning",
+          "Data Labeling",
+          "AI"
+        ]
+      },
+      {
+        "name": "Tandem",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/tandem-2",
+        "one_liner": "AI-native office leasing broker",
+        "sectors": [
+          "B2B",
+          "Office Management"
+        ],
+        "tags": [
+          "Real Estate",
+          "B2B",
+          "Proptech"
+        ]
+      },
+      {
+        "name": "Altur",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/altur",
+        "one_liner": "Voice AI Agents for Debt Collection",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "AI"
+        ]
+      },
+      {
+        "name": "Autosana",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/autosana",
+        "one_liner": "AI agents for E2E testing across mobile & web",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Developer Tools",
+          "B2B",
+          "Enterprise Software",
+          "AI"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 18194,
+      "full_name": "Andrew Miklas",
+      "url": "https://www.ycombinator.com/people/andrew-miklas"
+    },
+    "company_count": 59,
+    "top_industries": [
+      [
+        "B2B",
+        43
+      ],
+      [
+        "Industrials",
+        5
+      ],
+      [
+        "Fintech",
+        4
+      ],
+      [
+        "Consumer",
+        3
+      ],
+      [
+        "Healthcare",
+        3
+      ],
+      [
+        "Real Estate and Construction",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        43
+      ],
+      [
+        "Infrastructure",
+        7
+      ],
+      [
+        "Engineering, Product and Design",
+        7
+      ],
+      [
+        "Industrials",
+        5
+      ],
+      [
+        "Fintech",
+        4
+      ],
+      [
+        "Consumer",
+        3
+      ],
+      [
+        "Legal",
+        3
+      ],
+      [
+        "Sales",
+        3
+      ],
+      [
+        "Productivity",
+        3
+      ],
+      [
+        "Healthcare",
+        3
+      ],
+      [
+        "Defense",
+        2
+      ],
+      [
+        "Consumer Finance",
+        2
+      ],
+      [
+        "Marketing",
+        2
+      ],
+      [
+        "Security",
+        2
+      ],
+      [
+        "Manufacturing and Robotics",
+        2
+      ]
+    ],
+    "top_tags": [
+      [
+        "Artificial Intelligence",
+        12
+      ],
+      [
+        "AI",
+        11
+      ],
+      [
+        "B2B",
+        6
+      ],
+      [
+        "SaaS",
+        6
+      ],
+      [
+        "Developer Tools",
+        5
+      ],
+      [
+        "Infrastructure",
+        3
+      ],
+      [
+        "Machine Learning",
+        2
+      ],
+      [
+        "E-commerce",
+        2
+      ],
+      [
+        "Productivity",
+        2
+      ],
+      [
+        "Open Source",
+        2
+      ],
+      [
+        "Enterprise Software",
+        2
+      ],
+      [
+        "Deep Learning",
+        1
+      ],
+      [
+        "Generative AI",
+        1
+      ],
+      [
+        "Automation",
+        1
+      ],
+      [
+        "SMB",
+        1
+      ],
+      [
+        "Conversational AI",
+        1
+      ],
+      [
+        "Legal",
+        1
+      ],
+      [
+        "LegalTech",
+        1
+      ],
+      [
+        "Sales",
+        1
+      ],
+      [
+        "Marketing",
+        1
+      ]
+    ],
+    "top_batches": [
+      [
+        "Spring 2026",
+        29
+      ],
+      [
+        "Fall 2025",
+        10
+      ],
+      [
+        "Summer 2025",
+        10
+      ],
+      [
+        "Spring 2025",
+        5
+      ],
+      [
+        "Fall 2024",
+        1
+      ],
+      [
+        "Summer 2015",
+        1
+      ],
+      [
+        "Summer 2023",
+        1
+      ],
+      [
+        "Winter 2018",
+        1
+      ],
+      [
+        "Winter 2019",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        55
+      ],
+      [
+        "Growth",
+        4
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Revyl",
+        "batch": "Fall 2024",
+        "url": "https://www.ycombinator.com/companies/revyl",
+        "one_liner": "The mobile source of truth",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "B2B",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "AnswerThis",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/answerthis",
+        "one_liner": "End-to-end workspace to accelerate scientific discovery",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Arcten",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/arcten",
+        "one_liner": "Lab working on long-horizon autonomous research and coding agents",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Deep Learning",
+          "Generative AI",
+          "Machine Learning",
+          "AI"
+        ]
+      },
+      {
+        "name": "Aside",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/aside",
+        "one_liner": "Operating system for the AI era",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS",
+          "Automation"
+        ]
+      },
+      {
+        "name": "Boom AI",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/boom-ai",
+        "one_liner": "AI agents that recover lost revenue through real conversations.",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "B2B",
+          "E-commerce",
+          "SMB",
+          "AI"
+        ]
+      },
+      {
+        "name": "Codyco",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/codyco",
+        "one_liner": "The AI Reservation Team for Hotel Groups",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": [
+          "AI",
+          "Conversational AI"
+        ]
+      },
+      {
+        "name": "Compyle",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/compyle",
+        "one_liner": "The coding agent that actually collaborates with you",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "AI"
+        ]
+      },
+      {
+        "name": "Lexi",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/lexi",
+        "one_liner": "AI Associates for Corporate Law",
+        "sectors": [
+          "B2B",
+          "Legal"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS",
+          "B2B",
+          "Legal",
+          "LegalTech"
+        ]
+      },
+      {
+        "name": "Metorial",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/metorial",
+        "one_liner": "Agentic infrastructure to power AI-native companies.",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Telemetron",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/telemetron-ai",
+        "one_liner": "Support and Operations Platform for Hardware Companies",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Terrain",
+        "batch": "Fall 2025",
+        "url": "https://www.ycombinator.com/companies/terrain",
+        "one_liner": "AI native GTM platform for the physical economy",
+        "sectors": [
+          "B2B",
+          "Sales"
+        ],
+        "tags": [
+          "B2B",
+          "AI"
+        ]
+      },
+      {
+        "name": "Clarm",
+        "batch": "Spring 2025",
+        "url": "https://www.ycombinator.com/companies/clarm",
+        "one_liner": "Build governed AI agents on your own data, without code",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Sales",
+          "Marketing",
+          "Customer Support",
+          "AI"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 21014,
+      "full_name": "Jon Xu",
+      "url": "https://www.ycombinator.com/people/jon-xu"
+    },
+    "company_count": 55,
+    "top_industries": [
+      [
+        "B2B",
+        32
+      ],
+      [
+        "Fintech",
+        10
+      ],
+      [
+        "Industrials",
+        7
+      ],
+      [
+        "Healthcare",
+        5
+      ],
+      [
+        "Real Estate and Construction",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        32
+      ],
+      [
+        "Fintech",
+        10
+      ],
+      [
+        "Engineering, Product and Design",
+        7
+      ],
+      [
+        "Industrials",
+        7
+      ],
+      [
+        "Infrastructure",
+        7
+      ],
+      [
+        "Healthcare",
+        5
+      ],
+      [
+        "Security",
+        4
+      ],
+      [
+        "Banking and Exchange",
+        4
+      ],
+      [
+        "Healthcare IT",
+        3
+      ],
+      [
+        "Marketing",
+        2
+      ],
+      [
+        "Manufacturing and Robotics",
+        2
+      ],
+      [
+        "Asset Management",
+        1
+      ],
+      [
+        "Consumer Finance",
+        1
+      ],
+      [
+        "Supply Chain and Logistics",
+        1
+      ],
+      [
+        "Payments",
+        1
+      ]
+    ],
+    "top_tags": [
+      [
+        "Artificial Intelligence",
+        13
+      ],
+      [
+        "B2B",
+        12
+      ],
+      [
+        "AI",
+        8
+      ],
+      [
+        "Fintech",
+        6
+      ],
+      [
+        "Developer Tools",
+        4
+      ],
+      [
+        "Enterprise Software",
+        3
+      ],
+      [
+        "SaaS",
+        2
+      ],
+      [
+        "Productivity",
+        2
+      ],
+      [
+        "Supply Chain",
+        2
+      ],
+      [
+        "Hardware",
+        2
+      ],
+      [
+        "Infrastructure",
+        2
+      ],
+      [
+        "Team Collaboration",
+        1
+      ],
+      [
+        "Machine Learning",
+        1
+      ],
+      [
+        "Finance",
+        1
+      ],
+      [
+        "Sales Enablement",
+        1
+      ],
+      [
+        "Automation",
+        1
+      ],
+      [
+        "Generative AI",
+        1
+      ],
+      [
+        "AIOps",
+        1
+      ],
+      [
+        "DevSecOps",
+        1
+      ],
+      [
+        "Security",
+        1
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2026",
+        23
+      ],
+      [
+        "Summer 2025",
+        22
+      ],
+      [
+        "Spring 2025",
+        3
+      ],
+      [
+        "Summer 2026",
+        3
+      ],
+      [
+        "Summer 2024",
+        2
+      ],
+      [
+        "Winter 2018",
+        1
+      ],
+      [
+        "Winter 2020",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        52
+      ],
+      [
+        "Growth",
+        3
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Casco",
+        "batch": "Spring 2025",
+        "url": "https://www.ycombinator.com/companies/casco",
+        "one_liner": "Autonomous security testing for web apps, APIs, cloud, and AI systems",
+        "sectors": [
+          "B2B",
+          "Security"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Mesmer",
+        "batch": "Spring 2025",
+        "url": "https://www.ycombinator.com/companies/mesmer",
+        "one_liner": "The operating system for the 100x Engineering Team",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "SaaS",
+          "Productivity",
+          "Team Collaboration",
+          "AI"
+        ]
+      },
+      {
+        "name": "Trapeze",
+        "batch": "Spring 2025",
+        "url": "https://www.ycombinator.com/companies/trapeze",
+        "one_liner": "AI-native Zocdoc",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": []
+      },
+      {
+        "name": "FINNY AI",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/finny-ai",
+        "one_liner": "The organic growth engine for financial advisors ",
+        "sectors": [
+          "Fintech",
+          "Asset Management"
+        ],
+        "tags": [
+          "Fintech",
+          "Machine Learning",
+          "Finance",
+          "Sales Enablement",
+          "Automation"
+        ]
+      },
+      {
+        "name": "Saturn",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/saturn",
+        "one_liner": "Compliance and back office workflows for Wealth Managers.",
+        "sectors": [
+          "Fintech"
+        ],
+        "tags": [
+          "Fintech",
+          "Generative AI",
+          "B2B"
+        ]
+      },
+      {
+        "name": "Acrely",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/acrely",
+        "one_liner": "Enterprise Voice Agents",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Alter",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/alter",
+        "one_liner": "Secure access control and authorization platform for agent workflows",
+        "sectors": [
+          "B2B",
+          "Security"
+        ],
+        "tags": [
+          "AIOps",
+          "Developer Tools",
+          "DevSecOps",
+          "Security",
+          "AI"
+        ]
+      },
+      {
+        "name": "Astor",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/astor",
+        "one_liner": "AI advisor for retail investors",
+        "sectors": [
+          "Fintech",
+          "Consumer Finance"
+        ],
+        "tags": [
+          "Fintech",
+          "Investing",
+          "Consumer Finance",
+          "AI"
+        ]
+      },
+      {
+        "name": "Avelis Health",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/avelis-health",
+        "one_liner": "We audit medical claims for self-insured employers and health plans.",
+        "sectors": [
+          "Healthcare",
+          "Healthcare IT"
+        ],
+        "tags": []
+      },
+      {
+        "name": "burnt",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/burnt",
+        "one_liner": "Agentic Operating System for Food Supply Chain",
+        "sectors": [
+          "B2B",
+          "Supply Chain and Logistics"
+        ],
+        "tags": [
+          "Supply Chain",
+          "Food Tech",
+          "AI"
+        ]
+      },
+      {
+        "name": "Cyberdesk",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/cyberdesk",
+        "one_liner": "Self learning computer use agent for developers",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "Robotic Process Automation",
+          "Workflow Automation",
+          "Enterprise Software"
+        ]
+      },
+      {
+        "name": "Datafruit",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/datafruit",
+        "one_liner": "The AI workspace for software implementations",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Enterprise Software"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 224910,
+      "full_name": "Ankit Gupta",
+      "url": "https://www.ycombinator.com/people/ankit-gupta"
+    },
+    "company_count": 45,
+    "top_industries": [
+      [
+        "B2B",
+        25
+      ],
+      [
+        "Healthcare",
+        10
+      ],
+      [
+        "Industrials",
+        6
+      ],
+      [
+        "Fintech",
+        2
+      ],
+      [
+        "Consumer",
+        1
+      ],
+      [
+        "Real Estate and Construction",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        25
+      ],
+      [
+        "Healthcare",
+        10
+      ],
+      [
+        "Infrastructure",
+        7
+      ],
+      [
+        "Industrials",
+        6
+      ],
+      [
+        "Drug Discovery and Delivery",
+        5
+      ],
+      [
+        "Engineering, Product and Design",
+        4
+      ],
+      [
+        "Manufacturing and Robotics",
+        3
+      ],
+      [
+        "Productivity",
+        3
+      ],
+      [
+        "Therapeutics",
+        2
+      ],
+      [
+        "Fintech",
+        2
+      ],
+      [
+        "Supply Chain and Logistics",
+        2
+      ],
+      [
+        "Diagnostics",
+        1
+      ],
+      [
+        "Security",
+        1
+      ],
+      [
+        "Consumer",
+        1
+      ],
+      [
+        "Analytics",
+        1
+      ]
+    ],
+    "top_tags": [
+      [
+        "AI",
+        7
+      ],
+      [
+        "Artificial Intelligence",
+        6
+      ],
+      [
+        "Developer Tools",
+        5
+      ],
+      [
+        "Biotech",
+        4
+      ],
+      [
+        "API",
+        3
+      ],
+      [
+        "SaaS",
+        3
+      ],
+      [
+        "Infrastructure",
+        3
+      ],
+      [
+        "Machine Learning",
+        2
+      ],
+      [
+        "AI-powered Drug Discovery",
+        2
+      ],
+      [
+        "Hardware",
+        2
+      ],
+      [
+        "Construction",
+        2
+      ],
+      [
+        "B2B",
+        2
+      ],
+      [
+        "Enterprise Software",
+        2
+      ],
+      [
+        "Computer Vision",
+        2
+      ],
+      [
+        "Healthcare",
+        1
+      ],
+      [
+        "Diagnostics",
+        1
+      ],
+      [
+        "Gene Therapy",
+        1
+      ],
+      [
+        "Synthetic Biology",
+        1
+      ],
+      [
+        "Therapeutics",
+        1
+      ],
+      [
+        "Oncology",
+        1
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2026",
+        26
+      ],
+      [
+        "Summer 2025",
+        12
+      ],
+      [
+        "Summer 2024",
+        2
+      ],
+      [
+        "Summer 2026",
+        2
+      ],
+      [
+        "Summer 2023",
+        1
+      ],
+      [
+        "Winter 2018",
+        1
+      ],
+      [
+        "Winter 2019",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        43
+      ],
+      [
+        "Growth",
+        2
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Numen",
+        "batch": "Summer 2023",
+        "url": "https://www.ycombinator.com/companies/numen",
+        "one_liner": "Engineering a future without cancer deaths.",
+        "sectors": [
+          "Healthcare",
+          "Diagnostics"
+        ],
+        "tags": [
+          "Machine Learning",
+          "Biotech",
+          "Healthcare",
+          "Diagnostics",
+          "AI"
+        ]
+      },
+      {
+        "name": "Kopra Bio",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/kopra-bio",
+        "one_liner": "Genetically engineered viruses that teach your immune system to kill…",
+        "sectors": [
+          "Healthcare",
+          "Therapeutics"
+        ],
+        "tags": [
+          "Gene Therapy",
+          "Synthetic Biology",
+          "Biotech",
+          "Therapeutics",
+          "Oncology"
+        ]
+      },
+      {
+        "name": "Ångström AI",
+        "batch": "Summer 2024",
+        "url": "https://www.ycombinator.com/companies/angstrom-ai",
+        "one_liner": "Gen AI molecular simulations that reproduce wetlab results",
+        "sectors": [
+          "Healthcare",
+          "Drug Discovery and Delivery"
+        ],
+        "tags": [
+          "AI-powered Drug Discovery",
+          "Artificial Intelligence",
+          "Biotech",
+          "Drug discovery",
+          "AI"
+        ]
+      },
+      {
+        "name": "AgentMail",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/agentmail",
+        "one_liner": "Email Inboxes for AI Agents",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Developer Tools",
+          "API",
+          "Email"
+        ]
+      },
+      {
+        "name": "Blank Bio",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/blank-bio",
+        "one_liner": "RNA intelligence for precision medicine",
+        "sectors": [
+          "Healthcare",
+          "Therapeutics"
+        ],
+        "tags": []
+      },
+      {
+        "name": "ContextFort",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/contextfort",
+        "one_liner": "Visibility and Controls for Browser Agents",
+        "sectors": [
+          "B2B",
+          "Security"
+        ],
+        "tags": [
+          "Cybersecurity",
+          "AI"
+        ]
+      },
+      {
+        "name": "Convexia",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/convexia",
+        "one_liner": "The world's first AI-maximalist pharma company",
+        "sectors": [
+          "Healthcare",
+          "Drug Discovery and Delivery"
+        ],
+        "tags": [
+          "AI-powered Drug Discovery",
+          "Biotech",
+          "Drug Delivery"
+        ]
+      },
+      {
+        "name": "DeepAware AI",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/deepaware-ai",
+        "one_liner": "Robots, parts & RL environments - delivered in 72 hrs or pickup in SF.",
+        "sectors": [
+          "Industrials",
+          "Manufacturing and Robotics"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Robotics",
+          "Supply Chain",
+          "Data Engineering"
+        ]
+      },
+      {
+        "name": "Design Arena",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/design-arena",
+        "one_liner": "World's largest crowdsourced benchmark for AI-generated design",
+        "sectors": [
+          "Consumer"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Design",
+          "Crowdsourcing"
+        ]
+      },
+      {
+        "name": "Flywheel AI",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/flywheel-ai",
+        "one_liner": "Waymo for excavators",
+        "sectors": [
+          "Industrials",
+          "Manufacturing and Robotics"
+        ],
+        "tags": [
+          "Deep Learning",
+          "Hardware",
+          "Construction"
+        ]
+      },
+      {
+        "name": "Golpo",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/golpo",
+        "one_liner": "Create Whiteboard Explainer Videos with AI from a Prompt or Document",
+        "sectors": [
+          "B2B",
+          "Productivity"
+        ],
+        "tags": [
+          "Education",
+          "eLearning",
+          "Video",
+          "Sales Enablement",
+          "Marketing"
+        ]
+      },
+      {
+        "name": "Lotas",
+        "batch": "Summer 2025",
+        "url": "https://www.ycombinator.com/companies/lotas",
+        "one_liner": "AI for Data Science and 3D",
+        "sectors": [
+          "B2B",
+          "Analytics"
+        ],
+        "tags": [
+          "Artificial Intelligence",
+          "Developer Tools",
+          "Data Science",
+          "Data Visualization"
+        ]
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 219698,
+      "full_name": "Harshita Arora",
+      "url": "https://www.ycombinator.com/people/harshita-arora"
+    },
+    "company_count": 11,
+    "top_industries": [
+      [
+        "B2B",
+        8
+      ],
+      [
+        "Consumer",
+        3
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        8
+      ],
+      [
+        "Consumer",
+        3
+      ],
+      [
+        "Infrastructure",
+        2
+      ],
+      [
+        "Gaming",
+        2
+      ],
+      [
+        "Finance and Accounting",
+        2
+      ],
+      [
+        "Food and Beverage",
+        1
+      ],
+      [
+        "Engineering, Product and Design",
+        1
+      ],
+      [
+        "Analytics",
+        1
+      ]
+    ],
+    "top_tags": [
+      [
+        "Developer Tools",
+        1
+      ],
+      [
+        "Fintech",
+        1
+      ],
+      [
+        "SaaS",
+        1
+      ],
+      [
+        "B2B",
+        1
+      ],
+      [
+        "AI",
+        1
+      ]
+    ],
+    "top_batches": [
+      [
+        "Winter 2026",
+        9
+      ],
+      [
+        "Summer 2015",
+        1
+      ],
+      [
+        "Summer 2026",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        10
+      ],
+      [
+        "Growth",
+        1
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Chaldal",
+        "batch": "Summer 2015",
+        "url": "https://www.ycombinator.com/companies/chaldal",
+        "one_liner": "",
+        "sectors": [
+          "Consumer",
+          "Food and Beverage"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Codag",
+        "batch": "Summer 2026",
+        "url": "https://www.ycombinator.com/companies/codag",
+        "one_liner": "Systems log compression for agents.",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": [
+          "Developer Tools"
+        ]
+      },
+      {
+        "name": "Ashr",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/ashr",
+        "one_liner": "Automated Multi-Modal Testing for Agents",
+        "sectors": [
+          "B2B",
+          "Engineering, Product and Design"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Booko",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/booko",
+        "one_liner": "Dynamically pricing the whole economy. ",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      },
+      {
+        "name": "CodeWisp",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/codewisp",
+        "one_liner": "Anyone can create real games with AI",
+        "sectors": [
+          "Consumer",
+          "Gaming"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Copperlane",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/copperlane",
+        "one_liner": "Agentic Mortgage Origination",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Laurence",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/laurence",
+        "one_liner": "Hedge fund for ads",
+        "sectors": [
+          "B2B",
+          "Analytics"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Luel",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/luel",
+        "one_liner": "Turning everyday words and actions into usable training data.",
+        "sectors": [
+          "B2B",
+          "Infrastructure"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Pax Historia",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/pax-historia",
+        "one_liner": "The first AI-powered grand strategy platform",
+        "sectors": [
+          "Consumer",
+          "Gaming"
+        ],
+        "tags": []
+      },
+      {
+        "name": "Q2Q",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/q2q",
+        "one_liner": "We help private equity teams find acquisition targets faster",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": [
+          "Fintech",
+          "SaaS",
+          "B2B",
+          "AI"
+        ]
+      },
+      {
+        "name": "Ressl AI",
+        "batch": "Winter 2026",
+        "url": "https://www.ycombinator.com/companies/ressl-ai",
+        "one_liner": "AI Workers for Field Services",
+        "sectors": [
+          "B2B"
+        ],
+        "tags": []
+      }
+    ]
+  },
+  {
+    "group_partner": {
+      "id": 43727,
+      "full_name": "Vivian Midha Shen",
+      "url": "https://www.ycombinator.com/people"
+    },
+    "company_count": 1,
+    "top_industries": [
+      [
+        "B2B",
+        1
+      ]
+    ],
+    "top_sectors": [
+      [
+        "B2B",
+        1
+      ],
+      [
+        "Finance and Accounting",
+        1
+      ]
+    ],
+    "top_tags": [
+      [
+        "B2B",
+        1
+      ],
+      [
+        "Enterprise Software",
+        1
+      ],
+      [
+        "AI",
+        1
+      ]
+    ],
+    "top_batches": [
+      [
+        "Summer 2026",
+        1
+      ]
+    ],
+    "top_stages": [
+      [
+        "Early",
+        1
+      ]
+    ],
+    "example_companies": [
+      {
+        "name": "Rex",
+        "batch": "Summer 2026",
+        "url": "https://www.ycombinator.com/companies/rex-inc",
+        "one_liner": "AI Operations Partner for Enterprise Order to Cash",
+        "sectors": [
+          "B2B",
+          "Finance and Accounting"
+        ],
+        "tags": [
+          "B2B",
+          "Enterprise Software",
+          "AI"
+        ]
+      }
+    ]
+  }
+]

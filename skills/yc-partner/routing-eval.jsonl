@@ -3,3 +3,4 @@
 {"input":"What YC resources should I read before applying?","expected_skill":"yc-partner"}
 {"input":"Rewrite this YC application answer to be clearer and more specific.","expected_skill":"yc-partner"}
 {"input":"Act like a YC partner and pressure-test our startup application.","expected_skill":"yc-partner"}
+{"input":"We were rejected by YC before. Should we apply again, and what should we change?","expected_skill":"yc-partner"}
