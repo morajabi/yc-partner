@@ -1,0 +1,5 @@
+{"input":"Review my YC application and tell me what to fix first.","expected_skill":"yc-partner"}
+{"input":"Help me prepare for my YC interview.","expected_skill":"yc-partner"}
+{"input":"What YC resources should I read before applying?","expected_skill":"yc-partner"}
+{"input":"Rewrite this YC application answer to be clearer and more specific.","expected_skill":"yc-partner"}
+{"input":"Act like a YC partner and pressure-test our startup application.","expected_skill":"yc-partner"}

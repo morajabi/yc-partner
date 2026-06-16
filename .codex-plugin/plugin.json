@@ -1,0 +1,22 @@
+{
+  "name": "yc-partner",
+  "version": "0.1.0",
+  "description": "Public YC application and interview second pair of eyes built from processed source notes.",
+  "author": {
+    "name": "yc-partner maintainers"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "YC Partner",
+    "shortDescription": "Get source-grounded YC application feedback and interview prep.",
+    "longDescription": "YC Partner provides a public, processed Markdown knowledge pack and skill that acts as a fresh second pair of eyes for YC applications, interview prep, application hygiene, and relevant YC resource recommendations.",
+    "developerName": "yc-partner maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "application_review",
+      "interview_prep",
+      "source_recommendations"
+    ],
+    "defaultPrompt": "Use YC Partner as a second pair of eyes on my YC application."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC Partner"
+  short_description: "Get source-grounded YC application feedback and interview prep."
+  default_prompt: "Use YC Partner as a second pair of eyes on my YC application."

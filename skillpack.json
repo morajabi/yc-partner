@@ -1,0 +1,17 @@
+{
+  "api_version": "yc-partner-skillpack-v1",
+  "name": "yc-partner",
+  "version": "0.1.0",
+  "description": "Processed YC application review, interview prep, and resource recommendation knowledge pack.",
+  "author": "yc-partner maintainers",
+  "license": "MIT",
+  "skills": [
+    "skills/yc-partner"
+  ],
+  "runbooks": {
+    "bootstrap": "skills/yc-partner/runbooks/bootstrap.md"
+  },
+  "routing_evals": [
+    "skills/yc-partner/routing-eval.jsonl"
+  ]
+}

@@ -1,0 +1,148 @@
+# AGENTS.md
+
+## Source Of Truth
+
+The root `README.md` is the product source of truth. If lower-level scaffolding disagrees with it, update the skill and repo structure to match the README.
+
+## Goal
+
+`yc-partner` is a public, open source knowledge pack and agent skill for founders applying to Y Combinator.
+
+It should help users:
+
+- Review YC applications with fresh eyes.
+- Improve clarity, specificity, and application hygiene.
+- Estimate whether the application is likely to earn an interview.
+- Prepare for YC interviews.
+- Verify advice against YC resources, YC-affiliated material, examples, and founder stories.
+- Find relevant YC resources to read or watch.
+
+## Skill Boundary
+
+The skill is the artifact. `skills/yc-partner/SKILL.md` is for founders using the installed skill, not for maintainers building the corpus.
+
+Keep runtime skill instructions focused on:
+
+- How to review applications.
+- How to prepare founders for interviews.
+- What sources to trust.
+- How to find bundled resources.
+- Tone, posture, required vs optional behavior, and dos/don'ts.
+
+Keep collection, transcription, scraping, indexing, and guide-generation instructions outside the runtime skill, in `AGENTS.md`, `README.md`, `scripts/README.md`, or maintainer docs.
+
+## Public-Safe Boundary
+
+Do not include:
+
+- Private YC applications unless explicitly contributed for public use.
+- Personal contact information, private founder profiles, emails, phone numbers, screenshots, internal notes, or unpublished drafts.
+- Private anecdotes unless rewritten as approved public examples.
+- Secrets, credentials, `.env` files, auth cookies, browser session data, or private API outputs.
+- Raw unprocessed HTML, downloaded videos, audio files, screenshots, caption JSON, or temporary scraper outputs.
+
+If a file contains private information or application-specific content, keep it out of `yc-partner`.
+
+## Source Scope
+
+Official YC sources are highest priority for YC-specific guidance:
+
+- YC website pages and guides.
+- YC blog posts and essays.
+- YC YouTube videos and transcripts.
+- Startup School pages, lectures, and transcripts.
+- YC Requests for Startups and YC company-directory pages when relevant.
+- Public posts by YC partners when published through YC, Startup School, or official/clearly attributable channels.
+
+Also include, clearly labeled:
+
+- Paul Graham essays.
+- Jessica Livingston writing/interviews.
+- YC partner blogs, tweets, talks, and interviews.
+- Dalton + Michael videos.
+- Social Radars podcast material.
+- Public example YC applications, demo videos, and founder videos.
+- Founder stories from renowned YC startups, especially from their YC/early-company days.
+- External startup context when useful, labeled as external context, not YC guidance.
+
+## Content Format
+
+Durable source files should be processed Markdown with traceable metadata.
+
+Each source-derived file should include:
+
+- Title.
+- Source type and source status.
+- Original public URL.
+- Author/channel, when known.
+- Published date, when known.
+- Captured or processed date.
+- Processing method, when useful.
+
+Keep the full processed Markdown text of YouTube transcripts, podcast transcripts, blog posts, essays, and similar sources. Do not keep summaries only.
+
+Do not commit raw capture artifacts. If raw capture is needed, keep it outside the repository or in an ignored local staging area, then convert it into clean Markdown before committing.
+
+## Structure
+
+Use this structure unless the README requires a change:
+
+- `.codex-plugin/plugin.json` - Codex plugin manifest.
+- `AGENTS.md` - maintainer and agent instructions.
+- `LICENSE` - open source license.
+- `README.md` - human-facing product direction and usage.
+- `skillpack.json` - lightweight skillpack-style manifest.
+- `skills/yc-partner/SKILL.md` - runtime skill entry point.
+- `skills/yc-partner/references/` - compact founder-facing references loaded on demand.
+- `skills/yc-partner/resources/yc-website/` - official YC website material.
+- `skills/yc-partner/resources/yc-youtube/` - YC YouTube transcripts.
+- `skills/yc-partner/resources/yc-partners/` - YC partner blogs, tweets, talks, and related material.
+- `skills/yc-partner/resources/interviews/` - interviews with Paul Graham, Jessica Livingston, and YC partners.
+- `skills/yc-partner/resources/pg-essays/` - Paul Graham essays.
+- `skills/yc-partner/resources/social-radars/` - Social Radars podcast transcripts.
+- `skills/yc-partner/resources/founder-stories/` - YC founder stories from renowned startups.
+- `skills/yc-partner/resources/dalton-michael/` - Dalton + Michael video transcripts.
+- `skills/yc-partner/resources/examples/` - public example applications, founder videos, and demo videos.
+- `skills/yc-partner/resources/external/` - non-YC public context, clearly labeled.
+- `skills/yc-partner/indexes/` - routing maps by application question, FAQ topic, interview topic, source type, and theme.
+- `skills/yc-partner/guides/generated/` - autogenerated guide summaries from indexes and source files.
+- `skills/yc-partner/guides/curated/` - hand-written guidance scripts must not overwrite.
+- `skills/yc-partner/routing-eval.jsonl` - trigger examples.
+- `skills/yc-partner/runbooks/bootstrap.md` - post-install orientation.
+- `scripts/` - root-level collection, transcription, extraction, indexing, guide generation, and submitted-video analysis scripts.
+- `templates/` - maintainer templates.
+
+## Resource Pipeline
+
+1. Collect public material outside the runtime skill when raw capture is needed.
+2. Convert each source into processed Markdown under `skills/yc-partner/resources/`.
+3. Update indexes under `skills/yc-partner/indexes/`.
+4. Generate summaries under `skills/yc-partner/guides/generated/`.
+5. Put durable human judgment in `skills/yc-partner/guides/curated/` or `skills/yc-partner/references/`.
+
+## Review Behavior
+
+The skill should be direct, specific, source-grounded, and skeptical without being theatrical.
+
+Prioritize:
+
+- Clear company description.
+- Specific user/customer pain.
+- Evidence, traction, revenue, usage, and speed.
+- Founder insight and founder-market fit.
+- Direct answers to each prompt.
+- Concrete language over jargon.
+- Distinguishing YC guidance, public examples, founder stories, and inference.
+
+Do not act as a ghostwriter. Suggested rewrites are directional examples, not copy-paste final answers.
+
+## Maintenance Rules
+
+- Preserve user privacy.
+- Never read, print, modify, or summarize `.env` files.
+- Do not add private application data.
+- Do not add raw media, raw HTML, or raw caption files.
+- Preserve source metadata.
+- Label non-official sources clearly.
+- Keep generated and curated guides separate.
+- Keep `SKILL.md` concise; move detailed context into bundled resources, indexes, guides, and references.
