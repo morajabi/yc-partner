@@ -45,6 +45,18 @@ python3 scripts/capture_yc_library_pages.py https://www.ycombinator.com/library/
 python3 scripts/capture_yc_library_pages.py --output-dir skills/yc-partner/resources/social-radars https://www.ycombinator.com/library/JV-paul-graham-co-founder-of-y-combinator-and-viaweb
 ```
 
+## Social Radars Transcript Capture
+
+Use `capture_social_radars_transcripts.py` to discover public transcript PDFs from `https://www.thesocialradars.com/episodes`, download raw PDFs into ignored `.source/social-radars-transcripts/`, extract text, and write processed Markdown under `skills/yc-partner/resources/social-radars/`.
+
+Install the PDF extraction dependency in an ignored local environment:
+
+```sh
+python3 -m venv .source/social-radars-venv
+.source/social-radars-venv/bin/python -m pip install pypdf
+.source/social-radars-venv/bin/python scripts/capture_social_radars_transcripts.py paul-graham-s5
+```
+
 ## Paul Graham HTML Conversion
 
 Use `convert_pg_html_to_markdown.py` to convert local Paul Graham essay HTML captures into processed Markdown files under `skills/yc-partner/resources/pg-essays/`.

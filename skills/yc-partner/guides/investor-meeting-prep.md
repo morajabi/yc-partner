@@ -13,6 +13,8 @@ Use this guide when a founder asks how to prepare for investor meetings, fundrai
 - Geoff Ralston's seed fundraising guide says investors fund when the idea is compelling, the team can realize it, and the opportunity is real and large; for most founders this requires an idea, product, and some customer adoption (`../resources/yc-website/yc-blog/a-guide-to-seed-fundraising.md:68`).
 - Route seed mechanics questions to the official YC Blog guide first, especially how much to raise, financing options, SAFEs, valuation, investor meetings, closing, and documents (`../resources/yc-website/yc-blog/a-guide-to-seed-fundraising.md:22`).
 - If the company is not ready to fundraise, use the meeting prep to clarify what proof would make the story fundable: customer adoption, growth, revenue, retention, speed, technical proof, or founder-market fit.
+- For YC-company seed process context, Sam Altman's public YC Blog note emphasizes investor quality over valuation, about 20% dilution as a seed-round target, a time-boxed process, and not falling in love with fundraising (`../resources/yc-website/yc-blog/fundraising-advice-for-yc-companies.md:62`, `../resources/yc-website/yc-blog/fundraising-advice-for-yc-companies.md:70`, `../resources/yc-website/yc-blog/fundraising-advice-for-yc-companies.md:78`, `../resources/yc-website/yc-blog/fundraising-advice-for-yc-companies.md:104`).
+- Use the dilution post for cap-table sanity checks: higher valuation is not automatically better if founders sell too much early, and later investors can be deterred when early investors already own too much of the company (`../resources/yc-website/yc-blog/dilution.md:28`, `../resources/yc-website/yc-blog/dilution.md:56`, `../resources/yc-website/yc-blog/dilution.md:76`).
 
 ## Meeting Story
 
@@ -24,6 +26,8 @@ Use this guide when a founder asks how to prepare for investor meetings, fundrai
 
 - Michael Seibel's YC Blog post says a financing round is not the same as success; fundraising should be a byproduct of success, and using rounds as benchmarks can push founders toward optimizing for investors instead of customers (`../resources/yc-website/yc-blog/fundraising-rounds-are-not-milestones.md:28`, `../resources/yc-website/yc-blog/fundraising-rounds-are-not-milestones.md:36`).
 - In prep, replace "we are raising X" with the company milestone that money helps reach: retained users, paid customers, revenue, product proof, regulatory milestone, or distribution channel.
+- Christina Cacioppo's Vanta story is a concrete Demo Day/pre-fundraise example: YC pushed her away from investor meetings and toward building with customers, and she frames the choice as getting another customer versus spending the time on a VC meeting (`../resources/social-radars/christina-cacioppo-founder-ceo-vanta.md:593`, `../resources/social-radars/christina-cacioppo-founder-ceo-vanta.md:597`, `../resources/social-radars/christina-cacioppo-founder-ceo-vanta.md:609`).
+- The Vanta/Zapier YC Blog notes are a useful counterweight to "raise first, grow later": both examples frame disciplined fundraising around spend discipline, unit economics, and customer pull rather than assuming the next round (`../resources/yc-website/yc-blog/same-same-but-different-with-vanta-and-zapier.md:24`, `../resources/yc-website/yc-blog/same-same-but-different-with-vanta-and-zapier.md:76`, `../resources/yc-website/yc-blog/same-same-but-different-with-vanta-and-zapier.md:86`, `../resources/yc-website/yc-blog/same-same-but-different-with-vanta-and-zapier.md:160`).
 
 ## Runway And Burn
 
@@ -43,6 +47,8 @@ Use this guide when a founder asks how to prepare for investor meetings, fundrai
 - What will this round let you prove?
 - What must be true for this to become venture-scale?
 - What is the biggest risk, and what are you doing this month to reduce it?
+- How much of the company will be sold in this round, and what ownership path does that imply for the next round?
+- Which investor would you still want on the cap table if the market gets harder?
 - What happens if you cannot raise this round?
 
 ## Output Shape

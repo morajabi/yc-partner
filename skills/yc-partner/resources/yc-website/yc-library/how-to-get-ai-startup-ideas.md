@@ -5,7 +5,7 @@
 - URL: https://youtu.be/TANaRNMbYgk
 - Author: Y Combinator
 - Published: 2025-02-07
-- Captured: 2026-06-16
+- Captured: 2026-06-17
 - Method: YC Library data-page transcript
 - Caveat: references/caveats/official-yc-source.md
 
@@ -13,7 +13,7 @@
 
 - Official YC Library transcript captured as a first-class source.
 - Use with topic-specific indexes and guides based on the source title and transcript.
-- Full transcript preserved below.
+- Full processed transcript preserved below.
 - YC Library URL: https://www.ycombinator.com/library/M8-how-to-get-ai-startup-ideas.
 - Video ID: TANaRNMbYgk; duration: 43:49; YC Library view count at capture: 280447.
 

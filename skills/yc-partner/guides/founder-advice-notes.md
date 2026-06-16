@@ -299,9 +299,9 @@ Note: YC's essential advice is to launch once there is a real quantum of utility
 
 Sources:
 
-- YC essential advice: `../resources/yc-partners/michael-seibel-yc-s-essential-startup-advice.md:20`, `../resources/yc-partners/michael-seibel-yc-s-essential-startup-advice.md:22`, `../resources/yc-partners/michael-seibel-yc-s-essential-startup-advice.md:26`
+- YC essential advice: `../resources/yc-website/yc-library/yc-s-essential-startup-advice.md:27`, `../resources/yc-website/yc-library/yc-s-essential-startup-advice.md:34`, `../resources/yc-website/yc-library/yc-s-essential-startup-advice.md:60`
 - Sam Altman startup advice: `../resources/yc-partners/sam-altman-startup-advice.md:24`, `../resources/yc-partners/sam-altman-startup-advice.md:144`
-- Public URLs: https://www.michaelseibel.com/blog/yc-s-essential-startup-advice, https://blog.samaltman.com/startup-advice
+- Public URLs: https://www.ycombinator.com/library/4D-yc-s-essential-startup-advice, https://blog.samaltman.com/startup-advice
 
 ### Make Something A Few Users Love
 

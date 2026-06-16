@@ -166,18 +166,18 @@ For broad first-pass reviews, add `Tips` for application/applying advice and `Of
 
 The final review is a founder-facing report, not an audit transcript. Keep evidence traces, source-selection steps, and scoring deliberation internal. Do not include sections titled `Evidence Ledger`, `Source Pass`, `Signal Split`, `Myth Checks`, `Internal Notes`, or `Thinking`.
 
-The top of the review should be dense and skimmable. Do not open with long prose paragraphs. Use short, generic section titles and bullets by default. Avoid sections that duplicate each other. Lead with the most important conclusions in compact bullets, then use later sections for source references, quotes, examples, and suggested rewrites.
+The top of the review should be dense and skimmable. Do not open with long prose paragraphs. Use short, generic section titles and bullets by default, but allow short paragraphs where a quote, example, or sample rewrite reads better. Avoid sections that duplicate each other. Lead with the most important conclusions in compact bullets or short lines, then use later sections for source references, quotes, examples, and suggested rewrites.
 
 Use this shape for broad first-pass reviews and substantial iterations:
 
 1. `Overview`
-   - Bullet-only executive summary, usually 4-6 bullets.
-   - Each bullet should be one high-signal sentence, not a paragraph.
+   - Executive summary, usually 4-6 compact bullets or short lines.
+   - Each item should be one high-signal sentence, not a paragraph.
    - Include: plain one-line company description; overall read/verdict; strongest evidence; biggest risk/missing proof; highest-leverage next move.
    - Do not include score details here unless the user asked only for a score.
    - Do not restate the whole application. Mention application facts only when they explain the conclusion.
 2. `Good`
-   - Short bullets only.
+   - Short bullets or compact lines.
    - Focus on the strongest founder, product, traction, user-learning, or clarity signals.
    - Add a source/tip only if it sharpens the point.
 3. `Fix`
@@ -222,7 +222,7 @@ Optional `Sources`:
 - Keep it short and grouped at the end; do not make the body read like a bibliography.
 - Body citations should still appear close to the practical recommendation they support.
 
-For narrow answer edits, use a shorter variant: `Read`, `Fix`, `Example`, `Tip`, and `Question` if needed.
+For narrow answer edits, use a shorter variant: `Read`, `Fix`, `Example`, `Tip`, and `Question` if needed. In `Example`, it is fine to quote the user's original phrase and show one sample rewrite.
 
 After completing a review of an application, ask for more detail only where it would materially improve the next iteration: unclear product scope, weak user evidence, vague founder-market fit, missing work history, unresolved competitor/differentiation claims, questionable commitment, inconsistent traction, or missing proof-of-work/demo evidence. Also ask for the founder video and demo video if they exist and were not reviewed.
 
@@ -230,7 +230,7 @@ Include source-grounded advice in each meaningful review round using `founder-ad
 
 When an important answer is seriously weak, way off, or the founder explicitly asks for guidance, calibrate before rewriting. For core prompts such as "What is your company going to make?", show 1-2 short exact examples from the most relevant YC sources: official YC guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Use examples to teach answer shape, not as templates to imitate. Expand the example set only if the founder asks.
 
-For every rewrite, preserve factual accuracy. Only rewrite a pitch or answer when the facts are grounded in the submitted application, other supplied answers, public website, GitHub README or docs, demo/product surface, prior application, interview feedback, or founder-provided context. If a stronger answer needs missing facts about the market, customer, unique angle, positioning, traction, or product, ask for those facts instead of inventing them.
+For every rewrite, preserve factual accuracy. Only rewrite a pitch or answer when the facts are grounded in the submitted application, other supplied answers, public website, GitHub README or docs, demo/product surface, prior application, interview feedback, or founder-provided context. If a stronger answer needs missing facts about the market, customer, unique angle, positioning, traction, or product, ask for those facts instead of inventing them. Prefer one strong sample over many rewrites; do not rewrite many questions unless the user drills down into rewrite mode.
 
 ## Fun Fact
 
