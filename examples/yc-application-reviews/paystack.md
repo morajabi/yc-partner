@@ -15,73 +15,89 @@
 
 ```text
 Use YC Partner to review this public YC application: https://getintoyc.com/company/paystack/
-Give a source-grounded first-pass review with an evidence ledger, highest-impact fixes, score, helpful notes, and a fun fact.
+Give a source-grounded first-pass review with a quick overview, scorecard, highest-ROI fixes, application tips, office-hours startup advice, hygiene, and a fun fact.
 ```
 
 ## Review Output
 
-### One-Line Read
+### Overview
 
-Paystack is building APIs and tools that let African merchants accept online payments from local and international customers.
+- Strong founder-market fit: this reads like a founder who has lived the payment problem and then worked close to the underlying banking infrastructure.
+- The early user pull is promising despite small revenue, especially merchants using the product before settlement was complete.
+- The biggest risks are fintech execution risks: technical ownership, settlement trust, fraud/compliance, and vague growth denominators.
 
-### Evidence Ledger
-
-- Product: PCI-compliant payments infrastructure and APIs, with examples of live demo merchants.
-- User: African merchants and developers who cannot easily accept online payments, recurring payments, one-click payments, local card schemes, mobile money, and international cards.
-- Proof users care: 12 pilot merchants, about 400 merchants on the waitlist, $1,300 revenue, live transactions, a dozen pilots, 150 merchant conversations, and pilot merchants using the product even before settlement was implemented.
-- Founder-market fit: Founder had direct startup pain from trying to accept online payments in 2010 and spent 2014 implementing payments and disbursement solutions for banks.
-- Unique insight: The infrastructure existed in pieces; the hard part was integrating it locally and serving merchant/developer needs better than banks or global payment companies.
-- Distribution: Word of mouth, local developer community, merchant outreach, integrations with Shopify/Eventbrite/WooCommerce, and Access Bank customer access.
-- Main risks: Fintech compliance and fraud risk, settlement trust, technical ownership, contractor-built Android library, single-founder setup, and vague growth denominators.
-
-### What Works
-
-This application has unusually strong founder-market fit. It is not an abstract "Stripe for X" clone. The founder experienced the problem as a merchant, then spent a year implementing bank payment infrastructure, then built the missing developer-facing layer. That is exactly the kind of market knowledge YC can use when partners are not the domain experts.
-
-The user evidence is also strong for a private beta. "12 pilot merchants" and "$1,300 revenue" are small numbers, but the quality of the evidence is better than the size suggests. The most compelling sentence is that merchants were willing to use the product without settlement for six weeks. That points to pain and trust, not just curiosity.
-
-The differentiation answer is practical. Paystack explains why local financial institutions move slowly, why global companies may miss local card/payment schemes, and why local non-financial companies are the real competition.
-
-### Highest-Impact Fixes
-
-1. Clarify technical ownership.
-
-The application says the Android library was written by a contractor. That may be fine, but for a fintech infrastructure startup, YC will care who owns core technical execution. The answer should make clear who built and maintains the payment APIs, vault, anti-fraud, chargeback protection, compliance work, and integrations.
-
-2. Make the growth metrics defensible.
-
-"Waiting list at 10x" and "transaction volume at 15x" sound impressive, but without baseline and time window they are hard to evaluate. A better answer would say: starting point, ending point, period, transaction count, transaction value, and whether the volume came from repeat merchant behavior.
-
-3. Address trust, settlement, and fraud head-on.
-
-The application says merchants used Paystack without settlement, which is powerful evidence. It also creates the obvious partner question: why did they trust you, how did you handle settlement risk, and what happens at scale? For fintech, naming the hard part makes the application stronger.
-
-4. Explain the founder/team setup.
-
-The public application mostly reads as one founder with employee/advisory pools. YC accepts solo founders, but one-person startups are harder. Paystack should show the actual execution capacity around engineering, compliance, banking relationships, sales, and support.
-
-### Score
+### Scorecard
 
 - Application strength: 0.80
-- Interview-pull signal from text: 0.74
-- Confidence: Medium
+- Text-only interview likelihood: 0.74
+- Fixes: 4
+- Good areas: 3
+- Risks: 4
+- Highest-impact changes: clarify technical ownership; make growth metrics defensible; address settlement/fraud risk directly.
+- Caveat: this is a text-only estimate from a public historical example, not YC feedback or an admissions prediction.
 
-Why not higher: key fintech execution risks are not fully answered, and the team/technical ownership picture is incomplete. Why high: the founder has unusually relevant lived and professional experience, the merchant pain is concrete, and the early user pull looks real despite small revenue.
+### What's Good
 
-### Helpful Notes
+- Strong market knowledge: the founder experienced the merchant payment problem directly and later implemented bank payment infrastructure.
+- Strong early customer signal: 12 pilot merchants, about 400 merchants on the waitlist, $1,300 revenue, live transactions, and 150 merchant conversations.
+- Strong pain evidence: merchants using Paystack before settlement was implemented suggests urgency and trust, not just curiosity.
 
-- Paul Graham's YC interview essay says YC partners often rely on founders as domain experts if the founders know what they are talking about and are not misleading. Paystack's strongest case is that the founder can teach YC about African merchant payments from direct experience ([Billionaires Build](https://www.paulgraham.com/ace.html)).
-- The official YC FAQ says YC considers startups in any field, not only software, but the application still needs the founding team's ability to build the product. For Paystack, that means technical ownership and regulatory execution should be more explicit ([YC FAQ](https://www.ycombinator.com/faq)).
-- The customer-learning evidence is strong: 150 merchant conversations plus merchants using an incomplete settlement flow. The next revision should turn that learning into concrete product decisions, not just state that demand is amazing.
+### Highest-ROI Risks
+
+- Technical ownership is not obvious enough for a fintech infrastructure company.
+- "10x" waitlist and "15x" transaction growth need baselines, time windows, transaction count, and repeat behavior.
+- Trust, settlement, chargebacks, fraud, and compliance are obvious partner questions and should be answered before the reader has to ask.
+- The founder/team setup needs clearer coverage across engineering, banking relationships, sales, compliance, and support.
+
+### Changes To Make
+
+1. Clarify who owns the core technology.
+
+The contractor-built Android library may be fine, but the application should make clear who built and maintains the payment APIs, vault, anti-fraud, chargeback protection, compliance work, and integrations. YC's FAQ says non-software and complex companies are fine, but the team still has to show it can build what matters ([YC FAQ](https://www.ycombinator.com/faq)).
+
+2. Replace growth multiples with denominated metrics.
+
+"10x" and "15x" sound exciting but are hard to evaluate without a starting point, ending point, period, and repeat behavior. For example: transaction count, transaction value, number of repeat merchants, and whether the same merchants kept processing after the first transaction.
+
+3. Name the hard fintech risk.
+
+The strongest version does not hide settlement and trust. It says why merchants trusted Paystack before settlement, how settlement risk was handled, what the fraud/chargeback plan is, and what changes at higher volume.
+
+4. Make founder-market fit teach the reader.
+
+The application should not just say the founder knows payments. It should include one or two concrete lessons from the 150 merchant conversations or bank implementation work that a generic "Stripe for Africa" pitch would miss.
 
 ### Fun Fact
 
-When asked whether Africa-based companies need more progress to be accepted, Paul Graham replied that they need no more progress than companies from other continents. That is useful context for Paystack-style applications: geography is not the issue; clarity, founder strength, user pull, and execution risk are ([PG thread](https://x.com/paulg/status/1642566043053826048)).
+When asked whether Africa-based companies need more progress to be accepted, Paul Graham replied that they need no more progress than companies from other continents. For Paystack-style applications, geography is context; the real questions are clarity, founder strength, user pull, and execution risk ([PG thread](https://x.com/paulg/status/1642566043053826048)).
 
-### Source Trail
+### Tips
+
+- Application tip: explain the domain in plain English. Paul Graham says YC partners may rely on founders as domain experts when the founders know what they are talking about and are candid about risks ([Billionaires Build](https://www.paulgraham.com/ace.html)).
+- Application tip: do not rely on "Stripe for Africa" as the main explanation. Use it only after the reader understands the local payment workflow and why existing options fail.
+- Application tip: for fintech, put credibility near the risk. If the hard parts are settlement, fraud, compliance, and bank integrations, the application should show who handles each one.
+
+### Office Hours
+
+- Startup advice: treat settlement trust as the product, not a back-office detail. If merchants trust you with money before the product is complete, learn exactly why.
+- Startup advice: pick the first merchant segment where urgency is highest and integrations are repeatable. Broad "African merchants" is a market; the first wedge should be narrower.
+- Startup advice: turn the 150 merchant conversations into product decisions. What did you remove, add, or prioritize because of those conversations?
+
+### Hygiene
+
+- Add baselines and time windows for all growth multiples.
+- Clarify founder/team responsibilities and technical ownership.
+- Keep compliance and settlement claims precise; do not state more certainty than the evidence supports.
+
+### Next Questions
+
+- Who built and maintains each critical part of the payment stack?
+- What are the exact starting/ending values behind the 10x and 15x claims?
+- What did the 150 merchant conversations change in the product?
+
+### Sources
 
 - [Paystack public application](https://getintoyc.com/company/paystack/)
 - [Paul Graham: Billionaires Build](https://www.paulgraham.com/ace.html)
 - [YC FAQ](https://www.ycombinator.com/faq)
-- [Michael Seibel: How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)
 - [PG thread with geography reply](https://x.com/paulg/status/1642566043053826048)

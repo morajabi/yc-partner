@@ -146,21 +146,67 @@ Use this as a review pass:
 - For earnest applications that lack evidence of founder strength, remember PG's founder-suitability warning: YC learned not to accept people merely because they seemed nice and eager if they were not genuinely suited to startup pain (`../resources/tweets/paul-graham-founder-suitability-selection-2019-03-13.md:21`).
 - For hardware, biotech, and other domains where founders fear a category-specific YC bias, route back to fundamentals: PG says the hardware stereotype was always false and that YC looks for the same startup fundamentals in biotech as in other startups (`../resources/tweets/paul-graham-hardware-startup-stereotype-false-2016-03-27.md:21`, `../resources/tweets/paul-graham-biotech-domain-expertise-2026-06-14.md:30`).
 
-## Helpful Notes
+## Application Tips And Office Hours
 
 Use `founder-advice-notes.md` in every broad first-pass review and substantial iteration. Pick notes that map to the application's actual issues: stage doubt, clarity, founder signal, technical ownership, user learning, founder video, interview prep, competitors, market wedge, or another concrete issue surfaced by the review. Do not present the guide as a reading list.
 
 When assessing what the company does or whether it is a plausible YC company, include the partner-legibility note when relevant: YC fit is not just category matching against YC-funded companies or RFSes. The stronger question is whether a real YC partner can quickly see an interesting idea/insight, a compelling founder profile, or both. Ground this in official How to Apply, Startup School's application-reader questions, PG essays, interviews, and captured partner posts (`founder-advice-notes.md#make-a-real-partner-want-to-know-more`).
 
-For broad first-pass reviews, add a short `Office Hours` or `Helpful Notes` section with 3-5 context-matched notes. For narrow answer edits or follow-up revisions, use 1-2 inline notes only if they change the next edit.
+For broad first-pass reviews, add `Tips` for application/applying advice and `Office Hours` for startup advice when each is useful. Keep them separate: application wording, applying strategy, founder video, demo, and form hygiene belong in `Tips`; customer development, focus, revenue, growth, cofounder dynamics, and operating questions belong in `Office Hours`. Cap each section at 5-6 bullets or several short paragraphs. For narrow answer edits or follow-up revisions, use 1-2 inline notes only if they change the next edit.
 
 ## Output Shape
 
-Start with the highest-impact fixes. Then cover answer-level issues, suggested rewrites, open questions, and relevant sources.
+The final review is a founder-facing report, not an audit transcript. Keep evidence traces, source-selection steps, and scoring deliberation internal. Do not include sections titled `Evidence Ledger`, `Source Pass`, `Signal Split`, `Myth Checks`, `Internal Notes`, or `Thinking`.
+
+Use this shape for broad first-pass reviews and substantial iterations:
+
+1. `Overview`
+   - 2-4 bullets.
+   - Say the overall read, the main reason the application does or does not feel interview-ready, and the highest-leverage theme.
+   - Do not restate the whole application. Mention only facts needed to make the conclusion understandable.
+2. `Scorecard`
+   - Include application strength and text-only interview likelihood when scoring is requested or useful.
+   - Include counts: `Fixes`, `Good areas`, and `Risks`.
+   - Include 1-3 `Highest-impact changes`.
+   - Keep the score caveat to one sentence: it is a text-only estimate, not an admissions prediction.
+3. `What's Good`
+   - Short bullets only.
+   - Focus on the strongest founder, product, traction, user-learning, or clarity signals.
+   - Add a source/tip only if it sharpens the point.
+4. `Highest-ROI Risks`
+   - Short bullets naming the biggest risks, missing proof, weak answers, or reader doubts.
+   - Keep it diagnostic; expand in `Changes To Make`.
+5. `Changes To Make`
+   - Main section of the review.
+   - Each item should include what to change, why it matters, and a concrete example, source, quote, or tip when useful.
+   - Keep each item to a few sentences. Do not let one item exceed five short paragraphs.
+   - Suggested rewrites are directional examples, not copy-paste final answers.
+6. `Fun Fact`
+   - Exactly one short item for broad first-pass reviews.
+   - Keep it relevant and lightly cited.
+7. `Tips`
+   - 2-5 application/applying notes, examples, or resources.
+   - Use for prompt-answering, clarity, founder video, demo, applying timing, and source-backed application examples.
+   - Prefer actionable advice over long quotations.
+   - Skip generic tips that do not change the next edit.
+   - Keep the section capped at 5-6 bullets or several short paragraphs.
+8. `Office Hours`
+   - 2-5 startup advice notes about what to do in the business.
+   - Use for customer learning, focus, growth, revenue, market wedge, cofounder dynamics, and execution.
+   - Do not include application-writing advice here.
+   - Keep the section capped at 5-6 bullets or several short paragraphs.
+9. `Hygiene`
+   - Required fields, empty answers, grammar/typos, URLs/login, founder video, demo/product link, batch/location inconsistencies, and answers that do not answer the prompt.
+   - If clean, use one line.
+10. `Next Questions`
+   - Ask only for missing facts that would materially improve the next iteration.
+   - Ask for founder video and demo video if they exist and were not reviewed.
+
+For narrow answer edits, use a shorter variant: `Quick Read`, `Fixes`, `Example`, `Tip`, and `Next Question` if needed.
 
 After completing a review of an application, ask for more detail only where it would materially improve the next iteration: unclear product scope, weak user evidence, vague founder-market fit, missing work history, unresolved competitor/differentiation claims, questionable commitment, or inconsistent traction. Also ask for the founder video and demo video if they exist and were not reviewed.
 
-Include source-grounded advice in each meaningful review round using `founder-advice-notes.md` first. This can be a dedicated `Office Hours` or `Helpful Notes` section, or embedded tips next to the relevant critique. Aim for 4-5 relevant quotes, tips, examples, or advice nuggets with links when the application has enough surface area and the corpus has real support. Use fewer when the review is narrow or additional sources would become filler. Final answers should cite public URLs the founder can read or watch, not local skill file paths.
+Include source-grounded advice in each meaningful review round using `founder-advice-notes.md` first. Put application/applying advice in `Tips`; put startup operating advice in `Office Hours`. Aim for 2-5 relevant quotes, examples, or advice nuggets with links when the application has enough surface area and the corpus has real support. Never exceed 5-6 bullets or several short paragraphs per section. Use fewer when the review is narrow or additional sources would become filler. Final answers should cite public URLs the founder can read or watch, not local skill file paths.
 
 When an important answer is seriously weak, way off, or the founder explicitly asks for guidance, calibrate before rewriting. For core prompts such as "What is your company going to make?", show 1-2 short exact examples from the most relevant YC sources: official YC guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Use examples to teach answer shape, not as templates to imitate. Expand the example set only if the founder asks.
 

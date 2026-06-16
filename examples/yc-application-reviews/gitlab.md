@@ -15,78 +15,87 @@
 
 ```text
 Use YC Partner to review this public YC application: https://getintoyc.com/company/gitlab/
-Give a source-grounded first-pass review with an evidence ledger, highest-impact fixes, score, helpful notes, and a fun fact.
+Give a source-grounded first-pass review with a quick overview, scorecard, highest-ROI fixes, application tips, office-hours startup advice, hygiene, and a fun fact.
 ```
 
 ## Review Output
 
-### One-Line Read
+### Overview
 
-GitLab is an open-source, self-hosted GitHub alternative for organizations that want code collaboration, merge requests, issues, wiki, and CI on infrastructure they can inspect and control.
+- Very strong written case: product, users, revenue, contributors, named customers, and open-source distribution are all legible.
+- The biggest improvement is claim discipline. The application should keep the strong claims but add denominators and time windows.
+- The application reads interview-worthy from the text alone, with a few avoidable clarity and hygiene issues.
 
-### Evidence Ledger
-
-- Product: Live product, demo link, open-source code collaboration suite, plus GitLab CI and Runner.
-- User: Organizations and developers who need code collaboration behind the firewall or in an open-source/deployable model.
-- Proof users care: Over 100,000 organizations, more than 1 million estimated users, named paying customers, over 600 contributors, and $1M annual revenue run rate.
-- Growth: Claims about 60% monthly revenue growth.
-- Founder signal: Dmitriy started GitLab in 2011; Sytse built GitLab.com; the team has worked together since 2012 and has deep domain exposure.
-- Unique insight: Version control for organizations is infrastructure software, and open source plus a proprietary enterprise edition can create both distribution and scalable revenue.
-- Market path: Self-hosted/on-premise code collaboration first; CI and SaaS expansion later.
-- Main risks: Some claims need proof or cleaner wording; location/base-after-YC is unresolved; growth rate denominator is not shown; some answers contain avoidable typos and missing context.
-
-### What Works
-
-This is a very strong application because the core facts are immediately legible: what GitLab does, who uses it, how far along it is, what customers pay, how it grows, and why open source is part of the business model. That is the heart of a good YC application.
-
-The application also gives YC multiple ways to believe. Company signal is strong from usage, revenue, contributors, and named customers. Founder signal is strong because the founders have built the actual product and community. Application signal is mostly strong because the answers are direct and concrete.
-
-This also demonstrates why traction should be examined for quality, not just size. "100,000 organizations" would be weak if it were just downloads, but the application backs it with contributors, named paying customers, revenue, and a specific enterprise wedge.
-
-### Highest-Impact Fixes
-
-1. Clean up claim discipline.
-
-Several claims are strong but would be stronger if made more exact:
-
-- "More than 1M" active users: active how, over what period?
-- "60% revenue growth each month": over how many months and from what baseline?
-- "More installations than anything else": what is the basis?
-- "Most popular open source version control software": by what measure?
-
-Paul Graham's advice about unequivocal claims applies well here: strong claims are useful because they can be true or false. GitLab should keep the big claims, but make them easier to verify.
-
-2. Fix avoidable writing issues.
-
-The product answer has a visible missing phrase after "including thousands of programmers at." There are also small grammar issues like "where will be based." None of these destroy the case, but they are costly because Startup School explicitly says application readers notice whether founders follow directions and write clearly.
-
-3. Sharpen the first wedge.
-
-The application says GitLab is "run your own GitHub," and that is strong. The next sentence should make the wedge even clearer: organizations that need control, inspectability, self-hosting, and integrated tools. That is more persuasive than broad "collaborate on code" language.
-
-4. Make the SaaS expansion less hand-wavy.
-
-GitLab.com has 15k monthly active users, but the application says there are "a lot of possibilities" to grow it. This is the weakest strategic section. I would ask: what user segment is already pulling GitLab.com, and what does SaaS do better than self-hosted for that segment?
-
-### Score
+### Scorecard
 
 - Application strength: 0.91
-- Interview-pull signal from text: 0.86
-- Confidence: Medium-high
+- Text-only interview likelihood: 0.86
+- Fixes: 4
+- Good areas: 4
+- Risks: 3
+- Highest-impact changes: make metrics verifiable; fix small writing errors; sharpen the SaaS expansion story.
+- Caveat: this is a text-only estimate from a public historical example, not YC feedback or an admissions prediction.
 
-Why not higher: the public text has a few preventable clarity and proof gaps, and some strong claims need denominators. Why high: real product, large usage, revenue, named customers, technical team, community contribution, and a sharp open-source enterprise wedge.
+### What's Good
 
-### Helpful Notes
+- Clear product: an open-source, self-hosted GitHub alternative with merge requests, issues, wiki, CI, and runner.
+- Strong proof: over 100,000 organizations, more than 1 million estimated users, named paying customers, contributors, and $1M ARR.
+- Strong founder/product fit: the team built the actual product and community, not just a pitch deck.
+- Strong wedge: organizations wanting control, inspectability, and deployability have a concrete reason to choose GitLab.
 
-- The YC Startup School application talk specifically uses GitLab as an example of a clear application because it states what the product is, what it does, who uses it, and gives concrete scale. That is exactly the pattern this demo highlights ([YC Startup School video](https://www.youtube.com/watch?v=B5tU2447OK8&t=622s)).
-- Michael Seibel says a pitch should answer what you do, progress, unique insight, business model, and team in simple language. GitLab largely passes this because the application ties product, users, revenue, and insight together ([How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)).
-- The strongest critique is not "add more hype." It is the opposite: make the biggest claims more precise and verifiable.
+### Highest-ROI Risks
+
+- Big claims need cleaner proof: active users, revenue growth, installations, and "most popular" should each have a denominator.
+- Some writing issues are avoidable and make a polished application look less careful.
+- GitLab.com/SaaS expansion is weaker than the self-hosted wedge because the application does not say which user segment is pulling it.
+
+### Changes To Make
+
+1. Make the biggest claims falsifiable.
+
+"More than 1M users" is strongest if it says active how and over what period. "60% revenue growth each month" needs baseline and duration. Paul Graham's point about unequivocal claims fits here: the stronger the claim, the more useful it becomes when it is precise enough to check ([PG thread](https://x.com/paulg/status/2062957298512003556)).
+
+2. Fix preventable mechanics.
+
+There is a visible missing phrase after "including thousands of programmers at." Small grammar issues like "where will be based" are cheap to fix and matter because Startup School calls out clarity, completeness, and care as application signals ([YC Startup School video](https://www.youtube.com/watch?v=B5tU2447OK8&t=622s)).
+
+3. Lead with the enterprise wedge, not just the category.
+
+"Run your own GitHub" is strong. The next sentence should say who needs that: teams that need code collaboration behind their firewall, on inspectable infrastructure, with integrated tools.
+
+4. Make SaaS expansion concrete.
+
+GitLab.com has 15k monthly active users, but "a lot of possibilities" is not a strategy. Add the user segment already pulling SaaS and why hosted GitLab wins for that segment.
 
 ### Fun Fact
 
-Dalton Caldwell's Startup School talk calls GitLab's public application description "crystal clear" because a reader can understand what the product is and who uses it in a few sentences ([YC Startup School video](https://www.youtube.com/watch?v=B5tU2447OK8&t=622s)).
+Dalton Caldwell's Startup School talk uses GitLab's public application as an example of a clear application because a reader can quickly understand what the product is, what it does, and who uses it ([YC Startup School video](https://www.youtube.com/watch?v=B5tU2447OK8&t=622s)).
 
-### Source Trail
+### Tips
+
+- Application tip: do not add hype to already-strong numbers. Add denominators, time windows, and definitions.
+- Application tip: use the strongest current wedge first. "Self-hosted code collaboration for organizations that need control" is easier to remember than a long feature list.
+- Application tip: Michael Seibel's pitch structure maps well here: what you do, progress, unique insight, business model, team, and ask ([How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)).
+
+### Office Hours
+
+- Startup advice: keep open-source distribution and enterprise monetization connected. The community creates reach; the paid product needs a crisp reason budget owners pay.
+- Startup advice: make SaaS a focused bet, not a bucket of possibilities. Pick the customer segment where hosted beats self-hosted and measure that path.
+- Startup advice: as traction grows, precision matters operationally too. The metrics that persuade YC should also be the metrics the team uses to decide what to build.
+
+### Hygiene
+
+- Fix the incomplete sentence and small grammar issues.
+- Add denominator/time-window details to the biggest claims.
+- Clarify location/base-after-YC if the current form asks for it.
+
+### Next Questions
+
+- What period does the 60% monthly revenue growth cover?
+- What qualifies as an active user in the "more than 1M" claim?
+- Which customer segment is pulling GitLab.com rather than self-hosted GitLab?
+
+### Sources
 
 - [GitLab public application](https://getintoyc.com/company/gitlab/)
 - [YC Startup School: How to Apply and Succeed at YC](https://www.youtube.com/watch?v=B5tU2447OK8)

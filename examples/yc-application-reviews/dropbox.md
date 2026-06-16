@@ -15,78 +15,89 @@
 
 ```text
 Use YC Partner to review this public YC application: https://getintoyc.com/company/dropbox/
-Give a source-grounded first-pass review with an evidence ledger, highest-impact fixes, score, helpful notes, and a fun fact.
+Give a source-grounded first-pass review with a quick overview, scorecard, highest-ROI fixes, application tips, office-hours startup advice, hygiene, and a fun fact.
 ```
 
 ## Review Output
 
-### One-Line Read
+### Overview
 
-Dropbox is building automatic file sync and backup for individuals and teams, packaged so nontechnical users get version-control-like benefits without thinking about version control.
+- Strong early application: the product is easy to understand, the pain is concrete, and the demo/prototype does real work.
+- The main upgrade is not more ambition. It is making user pull measurable: beta size, active use, retention, and the strongest usage anecdotes.
+- The founder case is strong for an early, mostly solo application because technical ownership and commitment are obvious.
 
-### Evidence Ledger
+### Scorecard
 
-- Product: Working prototype and private beta; screencast and Windows build were provided.
-- User: Individuals and small teams that need files to stay current across computers without emailing, USB sticks, manual uploads, or brittle online-drive workflows.
-- Proof users care: Private beta usage, a concrete little-sister use case, partner/customer interest in APIs, and requests for enterprise/network deployment.
-- Progress: Built in roughly 3 months part-time, with about 5K lines of client code and 2K lines of server code.
-- Founder signal: Drew is the technical founder, has built a profitable SAT prep business, and had prior hacker/project evidence. He also says he is leaving his job to work on Dropbox full-time regardless of YC.
-- Unique insight: Existing products operate at the wrong abstraction layer; the real user desire is "hit save and everything works."
-- Market path: Starts with simple individual/team sync and expands into paid storage, team plans, API integrations, enterprise deployments, and collaboration workflows.
-- Main risks: Private beta traction is not quantified; team is effectively solo; business model is still a plan; legal/IP risk is mentioned but would need current documentation.
+- Application strength: 0.84
+- Text-only interview likelihood: 0.78
+- Fixes: 4
+- Good areas: 3
+- Risks: 3
+- Highest-impact changes: quantify beta usage; make the opening sentence user-visible; address solo-founder execution risk.
+- Caveat: this is a text-only estimate from a public historical example, not YC feedback or an admissions prediction.
 
-### What Works
+### What's Good
 
-The application has unusually clear founder-product fit. It does not say "cloud collaboration platform" and hope the reader guesses the product. It explains a painful workflow: people manually version files through email, USB sticks, web uploads, and document names like "proposal v2." That is exactly the kind of concrete user behavior that makes an application easier to believe.
+- Clear product: automatic file sync and backup for people tired of email attachments, USB drives, manual uploads, and versioned filenames.
+- Strong insight: the application understands that users want files to "just work," not another online drive abstraction.
+- Strong founder signal: real prototype, demo, technical ownership, prior startup/project history, and stated full-time commitment.
 
-The strongest answer is the "what do you understand" answer. The insight is not just "sync is useful." It is that manual web uploads and online-disk abstractions force users to think about file movement. Dropbox's answer makes the product feel obvious after you read it, which is a strong sign.
+### Highest-ROI Risks
 
-The founder signal is also strong for an early company. YC says many accepted companies are very early, but the application still needs compensating evidence when there is little revenue or scale. Here the compensation is a real build, a demo, technical ownership, startup history, and full-time commitment.
+- Beta demand is under-quantified: the application says private beta but not how many users, how active, or how retained.
+- Solo-founder risk is real: the application should show how product, infrastructure, support, and early sales will stay fast as usage grows.
+- API/partner interest is promising but too vague unless tied to named demand, workflows, payment intent, or repeated requests.
 
-### Highest-Impact Fixes
+### Changes To Make
 
 1. Quantify the beta.
 
-The application says Dropbox is in private beta and batches of people are being added, but it does not say how many active users, how often they sync, whether they keep using it, or what failures users tolerate because the product is valuable. If I were revising this today, I would add one sentence with the current beta count, active usage, retention/frequency, and strongest usage anecdote.
+Add one sentence with current beta count, active users, sync frequency, retention, and the strongest usage anecdote. A small but retained beta is more persuasive than a large vague one.
 
 2. Make the first sentence even more direct.
 
-The opening is already clear, but the strongest modern version would lead with the user-visible action, then add the technical depth:
+The opening is already clear, but it can lead with the user-visible action: "Dropbox keeps a folder automatically synced across your computers and backed up online." Michael Seibel's pitch advice is to start with what the company does, not a setup paragraph ([How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)).
 
-> Dropbox keeps a folder automatically synced across your computers and backed up online, so individuals and teams can work on the latest version of their files without emailing, uploading, or carrying USB drives.
+3. Address solo-founder execution risk.
 
-That is not a copy-paste suggestion; it is the direction. The real answer should use the founder's own wording.
-
-3. Address the solo-founder risk directly.
-
-The application shows Drew is committing full-time, but it does not explain how he will cover product, infrastructure, customer support, sales, and hiring if usage starts growing. YC accepts solo founders, but the application should make the compensating strength obvious: exceptional shipping speed, technical depth, and a plan for help.
+Do not apologize for being solo; show the compensating strength. The application should make the reader feel that Drew can ship quickly, keep the system reliable, learn from users, and recruit help when the bottleneck changes.
 
 4. Turn partner/customer interest into evidence.
 
-"Potential partners/customers asking for an API" is useful, but it would be stronger if named, dated, and tied to concrete demand. For example: who asked, what workflow they wanted, whether they would pay, and whether this was a one-off request or a pattern.
-
-### Score
-
-- Application strength: 0.84
-- Interview-pull signal from text: 0.78
-- Confidence: Medium
-
-Why not higher: the application is excellent for an early product, but a text-only review still lacks beta usage counts, retention, and revenue evidence. Why high anyway: the product is understandable, the demo exists, the user pain is concrete, and the founder has strong technical and commitment signal.
-
-### Helpful Notes
-
-- Official YC guidance says it is not a mistake to apply early; YC recommends applying once you have a founding team and an idea you are excited about. For Dropbox, the important point is not stage, it is that the application gives early-stage evidence: demo, prototype, user pain, and founder ability ([YC FAQ](https://www.ycombinator.com/faq)).
-- Michael Seibel's pitch test is useful here: start with what the company does in simple language, not with why the idea is impressive. Dropbox mostly passes that test because the application describes the user path and the pain plainly ([How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)).
-- Paul Graham's YC interview essay says partners dig into who the first users are and how founders know they want the product. Dropbox has good qualitative evidence, but the next improvement would be making beta usage more measurable ([Billionaires Build](https://www.paulgraham.com/ace.html)).
+"Potential partners/customers asking for an API" should become: who asked, what they wanted to build, whether they would pay, and whether the request appeared more than once.
 
 ### Fun Fact
 
-The historical W23 recap said 52% of that batch was accepted with just an idea and no product, and 77% without revenue. Dropbox was already past that bar in this application because it had a working demo and beta users, even though it was still very early ([PG thread with W23 recap](https://x.com/paulg/status/1642566043053826048)).
+The W23 recap said 52% of that batch was accepted with just an idea and no product, and 77% without revenue. Dropbox had already cleared the harder early-stage proof bar in this application because it had a working demo and beta users ([PG thread](https://x.com/paulg/status/1642566043053826048)).
 
-### Source Trail
+### Tips
+
+- Application tip: YC says applying early is fine; the application still has to show why the early evidence matters ([YC FAQ](https://www.ycombinator.com/faq)).
+- Application tip: Use the demo as proof of seriousness. YC's demo guidance says the difference between nothing and something is huge, even if the demo is rough ([YC application tips: include a demo](https://www.ycombinator.com/library/4X-yc-application-tips-include-a-demo)).
+- Application tip: Keep rewrites factual. A stronger one-liner should clarify the product, not turn Dropbox into a generic "cloud collaboration platform."
+
+### Office Hours
+
+- Startup advice: the next operating bottleneck is user learning. Find the handful of beta users who would be most upset if Dropbox disappeared and learn exactly why.
+- Startup advice: if the product is already valuable, make retention and reliability the scoreboard. Sync is a trust product; one bad failure can erase a lot of goodwill.
+- Startup advice: do not get distracted by every possible expansion. Prove the core folder-sync behavior is loved before API, enterprise, and collaboration branches take over.
+
+### Hygiene
+
+- Strong demo signal, but the application should make beta metrics easier to scan.
+- No obvious required-field issue in this public text.
+- Legal/IP references should be kept precise and current in a real application.
+
+### Next Questions
+
+- How many beta users were active in the last 7 and 30 days?
+- What percentage kept using Dropbox after first install?
+- What is the strongest user quote or behavior showing they would be upset if it disappeared?
+
+### Sources
 
 - [Dropbox public application](https://getintoyc.com/company/dropbox/)
 - [YC FAQ](https://www.ycombinator.com/faq)
 - [Michael Seibel: How to Pitch Your Company](https://www.michaelseibel.com/blog/how-to-pitch-your-company)
-- [Paul Graham: Billionaires Build](https://www.paulgraham.com/ace.html)
-- [YC application video guidance](https://www.ycombinator.com/video)
+- [YC application tips: include a demo](https://www.ycombinator.com/library/4X-yc-application-tips-include-a-demo)
+- [PG thread with W23 recap](https://x.com/paulg/status/1642566043053826048)

@@ -13,9 +13,9 @@ Separate `application strength` from `interview likelihood` when the distinction
 
 If a historically not-accepted application has strong usage, founder insight, or interview-worthy evidence, a high application-strength score can be correct. Interview likelihood should still account for missing company proof, unclear switching behavior, weak retention evidence, batch timing, and whether YC can quickly see a non-incremental wedge. The review should explain the remaining risks that could matter in an interview or final decision instead of forcing the score to match the historical outcome.
 
-## Evidence Ledger
+## Internal Evidence Notes
 
-Before scoring, extract the concrete evidence:
+Before scoring, extract the concrete evidence. This is internal scaffolding for judgment, not a required final-answer section:
 
 - Product: what the company makes in one plain sentence.
 - User: the narrow user/customer and their urgent pain.
@@ -161,4 +161,4 @@ Use these bands softly, and include confidence:
 
 Use the word `likely` conservatively. A score in the high 0.60s can be a credible application and still be better labeled `borderline` if the company wedge, retention, switching behavior, or source-grounded proof is not clear.
 
-Do not let the score be the main deliverable. The value is the tailored evidence ledger, myth correction, source-grounded risks, and next questions.
+Do not let the score be the main deliverable. The value is the tailored fixes, source-grounded risks, practical tips, and next questions. Keep the evidence notes internal unless the user explicitly asks to see the scoring rationale.
