@@ -8,3 +8,4 @@ Use as context only. Do not cite these as official YC criteria.
 
 - `codeant-ai-yc-rejection-to-acceptance-story.md` - external unverified LinkedIn founder anecdote about CodeAnt AI's reported path from YC interview rejection to W24 acceptance; company/founder status checked against the official YC directory.
 - `kudu-yc-s22-rejection-email-slack-alternative-2022-06-27.md` - external public Substack capture of a user-verified YC S22 rejection email for Kudu, useful for entrenched-incumbent, switching-cost, and customer-acquisition concerns.
+- `redacted-yc-post-interview-rejection-email-logistics-warehouse-marketplace.md` - public redacted screenshot capture of a personalized YC post-interview rejection email about customer quality, warehouse outsourcing, and multi-city scaling concerns. Use only as narrow context; never generalize the rejection reason to other founders.
