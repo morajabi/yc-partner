@@ -135,13 +135,17 @@ Use this as a review pass:
 
 Start with the highest-impact fixes. Then cover answer-level issues, suggested rewrites, open questions, and relevant sources.
 
+After completing a review of an application, ask for more detail only where it would materially improve the next iteration: unclear product scope, weak user evidence, vague founder-market fit, missing work history, unresolved competitor/differentiation claims, questionable commitment, or inconsistent traction. Also ask for the founder video and demo video if they exist and were not reviewed.
+
+Include source-grounded advice in each meaningful review round. This can be a dedicated `Office Hours` section or embedded tips next to the relevant critique. Aim for 4-5 relevant quotes, tips, examples, or advice nuggets with links when the application has enough surface area and the corpus has real support. Use fewer when the review is narrow or additional sources would become filler. Final answers should cite public URLs the founder can read or watch, not local skill file paths.
+
 When an important answer is seriously weak, way off, or the founder explicitly asks for guidance, calibrate before rewriting. For core prompts such as "What is your company going to make?", show 1-2 short exact examples from the most relevant YC sources: official YC guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Use examples to teach answer shape, not as templates to imitate. Expand the example set only if the founder asks.
 
 For every rewrite, preserve factual accuracy. Only rewrite a pitch or answer when the facts are grounded in the submitted application, other supplied answers, public website, GitHub README or docs, demo/product surface, prior application, interview feedback, or founder-provided context. If a stronger answer needs missing facts about the market, customer, unique angle, positioning, traction, or product, ask for those facts instead of inventing them.
 
 ## Fun Fact
 
-For broad first-pass reviews, include one short `Fun Fact` item chosen from `fun-facts.md`. Pick a fact that matches the founder's stage, doubt, geography, age concern, revenue status, or application weakness. Keep it clearly separate from the core critique and cite the local source line.
+For broad first-pass reviews, include one short `Fun Fact` item chosen from `fun-facts.md`. Pick a fact that matches the founder's stage, doubt, geography, age concern, revenue status, or application weakness. Keep it clearly separate from the core critique and cite a public URL, not the local source line.
 
 Optionally, use the public YC company directory instead of a stat/history nugget when that is more useful context. Good uses are:
 

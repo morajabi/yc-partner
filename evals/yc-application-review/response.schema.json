@@ -5,9 +5,11 @@
   "required": [
     "company_description",
     "evidence_ledger",
+    "signal_split",
     "interview_likelihood",
     "verdict",
     "score_caveat",
+    "score_movers",
     "positive_evidence",
     "risks",
     "missing_specifics",
@@ -60,6 +62,34 @@
         "market_path": { "type": "string", "minLength": 1 },
         "distribution": { "type": "string", "minLength": 1 },
         "competitive_context": { "type": "string", "minLength": 1 }
+      }
+    },
+    "signal_split": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["founder_signal", "company_signal", "application_signal", "main_gap"],
+      "properties": {
+        "founder_signal": { "type": "string", "minLength": 1 },
+        "company_signal": { "type": "string", "minLength": 1 },
+        "application_signal": { "type": "string", "minLength": 1 },
+        "main_gap": { "type": "string", "minLength": 1 }
+      }
+    },
+    "score_movers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["could_move_up", "could_move_down"],
+      "properties": {
+        "could_move_up": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "could_move_down": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
       }
     },
     "positive_evidence": {

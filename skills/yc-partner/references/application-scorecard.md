@@ -23,6 +23,38 @@ Before scoring, extract the concrete evidence:
 - Competitive context: substitutes, incumbents, adjacent YC-funded companies, and why users will switch or pay attention.
 - Risk profile: regulatory, marketplace liquidity, sales cycle, retention, unit economics, support burden, platform dependence, low-frequency use, or embedded-incumbent risk.
 
+## Signal Split
+
+Separate the founder case from the company case and the application-writing case.
+
+- Founder signal: ability to build, domain access, persistence, speed, taste, technical depth, sales ability, resourcefulness, and full-time seriousness.
+- Company signal: clear painful problem, user pull, retention, willingness to pay, differentiation, market path, distribution, and timing.
+- Application signal: direct answers, concise writing, concrete claims, good demos/videos, correct batch/logistics, and source-supported explanations.
+
+A strong founder case can justify a higher interview-case score even when company traction is early, but the review must say what company facts are still missing. A strong metrics case can still be weak if the founders do not explain user insight, retention, switching behavior, or why they can win. If one signal is much stronger than another, say that explicitly.
+
+## Score Movers
+
+When giving an interview-likelihood estimate, name the facts that would move the score.
+
+Examples that move a score up:
+
+- Retained active usage for the core workflow.
+- A paying customer replacing a real incumbent or painful manual workflow.
+- Organic or efficient acquisition with a clear denominator.
+- A surprising user insight that changes the product or wedge.
+- Founder-market fit that explains why this team sees something others miss.
+- Strong demo evidence that makes the product immediately understandable.
+
+Examples that move a score down:
+
+- Metrics that are cumulative, unretained, paid-for, vague, one-off, or disconnected from the wedge.
+- No clear first customer profile or switching reason.
+- Weak founder commitment, unclear technical ownership, or unresolved cofounder dynamics.
+- A competitor answer that attacks incumbents without explaining a durable wedge.
+- Legal, immigration, regulatory, or logistics claims stated with more certainty than the evidence supports.
+- A product description that sounds impressive but cannot be repeated in one sentence.
+
 ## Myth Checks
 
 Run an explicit myth check when relevant:

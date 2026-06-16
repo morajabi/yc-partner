@@ -176,6 +176,8 @@ def build_candidate_prompt(fixture: Fixture) -> str:
         - Build an evidence ledger before scoring: product, user, proof users
           care, progress, founder-market fit, unique insight, market path,
           distribution, and competitive context.
+        - Split founder signal, company signal, and application signal. If one
+          is much stronger than another, say that directly.
         - Estimate how strong the application text is as an interview case.
           This is a text-only estimate, not an admissions prediction.
         - Do not treat high usage or high revenue as automatically strong.
@@ -210,10 +212,13 @@ def build_candidate_prompt(fixture: Fixture) -> str:
 
         Return only JSON matching the provided schema. Use:
         - evidence_ledger: short text for every required evidence category
+        - signal_split: founder_signal, company_signal, application_signal,
+          and the main gap between them
         - interview_likelihood: 0.0 to 1.0
         - verdict: "likely", "borderline", or "unlikely"
         - score_caveat: one sentence explaining that this is a text-only
           estimate and naming what could move it
+        - score_movers: concrete facts that could move the score up or down
         - positive_evidence: short bullets grounded in the text
         - risks: short bullets grounded in the text and, where possible, a
           captured resource
@@ -361,9 +366,25 @@ def run_heuristic_candidate(fixture: Fixture) -> tuple[str, dict[str, Any]]:
             "distribution": "The application should explain how the first users are reached without assuming broad paid marketing works.",
             "competitive_context": "The review should inspect substitutes, direct competitors, adjacent YC-funded companies, and why users switch.",
         },
+        "signal_split": {
+            "founder_signal": "Founder signal is inferred from building, technical, domain, or prior-startup signals in the text.",
+            "company_signal": "Company signal is inferred from user, traction, revenue, retention, market-path, and differentiation evidence.",
+            "application_signal": "Application signal is inferred from clarity, directness, metric quality, and completeness of answers.",
+            "main_gap": "The main gap should name whether founder strength, company evidence, or application clarity is the limiting factor.",
+        },
         "interview_likelihood": round(score, 2),
         "verdict": verdict,
         "score_caveat": "This is a text-only estimate from the application; stronger source-backed user learning, retention, founder insight, or sector context could move it up or down.",
+        "score_movers": {
+            "could_move_up": [
+                "Retained active usage for the core workflow with clear denominators.",
+                "Evidence that the right first user pays, repeats, or switches from an existing substitute.",
+            ],
+            "could_move_down": [
+                "Metrics that are cumulative, vague, one-off, bought, unretained, or disconnected from the wedge.",
+                "A weak switching reason, unclear founder commitment, or unsupported differentiation claim.",
+            ],
+        },
         "positive_evidence": positives[:4],
         "risks": risks[:4],
         "missing_specifics": [
@@ -546,6 +567,26 @@ def response_quality(fixture: Fixture, parsed: dict[str, Any] | None, parse_erro
             "evidence_ledger_complete",
             isinstance(ledger, dict)
             and all(isinstance(ledger.get(key), str) and ledger[key].strip() for key in ledger_keys),
+        )
+    )
+    signal_split = parsed.get("signal_split")
+    signal_keys = ["founder_signal", "company_signal", "application_signal", "main_gap"]
+    checks.append(
+        (
+            "signal_split_complete",
+            isinstance(signal_split, dict)
+            and all(isinstance(signal_split.get(key), str) and signal_split[key].strip() for key in signal_keys),
+        )
+    )
+    score_movers = parsed.get("score_movers")
+    checks.append(
+        (
+            "score_movers_present",
+            isinstance(score_movers, dict)
+            and isinstance(score_movers.get("could_move_up"), list)
+            and isinstance(score_movers.get("could_move_down"), list)
+            and any(isinstance(item, str) and item.strip() for item in score_movers["could_move_up"])
+            and any(isinstance(item, str) and item.strip() for item in score_movers["could_move_down"]),
         )
     )
     for key in ["positive_evidence", "risks", "missing_specifics", "improvements"]:

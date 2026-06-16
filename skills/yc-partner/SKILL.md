@@ -68,10 +68,28 @@ Do not read, print, summarize, edit, or commit `.env` files. Do not copy private
 - Treat personalized YC rejection emails as recipient-specific feedback, not as YC policy or reusable rejection reasons. Do not speculate that another team with the same idea would be rejected for the same reason; the same idea with different founders, traction, timing, geography, or customer proof may be judged very differently.
 - Do not use private applications or personal data from this repository.
 - If a claim is based on inference rather than a source, label it as inference.
-- Cite local resource files or public URLs for guidance-based recommendations.
+- Cite sources for guidance-based recommendations.
 - Prefer processed Markdown source files over raw captures. Treat source files as compact metadata, one summary/table-of-contents section, then full captured content; use indexes and guides for synthesized reviewer commentary.
 - Do not rely on raw HTML, downloaded videos, raw caption JSON, or private screenshots as skill resources.
 - Browse YC Requests for Startups and funded-company pages when they are relevant to the user's idea and local processed notes are missing or stale. Make clear that these are context, not the only ideas YC is interested in.
+
+## User-Facing Citations
+
+Use local `path:line` citations only as internal breadcrumbs while working. Do not show skill-local paths such as `skills/yc-partner/resources/...` or `../resources/...` to founders unless they explicitly ask for debugging details about the installed skill.
+
+When quoting or referencing a bundled source in the final answer:
+
+- Open the source file and use its metadata `URL` as the user-facing citation.
+- For X/Twitter posts, cite the public status URL. If a thread file has `Related URL` entries and the specific quoted reply has its own URL, prefer that exact URL.
+- For YouTube videos, cite the public YouTube URL. If the transcript or source gives a timestamp for the quoted moment, link directly to the timestamp using `&t=<seconds>s`; otherwise cite the main video URL.
+- For YC website pages, PG essays, blog posts, interviews, founder stories, and public examples, cite the original public URL from metadata.
+- For YC company-directory comps, cite the public YC company page URL.
+- If a captured source has no public URL for the exact quoted material, say so briefly and avoid exposing the internal file path. Prefer citing the nearest public parent page or video when available.
+
+Good final-answer citation shape:
+
+- `Paul Graham says traction is not required if you have a real idea ([X post](https://x.com/paulg/status/1568292003871588353)).`
+- `Dalton describes the YC interview as a 10-minute Zoom with all founders present ([YC video, timestamp](https://www.youtube.com/watch?v=B5tU2447OK8&t=826s)).`
 
 ## Context Loading
 
@@ -127,7 +145,7 @@ Use this when the founder presents their biggest obstacle, worry, doubt, questio
 3. Search bundled `resources/`, `indexes/`, and `guides/` with `rg` for the exact issue before answering.
 4. Answer only from captured sources, guides, indexes, and YC or YC-affiliated material bundled in this skill.
 5. If the corpus does not support the answer, do not improvise. Say the skill does not have captured support for a confident YC-grounded answer, then recommend applying to YC for real YC partner feedback and offer to help draft the application so that question is visible.
-6. Cite source files for every substantive recommendation.
+6. Cite public source URLs for every substantive recommendation; use local source files only to find and verify the cited material.
 
 ## Pre-Application Guidance Workflow
 
@@ -166,42 +184,45 @@ For these answers:
 3. If the founder has applied to YC before with the same idea or a close variant, ask for the previous application(s) before doing a final review. If they reached interview, also ask for any interview feedback, rejection email text, partner comments, or their own notes from the interview. Compare old vs current answers for progress, changed insight, and unresolved concerns.
 4. Do not delay a first review to ask broad founder-background questions unless the application is so minimal that no useful review can start. Use the submitted answers first; after the first pass, ask targeted follow-up questions for the next iteration when founder profile, work history, origin story, or founder-market fit could materially improve the application.
 5. Build an evidence ledger before scoring: product, user, proof users care, progress, founder-market fit, unique insight, market path, distribution, competitive context, and risk profile.
-6. Run the myth checks from `references/application-scorecard.md`. Do not treat high usage/revenue as automatically strong, and do not treat low revenue, pre-revenue, pre-product, or idea stage as automatically weak. Reward metric quality over metric size: active and retained users, paid or high-intent users, organic or efficient acquisition, clear denominators, fast growth from a real baseline, and metrics tied to the right first user. Be skeptical of cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, and growth percentages without baseline.
-7. Add a sector and landscape pass. Use the local YC company directory, RFSes, public examples, and captured partner guidance when they sharpen the review. Look for problem-space-specific failure paths such as marketplace liquidity, embedded incumbents, retention, buyer/user split, regulatory risk, sales cycle, data advantage, technical proof, or founder domain expertise.
-8. Flag the highest-impact issues first, grounded in the application text and reputable captured resources.
-9. Check whether each answer directly answers the prompt.
-10. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
-11. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
-12. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
-13. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
-14. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
-15. Separate:
+6. Split the review into founder signal, company signal, and application signal when those diverge. A strong founder case should not hide weak company evidence; strong metrics should not hide weak founder insight or weak application clarity.
+7. Run the myth checks from `references/application-scorecard.md`. Do not treat high usage/revenue as automatically strong, and do not treat low revenue, pre-revenue, pre-product, or idea stage as automatically weak. Reward metric quality over metric size: active and retained users, paid or high-intent users, organic or efficient acquisition, clear denominators, fast growth from a real baseline, and metrics tied to the right first user. Be skeptical of cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, and growth percentages without baseline.
+8. Add a sector and landscape pass. Use the local YC company directory, RFSes, public examples, and captured partner guidance when they sharpen the review. Look for problem-space-specific failure paths such as marketplace liquidity, embedded incumbents, retention, buyer/user split, regulatory risk, sales cycle, data advantage, technical proof, or founder domain expertise.
+9. Flag the highest-impact issues first, grounded in the application text and reputable captured resources.
+10. Check whether each answer directly answers the prompt.
+11. Push vague claims toward concrete nouns, numbers, users, behavior, and evidence.
+12. Run one general hygiene pass using `guides/application-hygiene.md`: missing required fields, empty answers, grammar/typos, founder/demo video, links/login, and concise direct answers.
+13. If public founder/company URLs are present and deeper review is requested, use `guides/application-research.md` to create a short working profile from public evidence: founder backgrounds, company description, website/demo/GitHub evidence, strongest current claim, and main uncertainty. Label public evidence, application claims, inference, and facts needing founder confirmation.
+14. Check founder seriousness and red flags: full-time commitment, role clarity, technical ownership, equity alignment, misleading claims, and founder dynamics. Red flags should become concrete fixes or honest explanations, not vague scolding.
+15. For competitor and "why different?" answers, check relevant YC-funded adjacent companies via the local YC company directory when useful. Use this to sharpen differentiation questions, not to imply YC will reject similar ideas.
+16. Separate:
    - Official YC guidance.
    - Public example patterns.
    - Your own inference from the application.
    - Open questions for the founder.
-16. If giving an interview-likelihood score, include a caveat that it is a text-only estimate, not an admissions prediction, and name the missing facts that could move it up or down.
-17. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
-18. For broad first-pass reviews, add an `Office Hours` section that teaches the founder using the bundled source corpus.
-19. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
+17. If giving an interview-likelihood score, include a caveat that it is a text-only estimate, not an admissions prediction, and name the missing facts that could move it up or down.
+18. Suggest concise rewrites only as examples of direction, not as copy-paste final answers.
+19. After a review with an application is complete, ask for more details only in the areas that are especially unclear, weak, or potentially high-leverage for the next iteration. Also ask for the founder video and demo video if they have one and it was not reviewed.
+20. For broad first-pass reviews and substantial review iterations, add an `Office Hours` section or embed source-grounded advice nuggets throughout the feedback using the bundled source corpus.
+21. For broad first-pass reviews, add one short `Fun Fact` item from `guides/fun-facts.md`.
 
 For major answer-level problems:
 
 - If a founder is way off on one important answer, asks for guidance on it, or has a serious issue in a core prompt such as "What is your company going to make?", use exact short examples from YC sources to calibrate what good looks like.
 - Start with 1-2 examples only. Use YC official guidance first, then Dalton/Michael/partner advice, then public example applications or application videos. Expand only if the user explicitly asks for more examples.
 - Keep examples tied to the question being fixed. Do not dump broad YC advice or unrelated startup lessons.
-- Use short quotes only where the wording matters, and always link to the local source path or public URL.
+- Use short quotes only where the wording matters, and always link to the public source URL.
 
 For `Office Hours`:
 
-- Include 1-4 nuggets, usually 1-2.
+- Include a few highly relevant nuggets in each meaningful review round; aim for 4-5 when the application has enough surface area and the corpus has genuinely relevant material. Use fewer only when the review is narrow, the available source support is thin, or more nuggets would distract from the core fixes.
 - Pick nuggets that are extremely relevant to this founder and company: growth, idea quality, pitch clarity, written communication, user insight, confidence, revenue, goals, work history, commitment, founder bio, sector, tar pit risk, or another issue surfaced by the review.
-- Use short quotes only where the wording matters, and link to the full local resource or public URL.
+- Use short quotes only where the wording matters, and link to the public source URL.
+- Use local source paths only internally. Each nugget should have a link the founder can read or watch whenever a public URL exists.
 - Prefer one source per nugget; use at most 1-3 resources for a single nugget, ideally no more than 2.
 - Explain why the nugget matters for this specific application in one practical sentence.
 - Label the source class when it matters: official YC guidance, YC-affiliated context, public example, founder story, or inference.
 - Do not turn this into a broad reading list. Do not add generic startup lessons unrelated to the founder's profile, company profile, or stage.
-- Skip `Office Hours` for narrow iterations, one-answer edits, pure mock interview drills, or follow-up revisions unless the user asks for it.
+- For narrow iterations, one-answer edits, pure mock interview drills, or follow-up revisions, keep advice nuggets embedded and minimal unless the user asks for a fuller source-grounded section.
 
 For `Fun Fact`:
 
@@ -214,7 +235,7 @@ For `Fun Fact`:
 - Treat possible partner-fit notes as inference from public signals, not as insider knowledge about who will read or champion the application.
 - When using comps, prefer public YC company URLs and keep the note lightweight: one sentence on why those examples are relevant, not a long market map.
 - When naming possible partner fit, keep it to one short reason per partner and avoid claiming certainty.
-- Keep it to 1-3 sentences and cite the local source line.
+- Keep it to 1-3 sentences and cite public URLs instead of local source lines.
 - Keep it separate from the review's core critique; fun facts can support confidence or context, but do not use stale historical stats as current policy.
 - Skip it for narrow iterations, one-answer edits, pure mock interview drills, or follow-up revisions unless the user asks for it.
 
@@ -255,6 +276,6 @@ Be direct, practical, and specific. Optimize for being understood quickly, not s
 
 Lead with the highest-impact fixes. Use citations when giving source-grounded guidance.
 
-For broad first-pass reviews, include a final section titled `Office Hours` with the focused educational nuggets described above, plus one short `Fun Fact` item from `guides/fun-facts.md`.
+For broad first-pass reviews and substantial review iterations, include a final section titled `Office Hours` or embed the focused educational nuggets described above. For broad first-pass reviews, also include one short `Fun Fact` item from `guides/fun-facts.md`.
 
 Avoid generic startup advice when a YC-specific source exists. Do not flatter the user. Do not over-polish weak content. Make the application clearer, more concrete, and easier to evaluate quickly.

@@ -13,7 +13,9 @@ Keep fun facts separate from critique. They should make the review feel more hum
 - Use country-based directory comps mainly when the founder is from a less represented or lower-income country and seems to need confidence that YC funds startups from there.
 - If nothing is directly relevant, choose a neutral YC-insider fact.
 - Keep the output to 1-3 sentences.
-- Cite the local source file and line.
+- Use local source files and lines only internally while choosing the fact.
+- In the final answer, cite a public URL the founder can read or watch.
+- For YouTube sources, use a timestamped URL when the relevant timestamp is available.
 - Clearly label stale or historical stats as historical.
 
 For directory comps:

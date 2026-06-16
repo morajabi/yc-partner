@@ -50,6 +50,8 @@ Successful examples should generally receive a higher interview-likelihood score
 - Separates concrete evidence from inference.
 - Does not over-reward high usage or revenue without active/retained users, organic or efficient acquisition, monetization quality, clear denominators, distribution, defensibility, and market-path analysis.
 - Treats impressive-sounding metrics skeptically when they are cumulative signups, vague "users", waitlists, GMV without take rate, pilots without payment, one-off or pass-through revenue, paid acquisition without CAC/payback/retention, or growth percentages without a baseline.
+- Splits founder signal, company signal, and application-writing signal when they diverge.
+- Names concrete facts that would move the score up or down instead of presenting the score as a prediction.
 - Does not punish low revenue, pre-revenue, pre-product, or idea stage when the application shows user insight, founder-market fit, speed, domain expertise, or a strong next experiment.
 - References captured reputable resources for YC-specific claims, myths, and problem-space risks.
 - Uses sector and landscape context: adjacent YC companies, RFSes, common failure paths, substitutes, incumbents, sales cycle, marketplace liquidity, regulatory risk, buyer/user split, technical proof, or data advantage where relevant.

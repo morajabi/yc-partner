@@ -22,7 +22,7 @@ This is not real YC office hours. Official YC says office hours are led by YC pa
    - `Obstacle`: the real bottleneck or uncertainty.
    - `YC-grounded read`: what the captured source says.
    - `What I would do next`: 1-3 concrete actions that follow from the source.
-   - `Source trail`: local file citations.
+   - `Source trail`: public URLs the founder can read or watch. Use local file citations only internally while finding the source.
 6. If support is weak or missing, use the unsupported-answer path below.
 
 ## Useful Office-Hours Questions

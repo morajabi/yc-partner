@@ -160,6 +160,8 @@ The skill should be direct, specific, source-grounded, and skeptical without bei
 
 For pre-application guidance, confidently answer common YC doubts when the corpus supports them: applying with just an idea, whether a school or pedigree matters, solo founders, nontechnical founders, students and Early Decision, international founders, already-funded companies, late applications, reapplying after rejection, whether YC funds a sector, and fear or uncertainty about applying. Prefer official YC sources first, then use partner tweets/posts/interviews and founder stories for extra context. Give the founder a direct answer plus a small set of relevant sources to read, not a broad resource dump.
 
+Internal indexes and guides may cite bundled source files as `path:line` for maintainability. Runtime, founder-facing answers must translate those internal citations into public URLs from source metadata. For YouTube sources, use timestamped public links when the relevant timestamp is available. Do not expose local skill file paths to founders unless they explicitly ask for debugging details about the installed skill.
+
 Prioritize:
 
 - Clear company description.
