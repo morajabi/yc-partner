@@ -6,6 +6,39 @@ Think of it as a source-grounded second pair of eyes for your YC application. It
 
 It is based on official YC resources, Paul Graham essays, YC partner writing and interviews, Jessica Livingston material, founder stories, example applications, and related public material.
 
+## Resources Used
+
+YC Partner ships with a processed public corpus, not just a prompt. The current snapshot includes:
+
+- 418 processed Markdown source files across official YC material, partner writing, interviews, transcripts, public examples, podcast notes, and founder stories.
+- 195 official YC resources, including YC website/blog/library pages, YouTube transcripts, Requests for Startups, application prompts, and company-directory context.
+- 145+ transcript/interview/podcast-note captures from YC, Dalton + Michael, Social Radars, Garry Tan, Jessica Livingston, Gustaf Alstromer, Dalton Caldwell, and Lightcone.
+- 74 partner essays/posts from Paul Graham, Sam Altman, Michael Seibel, Jessica Livingston, Geoff Ralston, Harj Taggar, Dalton Caldwell, and other YC-affiliated sources.
+- 72 public examples and short-form captures, including YC application/demo examples and public tweet/X captures.
+- YC company-directory context with 5,960 public company entries and 17 group-partner profiles.
+
+When YC Partner quotes or cites a resource, it should show the public URL so founders can check the original source instead of being pointed at internal skill files.
+
+## Example Runs
+
+These are demo reviews of public YC applications, included so you can see the kind of feedback YC Partner gives. They are not YC feedback, not admissions predictions, and not templates to copy.
+
+- [Dropbox public application review](examples/yc-application-reviews/dropbox.md) - Shows how the skill handles an early, pre-revenue product with a strong demo, sharp user pain, and clear founder technical signal.
+
+```text
+- Dropbox is automatic file sync, backup, and versioning for individuals and small teams, starting with a Windows client plus web access.
+- Strongest signal: Drew built a real product quickly, has a demo/build, understands the workflow pain, and is clearly technical.
+- Biggest weakness: “Private beta” and “add batches every few days” need numbers, behavior, retention, and what users learned.
+```
+
+- [GitLab public application review](examples/yc-application-reviews/gitlab.md) - Shows how the skill reviews a later-stage devtools application with strong traction, revenue, open-source distribution, and a few claim-discipline issues.
+
+```text
+GitLab reads as a very strong YC application: open-source code collaboration, deployed mostly on-premise, with 100k+ organizations, named paying customers, 600+ contributors, $1M ARR, and ~60% monthly revenue growth in the submitted text. The application’s strength is not polish; it is concrete proof that real developers and enterprises already care.
+
+“We estimate more than 1M” is too vague. Active how? Monthly active developers? Installations? Users behind firewalls? This matters because YC looks for evidence users want the product, not just big numbers.
+```
+
 ## What It Does
 
 - Reviews YC application drafts for clarity, specificity, evidence, traction, founder-market fit, and application hygiene.
@@ -43,39 +76,6 @@ Use YC Partner to answer my questions before I write my YC application
 ```
 
 For video review, provide local paths to your founder video or demo video. If you want transcription handled locally, your environment needs `ffmpeg` and an `OPENAI_TOKEN`.
-
-## Example Runs
-
-These are demo reviews of public YC applications, included so you can see the kind of feedback YC Partner gives. They are not YC feedback, not admissions predictions, and not templates to copy.
-
-- [Dropbox public application review](examples/yc-application-reviews/dropbox.md) - Shows how the skill handles an early, pre-revenue product with a strong demo, sharp user pain, and clear founder technical signal.
-
-```text
-- Dropbox is automatic file sync, backup, and versioning for individuals and small teams, starting with a Windows client plus web access.
-- Strongest signal: Drew built a real product quickly, has a demo/build, understands the workflow pain, and is clearly technical.
-- Biggest weakness: “Private beta” and “add batches every few days” need numbers, behavior, retention, and what users learned.
-```
-
-- [GitLab public application review](examples/yc-application-reviews/gitlab.md) - Shows how the skill reviews a later-stage devtools application with strong traction, revenue, open-source distribution, and a few claim-discipline issues.
-
-```text
-GitLab reads as a very strong YC application: open-source code collaboration, deployed mostly on-premise, with 100k+ organizations, named paying customers, 600+ contributors, $1M ARR, and ~60% monthly revenue growth in the submitted text. The application’s strength is not polish; it is concrete proof that real developers and enterprises already care.
-
-“We estimate more than 1M” is too vague. Active how? Monthly active developers? Installations? Users behind firewalls? This matters because YC looks for evidence users want the product, not just big numbers.
-```
-
-## Resources Used
-
-YC Partner ships with a processed public corpus, not just a prompt. The current snapshot includes:
-
-- 418 processed Markdown source files across official YC material, partner writing, interviews, transcripts, public examples, podcast notes, and founder stories.
-- 195 official YC resources, including YC website/blog/library pages, YouTube transcripts, Requests for Startups, application prompts, and company-directory context.
-- 145+ transcript/interview/podcast-note captures from YC, Dalton + Michael, Social Radars, Garry Tan, Jessica Livingston, Gustaf Alstromer, Dalton Caldwell, and Lightcone.
-- 74 partner essays/posts from Paul Graham, Sam Altman, Michael Seibel, Jessica Livingston, Geoff Ralston, Harj Taggar, Dalton Caldwell, and other YC-affiliated sources.
-- 72 public examples and short-form captures, including YC application/demo examples and public tweet/X captures.
-- YC company-directory context with 5,960 public company entries and 17 group-partner profiles.
-
-When YC Partner quotes or cites a resource, it should show the public URL so founders can check the original source instead of being pointed at internal skill files.
 
 ## How To Use It
 
